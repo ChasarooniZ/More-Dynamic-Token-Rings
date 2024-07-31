@@ -21,9 +21,6 @@
   "esmodules": [
     "scripts/module.js"
   ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
   "languages": [
     {
       "lang": "en",
@@ -35,5 +32,5 @@
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
-  "readme": "README.md",
+  "readme": "README.md"
 }
