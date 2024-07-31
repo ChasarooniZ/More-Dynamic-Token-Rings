@@ -8,7 +8,7 @@ Hooks.once("init", async function () {
         RING_GRADIENT: "TOKEN.RING.EFFECTS.RING_GRADIENT",
         BKG_WAVE: "TOKEN.RING.EFFECTS.BKG_WAVE",
       },
-      spritesheet: "../rings/token-tool-chains-ring.json",
+      spritesheet: "rings/token-tool-chains-ring.json",
     });
     ringConfig.addConfig("tokenToolChainsRing", tokenToolChainsRing);
   });
