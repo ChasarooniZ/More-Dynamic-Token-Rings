@@ -55,6 +55,7 @@ function registerASetting(name, json) {
   game.settings.register(MODULE_ID, getSettingId(json), {
     name,
     hint: "",
+    requiresReload: true,
     scope: "world",
     config: true,
     default: false,
