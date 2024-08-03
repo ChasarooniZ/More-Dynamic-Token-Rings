@@ -9,12 +9,9 @@
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
 # FoundryVTT Module
-
-Does something, probably
-
+Adds options for dynamic token rings
 
 
-https://codeshack.io/images-sprite-sheet-generator/ (use to make sheets)
 ## Table of Contents
 - [FoundryVTT Module](#foundryvtt-module)
   - [Table of Contents](#table-of-contents)
