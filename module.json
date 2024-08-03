@@ -1,10 +1,9 @@
 {
   "id": "more-dynamic-token-rings",
-  "title": "More Dynamic Token Rings",
+  "title": "SETT: More Dynamic Token Rings",
   "description": "",
   "version": "#{VERSION}#",
   "library": "false",
-  "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": 12,
     "verified": 12
@@ -16,11 +15,18 @@
   ],
   "relationships": {
     "systems": [],
-    "requires": []
+    "requires": [],
+    "recommends": [
+      {
+        "id": "pf2e-reactive-token-ring",
+        "type": "module",
+        "reason": "This module actually adds functionality to dynamic tokens for many systems (Don't enable for DND5e and other systems that already have these features implemented)",
+        "manifest": "https://github.com/ChasarooniZ/PF2e-Reactive-Token-Ring/releases/latest/download/module.json",
+        "compatibility": {}
+      }
+    ]
   },
-  "esmodules": [
-    "scripts/module.js"
-  ],
+  "esmodules": ["scripts/module.js"],
   "languages": [
     {
       "lang": "en",
