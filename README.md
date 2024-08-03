@@ -34,7 +34,7 @@ Have a normal token ring that you want to become a dynamic ring. Just make a sim
 
 1. Go to this [web page](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/), and upload a copy of your token's Ring, and Background.
   a. You should get a token image sheet from this, you'll need that later
-3. Take that image and register an issue in the format here, make sure to include the token image sheet.
+3. Take that image and [register an issue](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/new?assignees=ChasarooniZ&labels=Ring+Submission&projects=&template=submit-a-new-ring.md&title=%5BRing+Submission%5D+) in the format here, make sure to include the token image sheet.
 ## Changelog
 You can access the changelog [here](/CHANGELOG.md).
 ## Contributors
