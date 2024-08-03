@@ -1,4 +1,7 @@
-const MODULE_BASE_PATH = "modules/more-dynamic-token-rings/";
+import { RINGS } from "./ringList.js";
+
+const MODULE_ID = "more-dynamic-token-rings";
+const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
 const effects = {
   RING_PULSE: "TOKEN.RING.EFFECTS.RING_PULSE",
   RING_GRADIENT: "TOKEN.RING.EFFECTS.RING_GRADIENT",
@@ -7,15 +10,58 @@ const effects = {
 };
 Hooks.once("init", async function () {
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
+  registerSettings();
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
-    const tokenToolChainsRing = new foundry.canvas.tokens.DynamicRingData({
-      label: "Token Tool: Chains",
-      effects,
-      spritesheet:
-        MODULE_BASE_PATH + "assets/rings/token-tool-chains-ring.json",
+    RINGS.forEach(({ label, json }) => {
+      if (game.settings.get(MODULE_ID, getSettingId(json)))
+        ringConfig.addConfig(...getRingDataRing(label, json));
     });
-    ringConfig.addConfig("tokenToolChainsRing", tokenToolChainsRing);
   });
 });
 
-//Hooks.once("ready", async function () {});
+function getRingDataRing(label, jsonName) {
+  return [
+    convertText(jsonName),
+    new foundry.canvas.tokens.DynamicRingData({
+      label,
+      effects,
+      spritesheet: MODULE_BASE_PATH + "assets/rings/" + jsonName,
+    }),
+  ];
+}
+
+function convertText(input) {
+  // Split the input string by spaces
+  let words = input.toLowerCase().split(" ");
+
+  // Capitalize the first letter of each word except the first one, and join them together
+  return words
+    .map((word, index) => {
+      if (index === 0) {
+        return word;
+      }
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join("");
+}
+
+function registerSettings() {
+  RINGS.forEach(({ label, json }) => {
+    registerASetting(label, json);
+  });
+}
+
+function registerASetting(name, json) {
+  game.settings.register(MODULE_ID, getSettingId(json), {
+    name,
+    hint: "",
+    scope: "world",
+    config: true,
+    default: false,
+    type: Boolean,
+  });
+}
+
+function getSettingId(json) {
+  return json.replace(".json", "");
+}
