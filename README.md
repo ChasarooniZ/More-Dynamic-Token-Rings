@@ -21,6 +21,7 @@ Adds options for dynamic token rings
   - [Contributors](#contributors)
   - [Sources](#sources)
 ## Current Rings
+Look at [list of all current rings](assets/rings/RINGS.md)
 ## Creating New Rings
 Have a normal token ring that you want to become a dynamic ring. Just make a simple PR and I will add it to the module:
 - **IMPORTANT** - To add a token ring while complying with ToS, You must have either __Ownership of the ring__ used (and give permission), or the __license and source that show the ring is free to use__ for this module

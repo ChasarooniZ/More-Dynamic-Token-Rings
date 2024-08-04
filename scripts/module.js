@@ -33,6 +33,8 @@ function getRingDataRing(label, jsonName) {
 function convertText(input) {
   // Split the input string by spaces
   let words = input.toLowerCase().split(" ");
+  //Remove all non alphanumeric characters
+  words = words.replace(/\W/g, '')
 
   // Capitalize the first letter of each word except the first one, and join them together
   return words
