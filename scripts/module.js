@@ -35,7 +35,6 @@ function convertText(input) {
   // Split the input string by spaces
   let words = input.toLowerCase().split(" ");
   //Remove all non alphanumeric characters
-  words = words.replace(/\W/g, "");
 
   // Capitalize the first letter of each word except the first one, and join them together
   return words
@@ -45,7 +44,8 @@ function convertText(input) {
       }
       return word.charAt(0).toUpperCase() + word.slice(1);
     })
-    .join("");
+    .join("")
+    .replace(/\W/g, "");
 }
 
 function registerSettings() {
@@ -79,8 +79,11 @@ function renderSettingsConfig(_, html) {
   // Find the target element and add the localized name before it
   coreTab
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
-    .closest(".form-group")
-    .before(`<button type="button" onclick="(async () => { await game.settings.sheet.activateTab("${MODULE_ID}"); })()">
-        ${localizedName}
-    </button>`);
+    .closest(".form-group").before(`
+      <button type="button" onclick="(async () => { 
+          await game.settings.sheet.activateTab('${MODULE_ID}'); 
+      })()">
+          ${localizedName}
+      </button>
+  `);
 }
