@@ -1,7 +1,7 @@
 # List of Token Rings
 ## Table of Contents
   - [Token Tool Chains](#Token-Tool-Chains)
-  - [Token Tool Runes (Black)](#Token-Tool-Runes-(Black))
+  - [Token Tool Runes (Black)](#Token-Tool-Runes-Black)
 
 ## Token Tool Chains
 ![image](https://github.com/user-attachments/assets/296fc6ba-72eb-493c-b77f-ebc95796d72f)
