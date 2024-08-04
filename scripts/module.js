@@ -80,7 +80,7 @@ export function renderSettingsConfig(_, html) {
   coreTab
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
     .closest(".form-group")
-    .before(`<button type="button" onclick="(async () => { await game.settings.sheet.activateTab(${MODULE_ID}); })()">
+    .before(`<button type="button" onclick="(async () => { await game.settings.sheet.activateTab("${MODULE_ID}"); })()">
         ${localizedName}
     </button>`);
 }
