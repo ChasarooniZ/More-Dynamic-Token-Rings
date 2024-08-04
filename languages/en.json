@@ -2,7 +2,7 @@
     "I18N.LANGUAGE": "English",
     "more-dynamic-token-rings": {
         "module-settings": {
-            "button": "SETT: Add More Rings"
+            "button": "Configure Rings with SETT"
         }
     }
 }
