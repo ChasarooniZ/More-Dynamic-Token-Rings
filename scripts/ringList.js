@@ -1,7 +1,7 @@
 export const RINGS = [
   {
     label: "Token Tool Chains",
-    json: "token-tool-chains-ring.json",
+    json: "rings-token-tool-chains.json",
   },
   {
       label: "Token Tool Runes (Black)",
