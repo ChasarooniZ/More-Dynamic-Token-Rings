@@ -11,6 +11,8 @@ const effects = {
 Hooks.once("init", async function () {
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
   registerSettings();
+
+  Hooks.on("renderSettingsConfig", renderSettingsConfig);
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
     RINGS.forEach(({ label, json }) => {
       if (game.settings.get(MODULE_ID, getSettingId(json)))
@@ -34,7 +36,7 @@ function convertText(input) {
   // Split the input string by spaces
   let words = input.toLowerCase().split(" ");
   //Remove all non alphanumeric characters
-  words = words.replace(/\W/g, '')
+  words = words.replace(/\W/g, "");
 
   // Capitalize the first letter of each word except the first one, and join them together
   return words
@@ -67,4 +69,18 @@ function registerASetting(name, json) {
 
 function getSettingId(json) {
   return json.replace(".json", "");
+}
+export function renderSettingsConfig(_, html) {
+  const coreTab = html.find(`.tab[data-tab=core]`);
+  // Retrieve the localized name for the setting
+  const localizedName = game.i18n.localize(
+    MODULE_ID + ".module-settings.button"
+  );
+  // Find the target element and add the localized name before it
+  coreTab
+    .find(`[data-settings-key="core.dynamicTokenRing"]`)
+    .closest(".form-group")
+    .before(`<button type="button" onclick="(async () => { await game.settings.sheet.activateTab(${MODULE_ID}); })()">
+        ${localizedName}
+    </button>`);
 }
