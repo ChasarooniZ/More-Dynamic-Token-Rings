@@ -80,7 +80,7 @@ function renderSettingsConfig(_, html) {
   coreTab
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
     .closest(".form-group").before(`
-      <button type="button" onclick="(async () => { 
+      <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
           await game.settings.sheet.activateTab('more-dynamic-token-rings'); 
       })()">
           ${localizedName}
