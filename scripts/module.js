@@ -49,15 +49,15 @@ function convertText(input) {
 }
 
 function registerSettings() {
-  RINGS.forEach(({ label, json }) => {
-    registerASetting(label, json);
+  RINGS.forEach(({ label, json, author }) => {
+    registerASetting(label, json, author);
   });
 }
 
-function registerASetting(name, json) {
+function registerASetting(name, json, author) {
   game.settings.register(MODULE_ID, getSettingId(json), {
     name,
-    hint: "",
+    hint: author,
     requiresReload: true,
     scope: "world",
     config: true,
