@@ -1,6 +1,6 @@
 export const RINGS_RAW = [
-  "rings-token-tool-chains.json",
-  "rings-token-tool-runes-black.json",
+  "rings-token-tool;-chains.json",
+  "rings-token-tool;-runes-black.json",
 ];
 
 export const RINGS = RINGS_RAW.sort().map((json) => ({
@@ -31,6 +31,7 @@ function formatRingName(filename) {
 function getAuthor(filename) {
   // Remove the file extension
   let author = filename.replace(".json", "");
+  author = author.replace("rings", "");
 
   //Get data before the ;
   author = author.split(";")[0];
