@@ -15,7 +15,7 @@ Hooks.once("init", async function () {
   game.SETT = {
     authors: AUTHORS,
     rings: RINGS,
-   // RingDialog,
+    // RingDialog,
     getMap,
     showRingDialog,
   };
@@ -121,6 +121,8 @@ function showRingDialog() {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
+        overflow-y: auto;
+        max-height: calc(100vh - 200px); /* Adjust based on desired height */
       }
       .ring-item {
         border: 1px solid #ccc;
@@ -210,5 +212,5 @@ function showRingDialog() {
         dialog.close();
       });
     },
-  }).render(true, { width: 800, height: 600 });
+  }).render(true, { width: 800, height: 600, top: 50 });
 }
