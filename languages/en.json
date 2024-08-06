@@ -3,6 +3,19 @@
     "more-dynamic-token-rings": {
         "module-settings": {
             "button": "Configure Rings with SETT"
+        },
+        "notifications": {
+            "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings"
+        },
+        "dialog": {
+            "reload": {
+                "title": "Reload?",
+                "content": "Do you want to reload?",
+                "buttons": {
+                    "yes": "Yes",
+                    "no": "No"
+                }
+            }
         }
     }
 }

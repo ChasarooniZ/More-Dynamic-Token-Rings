@@ -16,7 +16,8 @@ Hooks.once("init", async function () {
     authors: AUTHORS,
     rings: RINGS,
     RingDialog,
-    getMap
+    getMap,
+    showRingDialog,
   };
   registerSettings();
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
@@ -107,5 +108,106 @@ function getMap() {
   RINGS.forEach((ring) => {
     ringActivationMap[ring.id] = game.settings.get(MODULE_ID, ring.id);
   });
-  return ringActivationMap
+  return ringActivationMap;
+}
+
+function showRingDialog() {
+  const ringActivationMap = getMap();
+
+  function generateDialogContent(rings, authors, ringActivationMap) {
+    let con = `
+    <style>
+      .ring-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .ring-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .ring-item h2, .ring-item h3, .ring-item label {
+        margin: 5px 0;
+      }
+      .ring-item img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <form><div class="ring-grid">`;
+
+    rings.forEach((ring) => {
+      const author = authors.find((auth) => auth.name === ring.auth);
+      const authorLink = author ? author.link : "#";
+      const isActive = ringActivationMap[ring.id] || false;
+
+      con += `
+      <div class="ring-item">
+        <h2>${ring.label}</h2>
+        <h3><a href="${authorLink}" target="_blank">${ring.author}</a></h3>
+        <img src="${ring.preview}" alt="${ring.label}">
+        <label>
+          <input type="checkbox" data-id="${ring.id}" ${
+        isActive ? "checked" : ""
+      }>
+          Activate
+        </label>
+      </div>`;
+    });
+
+    con += `
+    </div>
+    <div class="dialog-buttons">
+      <button type="button" name="submit">Submit</button>
+    </div>
+  </form>`;
+
+    return con;
+  }
+
+  const content = generateDialogContent(RINGS, AUTHORS, ringActivationMap);
+
+  new Dialog({
+    title: "Ring Activation",
+    content: content,
+    buttons: {},
+    render: (html) => {
+      // Make the dialog wider
+      html.closest(".dialog").css({ width: "800px" });
+
+      html.find('button[name="submit"]').click(() => {
+        const updatedMap = {};
+
+        html.find('input[type="checkbox"]').each((_index, element) => {
+          updatedMap[element.dataset.id] = element.checked;
+          game.settings.set(MODULE_ID, element.dataset.id, element.checked);
+        });
+
+        console.log(updatedMap); // For now, logging the updated map. Replace this with the desired functionality.
+        ui.notifications.notify(
+          game.i18n.localize(MODULE_ID + ".notifications.ring-list-saved")
+        );
+        new Dialog({
+          title: game.i18n.localize(MODULE_ID + ".dialog.reload.title"),
+          content: `<p>${game.i18n.localize(
+            MODULE_ID + ".dialog.reload.content"
+          )}</p>`,
+          buttons: {
+            yes: {
+              label: game.i18n.localize(
+                MODULE_ID + ".dialog.reload.buttons.yes"
+              ),
+              callback: () => location.reload(),
+            },
+            no: {
+              label: game.i18n.localize(
+                MODULE_ID + ".dialog.reload.buttons.no"
+              ),
+            },
+          },
+        }).render(true);
+      });
+    },
+  }).render(true, { width: 800, height: 600 });
 }
