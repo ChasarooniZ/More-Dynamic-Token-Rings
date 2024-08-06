@@ -1,4 +1,4 @@
-import { RingDialog } from "./lib/ringConfig.js";
+// import { RingDialog } from "./lib/ringConfig.js";
 import { RINGS } from "./ringHelpers.js";
 import { AUTHORS } from "./ringList.js";
 
@@ -15,7 +15,7 @@ Hooks.once("init", async function () {
   game.SETT = {
     authors: AUTHORS,
     rings: RINGS,
-    RingDialog,
+   // RingDialog,
     getMap,
     showRingDialog,
   };
