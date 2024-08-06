@@ -15,5 +15,8 @@ Name of the ring
 ### Ring Licensing
 Put licensing/link to licensing here, or if its yours just be like, "Oh this is mine and I'd love for you to add it to this module or something"
 
+## Plug your Links
+- Give me a link to either your Linktree/patreon/ etc. so people can go checkout your stuff/support you if they like your ring
+
 ### Misc
 For anything else that needs to be note (special color FX radii etc.
