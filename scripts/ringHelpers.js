@@ -48,7 +48,7 @@ function getPreview(filename) {
   // Remove the file extension
   let name = filename.replace(".json", "");
 
-  return `${default_filepath}${name}.webp`;
+  return `${default_filepath}${name}-PREVIEW.webp`;
 }
 
 function getSettingId(json) {
