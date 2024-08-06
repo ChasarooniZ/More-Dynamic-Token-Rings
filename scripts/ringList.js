@@ -7,5 +7,3 @@ export const AUTHORS = [
   { name: "Token Tool", link: "https://www.rptools.net/toolbox/token-tool/" },
   { name: "", link: "" },
 ];
-
-export const ring
