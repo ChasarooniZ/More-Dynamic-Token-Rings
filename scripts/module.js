@@ -20,8 +20,8 @@ Hooks.once("init", async function () {
   };
   registerSettings();
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
-    RINGS.forEach(({ label, json }) => {
-      if (game.settings.get(MODULE_ID, getSettingId(json)))
+    RINGS.forEach(({ label, json, id }) => {
+      if (game.settings.get(MODULE_ID, id))
         ringConfig.addConfig(...getRingDataRing(label, json));
     });
   });
@@ -57,12 +57,12 @@ function convertText(input) {
 }
 
 function registerSettings() {
-  RINGS.forEach(({ label, json, author, id }) => {
-    registerASetting(label, json, author, id);
+  RINGS.forEach(({ label, author, id }) => {
+    registerASetting(label, author, id);
   });
 }
 
-function registerASetting(name, json, author, id) {
+function registerASetting(name, author, id) {
   game.settings.register(MODULE_ID, id, {
     name,
     hint: author,
