@@ -11,6 +11,7 @@ const effects = {
   INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
 };
 Hooks.once("init", async function () {
+  if (!game.user.isGM) return
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
   game.SETT = {
     authors: AUTHORS,
