@@ -87,7 +87,7 @@
 		}},
 	"meta": {
 		"version": "1.1",
-		"image": "rings-token-tool-runes-(black).webp",
+		"image": "rings-token-tool;-runes-(black).webp",
 		"format": "RGBA8888",
 		"size": {"w":7680,"h":2048},
 		"scale": "1"

@@ -168,7 +168,7 @@ function showRingDialog() {
 
   const content = generateDialogContent(RINGS, AUTHORS, ringActivationMap);
 
-  new Dialog({
+  const dialog = new Dialog({
     title: "Ring Activation",
     content: content,
     buttons: {},
@@ -198,7 +198,7 @@ function showRingDialog() {
               label: game.i18n.localize(
                 MODULE_ID + ".dialog.reload.buttons.yes"
               ),
-              callback: () => location.reload(),
+              callback: () => foundry.utils.debouncedReload(),
             },
             no: {
               label: game.i18n.localize(
@@ -207,6 +207,7 @@ function showRingDialog() {
             },
           },
         }).render(true);
+        dialog.close();
       });
     },
   }).render(true, { width: 800, height: 600 });
