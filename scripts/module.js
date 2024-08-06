@@ -12,7 +12,12 @@ const effects = {
 };
 Hooks.once("init", async function () {
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
-  game.getSETTRingMap = getMap;
+  game.SETT = {
+    authors: AUTHORS,
+    rings: RINGS,
+    RingDialog,
+    getMap
+  };
   registerSettings();
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
     RINGS.forEach(({ label, json }) => {
@@ -81,7 +86,7 @@ function renderSettingsConfig(_, html) {
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
     .closest(".form-group").before(`
       <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
-          new RingDialog(RINGS, AUTHORS, getMap()).render(true);; 
+          new game.SETT.RingDialog(game.SETT.rings, game.SETT.authors, game.SETT.getMap).render(true); 
       })()">
           ${localizedName}
       </button>
@@ -99,7 +104,8 @@ function renderSettingsConfig(_, html) {
 
 function getMap() {
   const ringActivationMap = {};
-  return RINGS.forEach((ring) => {
+  RINGS.forEach((ring) => {
     ringActivationMap[ring.id] = game.settings.register(MODULE_ID, ring.id);
   });
+  return ringActivationMap
 }
