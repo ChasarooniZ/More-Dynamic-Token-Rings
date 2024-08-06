@@ -1,4 +1,4 @@
-class RingDialog extends ApplicationV2 {
+export class RingDialog extends ApplicationV2 {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       title: "Ring Activation",
