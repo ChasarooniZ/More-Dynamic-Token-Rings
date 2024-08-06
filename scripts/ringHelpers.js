@@ -1,4 +1,4 @@
-import { RINGS_RAW } from "./ringList";
+import { RINGS_RAW } from "./ringList.js";
 
 const default_filepath = "modules/more-dynamic-token-rings/assets/previews/";
 
