@@ -105,7 +105,7 @@ function renderSettingsConfig(_, html) {
 function getMap() {
   const ringActivationMap = {};
   RINGS.forEach((ring) => {
-    ringActivationMap[ring.id] = game.settings.register(MODULE_ID, ring.id);
+    ringActivationMap[ring.id] = game.settings.get(MODULE_ID, ring.id);
   });
   return ringActivationMap
 }

@@ -26,7 +26,7 @@ function formatRingName(filename) {
   name = name.replace(/-/g, " ");
 
   // Capitalize the first letter of each word and remove the semicolon
-  return name.replace(/\b\w/g, (char) => char.toUpperCase()).replace(/;/g, "");
+  return name.replace(/\b\w/g, (char) => char.toUpperCase()).replace(/;/g, "").trim();
 }
 
 function getAuthor(filename) {
@@ -41,7 +41,7 @@ function getAuthor(filename) {
   author = author.replace(/-/g, " ");
 
   // Capitalize the first letter of each word and remove the semicolon
-  return author.replace(/\b\w/g, (char) => char.toUpperCase());
+  return author.replace(/\b\w/g, (char) => char.toUpperCase()).trim();
 }
 
 function getPreview(filename) {
