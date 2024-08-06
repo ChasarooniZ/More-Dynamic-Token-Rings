@@ -31,7 +31,7 @@ Hooks.once("init", async function () {
 
 function getRingDataRing(label, jsonName) {
   return [
-    convertText(jsonName),
+    convertText(label),
     new foundry.canvas.tokens.DynamicRingData({
       label,
       effects,
