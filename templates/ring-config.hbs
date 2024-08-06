@@ -1,0 +1,18 @@
+<form>
+  <div class="ring-grid">
+    {{#each rings}}
+      <div class="ring-item">
+        <h2>{{label}}</h2>
+        <img src="{{preview}}" alt="{{label}}">
+        <h3><a href="{{authorLink}}" target="_blank">{{author}}</a></h3>
+        <label>
+          <input type="checkbox" data-id="{{id}}" {{#if isActive}}checked{{/if}}>
+          Activate
+        </label>
+      </div>
+    {{/each}}
+  </div>
+  <div class="dialog-buttons">
+    <button type="button" name="submit">Submit</button>
+  </div>
+</form>

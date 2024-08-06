@@ -1,4 +1,6 @@
-import { RINGS } from "./ringList.js";
+import { RingDialog } from "./lib/ringConfig.js";
+import { RINGS } from "./ringHelpers.js";
+import { AUTHORS } from "./ringList.js";
 
 const MODULE_ID = "more-dynamic-token-rings";
 const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
@@ -10,6 +12,7 @@ const effects = {
 };
 Hooks.once("init", async function () {
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
+  game.getSETTRingMap = getMap;
   registerSettings();
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
     RINGS.forEach(({ label, json }) => {
@@ -49,13 +52,13 @@ function convertText(input) {
 }
 
 function registerSettings() {
-  RINGS.forEach(({ label, json, author }) => {
-    registerASetting(label, json, author);
+  RINGS.forEach(({ label, json, author, id }) => {
+    registerASetting(label, json, author, id);
   });
 }
 
-function registerASetting(name, json, author) {
-  game.settings.register(MODULE_ID, getSettingId(json), {
+function registerASetting(name, json, author, id) {
+  game.settings.register(MODULE_ID, id, {
     name,
     hint: author,
     requiresReload: true,
@@ -66,24 +69,37 @@ function registerASetting(name, json, author) {
   });
 }
 
-function getSettingId(json) {
-  return json.replace(".json", "");
-}
-
 function renderSettingsConfig(_, html) {
   const coreTab = html.find(`.tab[data-tab=core]`);
   // Retrieve the localized name for the setting
   const localizedName = game.i18n.localize(
     MODULE_ID + ".module-settings.button"
   );
+
   // Find the target element and add the localized name before it
   coreTab
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
     .closest(".form-group").before(`
       <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
-          await game.settings.sheet.activateTab('more-dynamic-token-rings'); 
+          new RingDialog(RINGS, AUTHORS, getMap()).render(true);; 
       })()">
           ${localizedName}
       </button>
   `);
+  // coreTab
+  //   .find(`[data-settings-key="core.dynamicTokenRing"]`)
+  //   .closest(".form-group").before(`
+  //     <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => {
+  //         await game.settings.sheet.activateTab('more-dynamic-token-rings');
+  //     })()">
+  //         ${localizedName}F
+  //     </button>
+  // `);
+}
+
+function getMap() {
+  const ringActivationMap = {};
+  return RINGS.forEach((ring) => {
+    ringActivationMap[ring.id] = game.settings.register(MODULE_ID, ring.id);
+  });
 }

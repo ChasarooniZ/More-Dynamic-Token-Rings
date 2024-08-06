@@ -1,0 +1,56 @@
+import { RINGS_RAW } from "./ringList";
+
+const default_filepath = "modules/more-dynamic-token-rings/assets/previews/";
+
+export const RINGS = RINGS_RAW.sort().map((json) => ({
+  json,
+  label: formatRingName(json),
+  author: getAuthor(json),
+  preview: getPreview(json),
+  id: getSettingId(json)
+}));
+
+/**
+ * Converts a filename into a more readable token ring name
+ * @param {string} filename - The input filename.
+ * @returns {string} - The formatted token ring name.
+ */
+function formatRingName(filename) {
+  // Remove the rings prefix
+  let name = filename.replace("rings", "");
+
+  // Remove the file extension
+  name = name.replace(".json", "");
+
+  // Replace hyphens with spaces
+  name = name.replace(/-/g, " ");
+
+  // Capitalize the first letter of each word and remove the semicolon
+  return name.replace(/\b\w/g, (char) => char.toUpperCase()).replace(/;/g, "");
+}
+
+function getAuthor(filename) {
+  // Remove the file extension
+  let author = filename.replace(".json", "");
+  author = author.replace("rings", "");
+
+  //Get data before the ;
+  author = author.split(";")[0];
+
+  // Replace hyphens with spaces
+  author = author.replace(/-/g, " ");
+
+  // Capitalize the first letter of each word and remove the semicolon
+  return author.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function getPreview(filename) {
+  // Remove the file extension
+  let name = filename.replace(".json", "");
+
+  return `${default_filepath}${name}.webp`;
+}
+
+function getSettingId(json) {
+  return json.replace(".json", "");
+}
