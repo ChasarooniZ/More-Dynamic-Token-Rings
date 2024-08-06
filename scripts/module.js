@@ -87,7 +87,7 @@ function renderSettingsConfig(_, html) {
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
     .closest(".form-group").before(`
       <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
-          new game.SETT.RingDialog(game.SETT.rings, game.SETT.authors, game.SETT.getMap).render(true); 
+          game.SETT.showRingDialog(); 
       })()">
           ${localizedName}
       </button>
