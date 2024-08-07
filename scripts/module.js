@@ -127,7 +127,7 @@ function showRingDialog() {
   const old_rings = game.settings.get(MODULE_ID, "old-rings");
   const new_rings = RINGS.filter((ring) => !old_rings.includes(ring.id));
 
-  function generateDialogContent(rings, authors, ringActivationMap) {
+  function generateDialogContent(rings, authors, ringActivationMap, new_rings) {
     let con = `
     <style>
       .ring-grid {
@@ -185,7 +185,7 @@ function showRingDialog() {
     return con;
   }
 
-  const content = generateDialogContent(RINGS, AUTHORS, ringActivationMap);
+  const content = generateDialogContent(RINGS, AUTHORS, ringActivationMap, new_rings);
 
   const dialog = new Dialog({
     title: "Ring Activation",
@@ -232,7 +232,7 @@ function showRingDialog() {
   }).render(true, { width: 800, height: 600, top: 50 });
   game.settings.set(
     MODULE_ID,
-    old_rings,
+    "old_rings",
     RINGS.map((ring) => ring.id)
   );
 }
