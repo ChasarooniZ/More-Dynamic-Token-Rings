@@ -1,3 +1,6 @@
+## [0.1.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.1...0.1.2) - Simply Sharp
+- `Rings`
+  - Add one new ring  `Joeundsoo Simple Sharp Ring`
 ## [0.1.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.0...0.1.1) - First Gear
 - `Rings`
   - Added one new Ring `Token Tool Gear (Colored)`
