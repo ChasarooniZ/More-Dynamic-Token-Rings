@@ -11,22 +11,23 @@ const effects = {
   INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
 };
 Hooks.once("init", async function () {
-    // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
-    game.SETT = {
-      authors: AUTHORS,
-      rings: RINGS,
-      // RingDialog,
-      getMap,
-      showRingDialog,
-    };
-    registerSettings();
-    Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
-      RINGS.forEach(({ label, json, id }) => {
-        if (game.settings.get(MODULE_ID, id))
-          ringConfig.addConfig(...getRingDataRing(label, json));
-      });
+  // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
+  game.SETT = {
+    authors: AUTHORS,
+    rings: RINGS,
+    // RingDialog,
+    getMap,
+    showRingDialog,
+  };
+  registerSettings();
+
+  Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
+    RINGS.forEach(({ label, json, id }) => {
+      if (game.settings.get(MODULE_ID, id))
+        ringConfig.addConfig(...getRingDataRing(label, json));
     });
-    Hooks.on("renderSettingsConfig", renderSettingsConfig);
+  });
+  Hooks.on("renderSettingsConfig", renderSettingsConfig);
 });
 
 function getRingDataRing(label, jsonName) {
@@ -114,6 +115,8 @@ function getMap() {
 
 function showRingDialog() {
   const ringActivationMap = getMap();
+  const old_rings = game.settings.get(MODULE_ID, "old-rings");
+  const new_rings = RINGS.filter((ring) => !old_rings.includes(ring.id));
 
   function generateDialogContent(rings, authors, ringActivationMap) {
     let con = `
@@ -147,11 +150,15 @@ function showRingDialog() {
 
       con += `
       <div class="ring-item">
-        <h3>${ring.label}</h3>
+        <h3>${
+          new_rings.includes(ring.id)
+            ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="New Ring" data-tooltip-direction="UP"></i>'
+            : ""
+        }${ring.label}</h3>
         <h4><a href="${authorLink}">${ring.author}</a></h4>
         <img src="${ring.preview}" alt="${ring.label}">
         <label>
-          <input type="checkbox" data-id="${ring.id}" ${
+          <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${ring.id}" ${
         isActive ? "checked" : ""
       }>
           Activate
@@ -214,4 +221,9 @@ function showRingDialog() {
       });
     },
   }).render(true, { width: 800, height: 600, top: 50 });
+  game.settings.set(
+    MODULE_ID,
+    old_rings,
+    RINGS.map((ring) => ring.id)
+  );
 }
