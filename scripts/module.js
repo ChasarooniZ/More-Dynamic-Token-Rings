@@ -92,6 +92,8 @@ function renderSettingsConfig(_, html) {
   const localizedName = game.i18n.localize(
     MODULE_ID + ".module-settings.button"
   );
+  const isNewRing =
+    game.settings.get(MODULE_ID, "old-rings").length < RINGS.length;
 
   // Find the target element and add the localized name before it
   coreTab
@@ -100,7 +102,13 @@ function renderSettingsConfig(_, html) {
       <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
           game.SETT.showRingDialog(); 
       })()">
-          ${localizedName}
+          ${
+            isNewRing
+              ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
+                game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
+                '" data-tooltip-direction="UP"></i> '
+              : ""
+          }${localizedName}
       </button>
   `);
   // coreTab
