@@ -61,7 +61,7 @@ function convertText(input) {
 function registerSettings() {
   game.settings.register(MODULE_ID, "old-rings", {
     name: "old-rings",
-    hint:"",
+    hint: "",
     requiresReload: false,
     scope: "world",
     config: false,
@@ -125,7 +125,9 @@ function getMap() {
 function showRingDialog() {
   const ringActivationMap = getMap();
   const old_rings = game.settings.get(MODULE_ID, "old-rings");
-  const new_rings = RINGS.filter((ring) => !old_rings.includes(ring.id));
+  const new_rings = RINGS.filter((ring) => !old_rings.includes(ring.id)).map(
+    (ring) => ring.id
+  );
 
   function generateDialogContent(rings, authors, ringActivationMap, new_rings) {
     let con = `
@@ -167,9 +169,9 @@ function showRingDialog() {
         <h4><a href="${authorLink}">${ring.author}</a></h4>
         <img src="${ring.preview}" alt="${ring.label}">
         <label>
-          <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${ring.id}" ${
-        isActive ? "checked" : ""
-      }>
+          <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${
+            ring.id
+          }" ${isActive ? "checked" : ""}>
           Activate
         </label>
       </div>`;
@@ -185,7 +187,12 @@ function showRingDialog() {
     return con;
   }
 
-  const content = generateDialogContent(RINGS, AUTHORS, ringActivationMap, new_rings);
+  const content = generateDialogContent(
+    RINGS,
+    AUTHORS,
+    ringActivationMap,
+    new_rings
+  );
 
   const dialog = new Dialog({
     title: "Ring Activation",
