@@ -9,6 +9,11 @@ assignees: ChasarooniZ
 
 Ideally attach a copy of your ring's sprite sheet, you can [Follow the guide here](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings?tab=readme-ov-file#creating-new-rings).
 
+_just realized it saves as webp and github won't let you directly attach it..._
+
+
+also here is a default background if you don't have one [default token bg](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/master/tutorial/ring_background_DEFAULT.webp)
+
 ### Ring Name
 Name of the ring
 
