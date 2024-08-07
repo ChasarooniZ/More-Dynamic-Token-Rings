@@ -147,8 +147,8 @@ function showRingDialog() {
 
       con += `
       <div class="ring-item">
-        <h2>${ring.label}</h2>
-        <h3><a href="${authorLink}">${ring.author}</a></h3>
+        <h3>${ring.label}</h3>
+        <h4><a href="${authorLink}">${ring.author}</a></h4>
         <img src="${ring.preview}" alt="${ring.label}">
         <label>
           <input type="checkbox" data-id="${ring.id}" ${
