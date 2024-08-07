@@ -11,7 +11,6 @@ const effects = {
   INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
 };
 Hooks.once("init", async function () {
-  if (game.user.isGM) {
     // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
     game.SETT = {
       authors: AUTHORS,
@@ -28,7 +27,6 @@ Hooks.once("init", async function () {
       });
     });
     Hooks.on("renderSettingsConfig", renderSettingsConfig);
-  }
 });
 
 function getRingDataRing(label, jsonName) {
@@ -78,6 +76,7 @@ function registerASetting(name, author, id) {
 }
 
 function renderSettingsConfig(_, html) {
+  if (!game.user.isGM) return false;
   const coreTab = html.find(`.tab[data-tab=core]`);
   // Retrieve the localized name for the setting
   const localizedName = game.i18n.localize(
