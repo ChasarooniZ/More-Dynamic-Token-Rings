@@ -1,3 +1,6 @@
+## [0.1.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.2...0.1.3) - New Rings
+- `QoL`
+ - Added an indicator to show when a new ring has been added
 ## [0.1.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.1...0.1.2) - Simply Sharp
 - `Rings`
   - Add one new ring  `Joeundsoo Simple Sharp Ring`
