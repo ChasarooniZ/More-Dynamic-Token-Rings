@@ -38,5 +38,5 @@ You can access the changelog [here](/CHANGELOG.md).
 ## Contributors
 You can see everyone else who contributed to the module [here](CONTRIBUTORS.md)
 ## Sources
-Sourced from TokenTool
-[TokenTool](https://github.com/RPTools/TokenTool), which uses the "GNU AFFERO GENERAL PUBLIC LICENSE".
+- [TokenTool](https://github.com/RPTools/TokenTool), which uses the "GNU AFFERO GENERAL PUBLIC LICENSE".
+- [joeundsoo](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/3) gave permission
