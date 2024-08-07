@@ -1,4 +1,4 @@
-## [0.1.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.0.1...0.0.31) - First Gear
+## [0.1.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.0...0.1.1) - First Gear
 - `Rings`
   - Added one new Ring `Token Tool Gear (Colored)`
 ## [0.1.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.0.1...0.0.31) - Initial Release
