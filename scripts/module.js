@@ -11,23 +11,24 @@ const effects = {
   INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
 };
 Hooks.once("init", async function () {
-  if (!game.user.isGM) return
-  // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
-  game.SETT = {
-    authors: AUTHORS,
-    rings: RINGS,
-    // RingDialog,
-    getMap,
-    showRingDialog,
-  };
-  registerSettings();
-  Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
-    RINGS.forEach(({ label, json, id }) => {
-      if (game.settings.get(MODULE_ID, id))
-        ringConfig.addConfig(...getRingDataRing(label, json));
+  if (game.user.isGM) {
+    // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
+    game.SETT = {
+      authors: AUTHORS,
+      rings: RINGS,
+      // RingDialog,
+      getMap,
+      showRingDialog,
+    };
+    registerSettings();
+    Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
+      RINGS.forEach(({ label, json, id }) => {
+        if (game.settings.get(MODULE_ID, id))
+          ringConfig.addConfig(...getRingDataRing(label, json));
+      });
     });
-  });
-  Hooks.on("renderSettingsConfig", renderSettingsConfig);
+    Hooks.on("renderSettingsConfig", renderSettingsConfig);
+  }
 });
 
 function getRingDataRing(label, jsonName) {
