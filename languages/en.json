@@ -16,6 +16,9 @@
                     "no": "No"
                 }
             }
+        },
+        "hover-text": {
+            "new-ring": "New Ring!"
         }
     }
 }

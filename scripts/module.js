@@ -163,7 +163,9 @@ function showRingDialog() {
       <div class="ring-item">
         <h3>${
           new_rings.includes(ring.id)
-            ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="New Ring" data-tooltip-direction="UP"></i>'
+            ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
+              game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
+              '" data-tooltip-direction="UP"></i> '
             : ""
         }${ring.label}</h3>
         <h4><a href="${authorLink}">${ring.author}</a></h4>
@@ -239,7 +241,7 @@ function showRingDialog() {
   }).render(true, { width: 800, height: 600, top: 50 });
   game.settings.set(
     MODULE_ID,
-    "old_rings",
+    "old-rings",
     RINGS.map((ring) => ring.id)
   );
 }
