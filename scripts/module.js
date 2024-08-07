@@ -141,7 +141,7 @@ function showRingDialog() {
     <form><div class="ring-grid">`;
 
     rings.forEach((ring) => {
-      const author = authors.find((auth) => auth.name === ring.auth);
+      const author = authors.find((auth) => auth.name === ring.author);
       const authorLink = author ? author.link : "#";
       const isActive = ringActivationMap[ring.id] || false;
 
