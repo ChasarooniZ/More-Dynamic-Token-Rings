@@ -5,7 +5,7 @@
   - [Token Tool Gears (Colored)](#Token-Tool-Gears-Colored)
   - [Token Tool Runes (Black)](#Token-Tool-Runes-Black)
 ## Joeundsoo Simple Sharp Ring
-![image](https://github.com/user-attachments/assets/c904aba2-815b-46d2-a7d7-9f41d309083c)
+![image](https://github.com/user-attachments/assets/31b6a346-16fd-4081-bbf9-a2a4f74665c7)
 
 
 ## Token Tool Chains
