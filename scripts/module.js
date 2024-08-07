@@ -59,6 +59,15 @@ function convertText(input) {
 }
 
 function registerSettings() {
+  game.settings.register(MODULE_ID, "old-rings", {
+    name: "old-rings",
+    hint:"",
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: [],
+    type: Array,
+  });
   RINGS.forEach(({ label, author, id }) => {
     registerASetting(label, author, id);
   });
