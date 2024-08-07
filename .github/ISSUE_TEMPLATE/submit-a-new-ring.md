@@ -17,6 +17,7 @@ Put licensing/link to licensing here, or if its yours just be like, "Oh this is 
 
 ### Plug your Stuff
  Give me a link to either your Linktree/patreon/ etc. so people can go checkout your stuff/support you if they like your ring (you only need to fill out this part once)
+ _If you don't put have anything to plug, i'll link your profile to a verified charity instead_
 
 ### Misc
 For anything else that needs to be note (special color FX radii etc.
