@@ -3,10 +3,12 @@ export const RINGS_RAW = [
   "rings-token-tool;-runes-(black).json",
   "rings-token-tool;-gears-(colored).json",
   "rings-joeundsoo;-simple-sharp-ring.json",
+  "rings-chasarooni;-simply-grey-(transparent)"
 ];
 
 export const AUTHORS = [
   { name: "Token Tool", link: "https://www.rptools.net/toolbox/token-tool/" },
   { name: "Joeundsoo", link: "https://primaryimmune.org/donate" },
+  { name: "Chasarooni", link: "https://ko-fi.com/Chasarooni" },
   { name: "", link: "" },
 ];
