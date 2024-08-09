@@ -1,0 +1,1 @@
+The tokens inside of this folder fall under the APGL license, which is different from the licensing of the rest of this REPO
