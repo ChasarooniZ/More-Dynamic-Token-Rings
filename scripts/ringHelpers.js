@@ -2,13 +2,24 @@ import { RINGS_RAW } from "./ringList.js";
 
 const default_filepath = "modules/more-dynamic-token-rings/assets/previews/";
 
-export const RINGS = RINGS_RAW.sort().map((json) => ({
-  json,
-  label: formatRingName(json),
-  author: getAuthor(json),
-  preview: getPreview(json),
-  id: getSettingId(json)
-}));
+export const RINGS = RINGS_RAW.sort().map((jsonPath) => {
+  const json = formatJSON(jsonPath);
+  return {
+    jsonPath,
+    json,
+    label: formatRingName(json),
+    author: getAuthor(json),
+    preview: getPreview(json),
+    id: getSettingId(json),
+  };
+});
+
+function formatJSON(jsonPath) {
+  //split by /
+  const parts = jsonPath.split("/");
+
+  return parts[parts.length - 1];
+}
 
 /**
  * Converts a filename into a more readable token ring name
@@ -26,7 +37,10 @@ function formatRingName(filename) {
   name = name.replace(/-/g, " ");
 
   // Capitalize the first letter of each word and remove the semicolon
-  return name.replace(/\b\w/g, (char) => char.toUpperCase()).replace(/;/g, "").trim();
+  return name
+    .replace(/\b\w/g, (char) => char.toUpperCase())
+    .replace(/;/g, "")
+    .trim();
 }
 
 function getAuthor(filename) {

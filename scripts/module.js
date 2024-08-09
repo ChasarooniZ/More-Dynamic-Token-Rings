@@ -22,9 +22,9 @@ Hooks.once("init", async function () {
   registerSettings();
 
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
-    RINGS.forEach(({ label, json, id }) => {
+    RINGS.forEach(({ label, jsonPath, id }) => {
       if (game.settings.get(MODULE_ID, id))
-        ringConfig.addConfig(...getRingDataRing(label, json));
+        ringConfig.addConfig(...getRingDataRing(label, jsonPath));
     });
   });
   Hooks.on("renderSettingsConfig", renderSettingsConfig);

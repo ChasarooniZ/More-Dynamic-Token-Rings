@@ -1,7 +1,7 @@
 export const RINGS_RAW = [
-  "rings-token-tool;-chains.json",
-  "rings-token-tool;-runes-(black).json",
-  "rings-token-tool;-gears-(colored).json",
+  "APGL/rings-token-tool;-chains.json",
+  "APGL/rings-token-tool;-runes-(black).json",
+  "APGL/rings-token-tool;-gears-(colored).json",
   "rings-joeundsoo;-simple-sharp-ring.json",
   "rings-chasarooni;-simply-grey-(transparent)"
 ];
