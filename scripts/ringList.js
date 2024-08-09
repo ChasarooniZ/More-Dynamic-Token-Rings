@@ -3,7 +3,7 @@ export const RINGS_RAW = [
   "APGL/rings-token-tool;-runes-(black).json",
   "APGL/rings-token-tool;-gears-(colored).json",
   "rings-joeundsoo;-simple-sharp-ring.json",
- // "rings-chasarooni;-simply-grey-(transparent)"
+  "rings-chasarooni;-simply-grey-(transparent)"
 ];
 
 export const AUTHORS = [
