@@ -10,7 +10,7 @@
 
 # FoundryVTT Module
 Adds options for dynamic token rings
-
+[Page to Make your own Token Sprite Sheet](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/)
 
 ## Table of Contents
 - [FoundryVTT Module](#foundryvtt-module)
@@ -30,9 +30,7 @@ Have a normal token ring that you want to become a dynamic ring. Just make a sim
 ![image](https://github.com/user-attachments/assets/c26b18c8-14f7-4a02-9ab8-0443db467d69)
 > It is also recommended to add the magenta coloration for parts of the token ring that should animate and change color
 
-1. Go to this [web page](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/), and upload a copy of your token's Ring, and Background.
-  a. You should get a token image sheet from this, you'll need that later
-3. Take that image and [register an issue](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/new?assignees=ChasarooniZ&labels=Ring+Submission&projects=&template=submit-a-new-ring.md&title=%5BRing+Submission%5D+) in the format here, make sure to include the token image sheet.
+1. Take a (2048px x 2048px) version of your Ring + Background and [register an issue](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/new?assignees=ChasarooniZ&labels=Ring+Submission&projects=&template=submit-a-new-ring.md&title=%5BRing+Submission%5D+) here.
 ## Changelog
 You can access the changelog [here](/CHANGELOG.md).
 ## Contributors
