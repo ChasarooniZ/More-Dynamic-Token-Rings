@@ -39,3 +39,4 @@ You can see everyone else who contributed to the module [here](CONTRIBUTORS.md)
 ## Sources
 - [TokenTool](https://github.com/RPTools/TokenTool), which uses the "GNU AFFERO GENERAL PUBLIC LICENSE".
 - [joeundsoo](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/3) gave permission
+- [redeux](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/master/permissions/redeux%20permission.png) gave permission
