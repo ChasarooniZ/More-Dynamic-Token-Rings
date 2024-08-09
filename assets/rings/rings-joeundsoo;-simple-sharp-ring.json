@@ -2,8 +2,8 @@
 
 	"config": {
 		"defaultColorBand": {
-			"startRadius": 0.589,
-			"endRadius": 0.9
+			"startRadius": 0,
+			"endRadius": 1
 		}
 	},
 
