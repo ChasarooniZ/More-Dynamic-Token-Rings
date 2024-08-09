@@ -7,7 +7,7 @@ assignees: ChasarooniZ
 
 ---
 
-Ideally attach a copy of your ring's sprite sheet, you can [Follow the guide here](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings?tab=readme-ov-file#creating-new-rings).
+Ideally attach a copy of your Ring's Ring and background if you have it, you can [Follow the guide here](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings?tab=readme-ov-file#creating-new-rings) for how to format it (2/3rds rule, pink for parts that color etc.).
 
 _just realized it saves as webp and github won't let you directly attach it..._
 
