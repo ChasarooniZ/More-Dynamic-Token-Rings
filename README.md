@@ -10,7 +10,8 @@
 
 # FoundryVTT Module
 Adds options for dynamic token rings
-[Page to Make your own Token Sprite Sheet](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/)
+
+[Page](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/) to Make your own Token Sprite Sheet
 
 ## Table of Contents
 - [FoundryVTT Module](#foundryvtt-module)
