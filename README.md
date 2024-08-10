@@ -20,7 +20,7 @@ Adds options for dynamic token rings
   - [Creating New Rings](#creating-new-rings)
   - [Changelog](#changelog)
   - [Contributors](#contributors)
-  - [Sources](#sources)
+  - [Sources](#sources-licensing)
 ## [Current Rings](assets/rings/RINGS.md)
 Click link above to see a list of all current rings
 ## Creating New Rings
