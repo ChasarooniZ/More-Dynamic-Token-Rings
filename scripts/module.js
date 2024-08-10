@@ -1,6 +1,6 @@
 // import { RingDialog } from "./lib/ringConfig.js";
 import { RINGS } from "./ringHelpers.js";
-import { AUTHORS } from "./ringList.js";
+import { AUTHORS } from "./authorList.js";
 
 const MODULE_ID = "more-dynamic-token-rings";
 const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
@@ -122,9 +122,7 @@ function renderSettingsConfig(_, html) {
     game.settings.get(MODULE_ID, "old-rings").length < RINGS.length;
 
   // Find the target element and add the localized name before it
-  coreTab
-    .find(`[name="core.dynamicTokenRing"]`)
-    .closest(".form-group").before(`
+  coreTab.find(`[name="core.dynamicTokenRing"]`).closest(".form-group").before(`
       <button type="button" class="SETT-button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
           game.SETT.showRingDialog(); 
       })()">
@@ -192,7 +190,7 @@ function showRingDialog() {
               game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
               '" data-tooltip-direction="UP"></i> '
             : ""
-        }${ring.label}</h3>
+        }${ring.name}</h3>
         <h4><a href="${authorLink}">${ring.author}</a></h4>
         <img src="${ring.preview}" alt="${ring.label}">
         <label>

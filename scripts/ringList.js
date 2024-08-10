@@ -8,14 +8,5 @@ export const RINGS_RAW = [
   "rings-redeux;-simple-ring-(clear).json",
   "rings-eldritch-dream;-curse-ring.json",
   "rings-eldritch-dream;-curse-ring-(colored).json",
-];
-
-export const AUTHORS = [
-  // { name: "Token Tool", link: "https://www.rptools.net/toolbox/token-tool/" },
-  { name: "Joeundsoo", link: "https://primaryimmune.org/donate" },
-  { name: "Chasarooni", link: "https://ko-fi.com/Chasarooni" },
-  { name: "Redeux", link: "https://ko-fi.com/redeux" },
-  { name: "Eldritch Dream", link: "https://www.patreon.com/EldritchDreamCreations" },
-  { name: "", link: "" },
-  { name: "", link: "" },
+  "rings-chasarooni;-runes-thin-ring-(black)",
 ];
