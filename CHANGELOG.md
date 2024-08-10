@@ -9,10 +9,13 @@
       - `Token Tool Chains`
       - `Token Tool Gears (Colored)`
       - `Token Tool Runes (Black)`
-- 
+      - `Eldritch Dream Curse`
+  - `First Time Users`
+    - Added chat message to explain how the module works for first time users
   
 ## [0.1.5](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.4...0.1.5) - Fix for errors
 - Fixed issue causing rings to not show after last patch
+
 ## [0.1.4](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.3...0.1.4) - Licensing Fixes
 - Moved Token Tool Assets to an APGL license folder to comply with legal issues around using said license
 
