@@ -273,7 +273,7 @@ function showRingDialog() {
   );
 }
 
-function starterTour() {
+async function starterTour() {
   //tour path
   const tp = ".tours.starter.";
   game.settings.sheet.render(true);
