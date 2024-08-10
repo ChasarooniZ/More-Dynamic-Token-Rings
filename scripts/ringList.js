@@ -3,9 +3,8 @@ export const RINGS_RAW = [
   // "APGL/rings-token-tool;-runes-(black).json",
   // "APGL/rings-token-tool;-gears-(colored).json",
   "rings-joeundsoo;-simple-sharp-ring.json",
-  //"rings-chasarooni;-simply-grey-(transparent).json",
   "rings-redeux;-simple-ring.json",
-  "rings-redeux;-simple-clear-ring.json",
+  "rings-redeux;-simple-transparent-ring.json",
   "rings-redeux;-simple-ring-(clear).json",
 ];
 
