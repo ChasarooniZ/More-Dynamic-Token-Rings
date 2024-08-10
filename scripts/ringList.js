@@ -6,6 +6,7 @@ export const RINGS_RAW = [
   "rings-redeux;-simple-ring.json",
   "rings-redeux;-simple-transparent-ring.json",
   "rings-redeux;-simple-ring-(clear).json",
+  "rings-eldritch-dream;-curse.json"
 ];
 
 export const AUTHORS = [
