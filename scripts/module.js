@@ -33,7 +33,8 @@ Hooks.once("init", async function () {
   Hooks.on("renderSettingsConfig", renderSettingsConfig);
   if (game.settings.get(MODULE_ID, "first-time-user")) {
     //TODO direct them how to enable rings
-    ChatMessage.create({
+    game.settings.set(MODULE_ID, "first-time-user", false)
+    await ChatMessage.create({
       content:
         game.i18n.localize(
           MODULE_ID + ".notifications.first-time-user.content"
