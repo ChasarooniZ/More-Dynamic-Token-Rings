@@ -123,7 +123,7 @@ function renderSettingsConfig(_, html) {
 
   // Find the target element and add the localized name before it
   coreTab
-    .find(`[data-settings-id="core.dynamicTokenRing"]`)
+    .find(`[name="core.dynamicTokenRing"]`)
     .closest(".form-group").before(`
       <button type="button" class="SETT-button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
           game.SETT.showRingDialog(); 
