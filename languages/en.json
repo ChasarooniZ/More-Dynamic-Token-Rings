@@ -6,7 +6,7 @@
         },
         "notifications": {
             "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings",
-            "first-time-iser": {
+            "first-time-user": {
                 "content": "<h2>Welcome to SETT</h2><p>Hi, welcome to the module.</p><p>To access new token rings you need to navigate to your game settings and there should be a new button in the settings above the selection for Dynamic Token Ring where you can select a token rings to enable.</p><p>After that you'll be prompted to restart the foundry, and the new ring will show up in your list of options</p>",
                 "button": "Take a Tour"
             }

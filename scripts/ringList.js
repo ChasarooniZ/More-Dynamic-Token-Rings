@@ -13,7 +13,7 @@ export const AUTHORS = [
   { name: "Joeundsoo", link: "https://primaryimmune.org/donate" },
   { name: "Chasarooni", link: "https://ko-fi.com/Chasarooni" },
   { name: "Redeux", link: "https://ko-fi.com/redeux" },
-  { name: "", link: "" },
+  { name: "Eldritch Dream", link: "https://www.patreon.com/EldritchDreamCreations" },
   { name: "", link: "" },
   { name: "", link: "" },
 ];

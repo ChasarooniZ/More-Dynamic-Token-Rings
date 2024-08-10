@@ -38,15 +38,9 @@ Hooks.once("ready", async function () {
     //TODO direct them how to enable rings
     game.settings.set(MODULE_ID, "first-time-user", false);
     await ChatMessage.create({
-      content:
-        game.i18n.localize(
-          MODULE_ID + ".notifications.first-time-user.content"
-        ) +
-        `<button type="button"  onclick="(async () => { 
-        game.SETT.tours.starter(); 
-    })()">${game.i18n.localize(
-      MODULE_ID + ".notifications.first-time-user.button"
-    )}</button>`,
+      content: game.i18n.localize(
+        MODULE_ID + ".notifications.first-time-user.content"
+      ),
       whisper: [game.userId],
     });
   }
