@@ -5,7 +5,11 @@
             "button": "Configure Rings with SETT"
         },
         "notifications": {
-            "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings"
+            "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings",
+            "first-time-iser": {
+                "content": "<h2>Welcome to SETT</h2><p>Hi, welcome to the module.</p><p>To access new token rings you need to navigate to your game settings and there should be a new button in the settings above the selection for Dynamic Token Ring where you can select a token rings to enable.</p><p>After that you'll be prompted to restart the foundry, and the new ring will show up in your list of options</p>",
+                "button": "Take a Tour"
+            }
         },
         "dialog": {
             "reload": {
@@ -19,6 +23,34 @@
         },
         "hover-text": {
             "new-ring": "New Ring!"
+        },
+        "tours": {
+            "starter": {
+                "title": "SETT Starter Tour",
+                "steps": {
+                    "1": {
+                        "title": "Navigate To",
+                        "content": "After opening settings first navigate from into 'Core' settings"
+                    },
+                    "2": {
+                        "title": "SETT Menu",
+                        "content": "You should see the SETT button that has been inserted, use this to enable new rings!"
+                    },
+                    "3": {
+                        "title": "After that",
+                        "content": "After you have enabled rings make sure to click save, then you'll eb prompted to reload foundry"
+                    },
+                    "4": {
+                        "title": "Selecting a Ring",
+                        "content": "Select a Ring here, it will prompt you to reload so that it can update the rings"
+                    },
+                    "5": {
+                        "title": "Thanks",
+                        "content": "Thanks for taking the tour, make sure to tip your tour guide (me) and your servers (Ring Makers) on you way out if you feel so inclined :P."
+                    }
+                }
+            }
         }
+        
     }
 }

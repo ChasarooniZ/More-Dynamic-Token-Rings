@@ -18,6 +18,9 @@ Hooks.once("init", async function () {
     // RingDialog,
     getMap,
     showRingDialog,
+    tours: {
+      starter: starterTour,
+    },
   };
   registerSettings();
 
@@ -28,6 +31,21 @@ Hooks.once("init", async function () {
     });
   });
   Hooks.on("renderSettingsConfig", renderSettingsConfig);
+  if (game.settings.get(MODULE_ID, "first-time-user")) {
+    //TODO direct them how to enable rings
+    ChatMessage.create({
+      content:
+        game.i18n.localize(
+          MODULE_ID + ".notifications.first-time-user.content"
+        ) +
+        `<button type="button"  onclick="(async () => { 
+        game.SETT.tours.starter(); 
+    })()">${game.i18n.localize(
+      MODULE_ID + ".notifications.first-time-user.button"
+    )}</button>`,
+      whisper: [game.userId],
+    });
+  }
 });
 
 function getRingDataRing(label, jsonName) {
@@ -68,6 +86,16 @@ function registerSettings() {
     default: [],
     type: Array,
   });
+
+  game.settings.register(MODULE_ID, "first-time-user", {
+    name: "first-time-user",
+    hint: "",
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: true,
+    type: Boolean,
+  });
   RINGS.forEach(({ label, author, id }) => {
     registerASetting(label, author, id);
   });
@@ -99,7 +127,7 @@ function renderSettingsConfig(_, html) {
   coreTab
     .find(`[data-settings-key="core.dynamicTokenRing"]`)
     .closest(".form-group").before(`
-      <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
+      <button type="button" class="SETT-button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
           game.SETT.showRingDialog(); 
       })()">
           ${
@@ -111,15 +139,6 @@ function renderSettingsConfig(_, html) {
           }${localizedName}
       </button>
   `);
-  // coreTab
-  //   .find(`[data-settings-key="core.dynamicTokenRing"]`)
-  //   .closest(".form-group").before(`
-  //     <button type="button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => {
-  //         await game.settings.sheet.activateTab('more-dynamic-token-rings');
-  //     })()">
-  //         ${localizedName}F
-  //     </button>
-  // `);
 }
 
 function getMap() {
@@ -252,4 +271,50 @@ function showRingDialog() {
     "old-rings",
     RINGS.map((ring) => ring.id)
   );
+}
+
+function starterTour() {
+  //tour path
+  const tp = ".tours.starter.";
+  game.settings.sheet.render(true);
+  game.settings.sheet.activateTab("core");
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  let tour = new Tour({
+    namespace: "core",
+    id: "sett-starter-tour",
+    title: game.i18n.localize(MODULE_ID + tp + "title"),
+    steps: [
+      {
+        title: stepStart(tp, 1) + "title",
+        selector: '[data-tab="core"]',
+        content: stepStart(tp, 1) + "content",
+      },
+      {
+        title: stepStart(tp, 2) + "title",
+        selector: ".SETT-button",
+        content: stepStart(tp, 2) + "content",
+      },
+
+      {
+        title: stepStart(tp, 3) + "title",
+        selector: "#client-settings",
+        content: stepStart(tp, 3) + "content",
+      },
+      {
+        selector: '[data-setting-id="core.dynamicTokenRing"]',
+        title: stepStart(tp, 4) + "title",
+        content: stepStart(tp, 4) + "content",
+      },
+      {
+        title: stepStart(tp, 5) + "title",
+        selector: "",
+        content: stepStart(tp, 5) + "content",
+      },
+    ],
+  });
+  tour.start();
+}
+
+function stepStart(tourPath, step) {
+  return MODULE_ID + tourPath + `steps.${step}.`;
 }
