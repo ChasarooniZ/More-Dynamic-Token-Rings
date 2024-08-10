@@ -1,3 +1,21 @@
+## [0.1.6](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.5...0.1.6) - Shemetz Special
+- `Rings`
+  - `Added`
+    - `Redeux Simple Ring`
+    - `Redeux Simple Ring (Clear)`
+    - `Redeux Simple Transparent Ring`
+  - `Removed`
+    - Removed the following rings due to their license conflicting with the goals of the module (@shemetz)
+      - `Token Tool Chains`
+      - `Token Tool Gears (Colored)`
+      - `Token Tool Runes (Black)`
+- 
+  
+## [0.1.5](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.4...0.1.5) - Fix for errors
+- Fixed issue causing rings to not show after last patch
+## [0.1.4](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.3...0.1.4) - Licensing Fixes
+- Moved Token Tool Assets to an APGL license folder to comply with legal issues around using said license
+
 ## [0.1.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.2...0.1.3) - New Rings
 - `QoL`
   - Added an indicator to show when a new ring has been added
