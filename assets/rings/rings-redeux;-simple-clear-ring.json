@@ -87,7 +87,7 @@
 		}},
 	"meta": {
 		"version": "1.1",
-		"image": "rings-redeux;-simple-ring-(gradient).webp",
+		"image": "rings-redeux;-simple-clear-ring.webp",
 		"format": "RGBA8888",
 		"size": {"w":7680,"h":2048},
 		"scale": "1"
