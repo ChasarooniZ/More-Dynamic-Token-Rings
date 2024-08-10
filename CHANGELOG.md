@@ -4,12 +4,14 @@
     - `Redeux Simple Ring`
     - `Redeux Simple Ring (Clear)`
     - `Redeux Simple Transparent Ring`
+    - `Eldritch Dream Curse`
+  - `Fixed`
+    - `Joeundsoo Simple Sharp Ring` - Fixed issue of coloring not applying to ring properly
   - `Removed`
     - Removed the following rings due to their license conflicting with the goals of the module (@shemetz)
-      - `Token Tool Chains`
-      - `Token Tool Gears (Colored)`
-      - `Token Tool Runes (Black)`
-      - `Eldritch Dream Curse`
+      - ~~`Token Tool Chains`~~
+      - ~~`Token Tool Gears (Colored)`~~
+      - ~~`Token Tool Runes (Black)`~~
   - `First Time Users`
     - Added chat message to explain how the module works for first time users
   
