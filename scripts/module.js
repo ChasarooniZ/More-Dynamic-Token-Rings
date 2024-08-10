@@ -31,9 +31,12 @@ Hooks.once("init", async function () {
     });
   });
   Hooks.on("renderSettingsConfig", renderSettingsConfig);
+});
+
+Hooks.once("ready", async function () {
   if (game.settings.get(MODULE_ID, "first-time-user")) {
     //TODO direct them how to enable rings
-    game.settings.set(MODULE_ID, "first-time-user", false)
+    game.settings.set(MODULE_ID, "first-time-user", false);
     await ChatMessage.create({
       content:
         game.i18n.localize(
@@ -278,8 +281,9 @@ async function starterTour() {
   //tour path
   const tp = ".tours.starter.";
   game.settings.sheet.render(true);
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   game.settings.sheet.activateTab("core");
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   let tour = new Tour({
     namespace: "core",
     id: "sett-starter-tour",
