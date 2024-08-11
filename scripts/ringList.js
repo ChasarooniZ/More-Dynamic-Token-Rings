@@ -8,5 +8,6 @@ export const RINGS_RAW = [
   "rings-redeux;-simple-ring-(clear).json",
   "rings-eldritch-dream;-curse-ring.json",
   "rings-eldritch-dream;-curse-ring-(colored).json",
-  "rings-chasarooni;-runes-thin-ring-(black).json",
+  //"rings-chasarooni;-runes-thin-ring-(black).json", //TODO Fix me am non readable
+  "rings-volfied;-runes-ring-(blue).json"
 ];
