@@ -40,3 +40,4 @@ You can see everyone else who contributed to the module [here](CONTRIBUTORS.md)
 MIT License applies to the CODE,all rings are owned by their respective owners and are only licensed for use of this module.
 - [joeundsoo](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/3) gave permission
 - [redeux](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/master/permissions/redeux%20permission.png) gave permission
+- [Chain Ring] (Used Pro Trial of vecteezy which required no attreibution for that art)
