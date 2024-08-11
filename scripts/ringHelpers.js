@@ -9,6 +9,7 @@ export const RINGS = RINGS_RAW.sort().map((jsonPath) => {
     json,
     label: formatRingName(json),
     author: getAuthor(json),
+    name: formatRingName(json).replace(getAuthor(json), ''),
     preview: getPreview(json),
     id: getSettingId(json),
   };
