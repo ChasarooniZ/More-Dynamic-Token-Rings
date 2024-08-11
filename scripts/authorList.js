@@ -7,6 +7,6 @@ export const AUTHORS = [
     name: "Eldritch Dream",
     link: "https://www.patreon.com/EldritchDreamCreations",
   },
-  { name: "", link: "" },
+  { name: "Volfied", link: "https://www.metamorphic-digital.com/" },
   { name: "", link: "" },
 ];
