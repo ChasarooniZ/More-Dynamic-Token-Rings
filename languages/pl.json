@@ -1,0 +1,56 @@
+{
+    "I18N.LANGUAGE": "Polski",
+    "more-dynamic-token-rings": {
+        "module-settings": {
+            "button": "Konfiguracja pierścieni za pomocą SETT"
+        },
+        "notifications": {
+            "ring-list-saved": "Dynamiczna lista pierścieni została zaktualizowana, załaduj ponownie, aby zobaczyć nowe pierścienie",
+            "first-time-user": {
+                "content": "<h2>Witamy w SETT</h2><p>Cześć, witam w module.</p><p>Aby uzyskać dostęp do nowych pierścieni tokenów, kliknij Skonfiguruj Ustawienia i przejdź do ustawień modułu SETT. Włącz tam niektóre pierścienie, zapisz zmiany, a zostaniesz poproszony o ponowne załadowanie Foundry. Po wykonaniu tej czynności ponownie otwórz ustawienia i znajdź rozwijane ustawienie Bazowa -> Dynamiczne Pierścienie Tokena, które będzie teraz zawierać dodatkowe pierścienie. Wybierz jeden z nich, zapisz zmiany i ponownie załaduj Foundry.</p>",
+                "button": "Zapraszamy na przewodnik"
+            }
+        },
+        "dialog": {
+            "reload": {
+                "title": "Przeładować?",
+                "content": "Czy chcesz przeładować?",
+                "buttons": {
+                    "yes": "Tak",
+                    "no": "Nie"
+                }
+            }
+        },
+        "hover-text": {
+            "new-ring": "Nowy pierścień!"
+        },
+        "tours": {
+            "starter": {
+                "title": "Przewodnik dla początkujących SETT",
+                "steps": {
+                    "1": {
+                        "title": "Nawiguj do",
+                        "content": "Po otwarciu ustawień najpierw przejdź do ustawień \"Bazowe\""
+                    },
+                    "2": {
+                        "title": "Menu SETT",
+                        "content": "Powinieneś zobaczyć przycisk SETT, który został dodany, użyj go, aby włączyć nowe pierścienie!"
+                    },
+                    "3": {
+                        "title": "Następnie",
+                        "content": "Po włączeniu pierścieni upewnij się, że kliknąłeś przycisk Zapisz, a następnie zostaniesz poproszony o ponowne załadowanie Foundry"
+                    },
+                    "4": {
+                        "title": "Wybieranie pierścienia",
+                        "content": "Po wybraniu pierścienia zostanie wyświetlony monit o ponowne załadowanie, aby można było zaktualizować pierścienie"
+                    },
+                    "5": {
+                        "title": "Dzięki",
+                        "content": "Dzięki za przewodnik, pamiętaj, aby dać napiwek swojemu przewodnikowi (mnie) i serwerom (Ring Makers) przy wyjściu, jeśli masz na to ochotę :P."
+                    }
+                }
+            }
+        }
+        
+    }
+}
