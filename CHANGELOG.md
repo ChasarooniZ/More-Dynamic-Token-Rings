@@ -1,3 +1,13 @@
+## [0.1.7](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.6...0.1.7) - Ringing in the New Day
+- `Rings`
+  - `Added`
+    - `Chasarooni Chains Ring (Grey)`
+    - `Eldritch Dream Curse (Colored)`
+    - `Volfied Runes Ring (Blue)`
+- `Bug Fixes`
+  - Improved first time user text (@shemetz)
+  - Fixed issue where SETT Button wasn't showing up in core settings (@shemetz)
+  - Made Ring list more readable by removing author name from title (still shows in subtitle)
 ## [0.1.6](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.5...0.1.6) - Shemetz Special
 - `Rings`
   - `Added`
