@@ -1,56 +1,89 @@
 {
-    "I18N.LANGUAGE": "Polski",
-    "more-dynamic-token-rings": {
-        "module-settings": {
-            "button": "Konfiguracja pierścieni za pomocą SETT"
+  "I18N.LANGUAGE": "Polski",
+  "pf2e-reactive-token-ring": {
+    "module-settings": {
+      "target": {
+        "share-flash": {
+          "name": "Współdzielenie migania celu",
+          "hint": "Pokazuje efekt migania na celu wszystkim użytkownikom (wyłączone - pokazuje tylko osobie celującej)"
         },
-        "notifications": {
-            "ring-list-saved": "Dynamiczna lista pierścieni została zaktualizowana, załaduj ponownie, aby zobaczyć nowe pierścienie",
-            "first-time-user": {
-                "content": "<h2>Witamy w SETT</h2><p>Cześć, witam w module.</p><p>Aby uzyskać dostęp do nowych pierścieni tokenów, kliknij Skonfiguruj Ustawienia i przejdź do ustawień modułu SETT. Włącz tam niektóre pierścienie, zapisz zmiany, a zostaniesz poproszony o ponowne załadowanie Foundry. Po wykonaniu tej czynności ponownie otwórz ustawienia i znajdź rozwijane ustawienie Bazowa -> Dynamiczne Pierścienie Tokena, które będzie teraz zawierać dodatkowe pierścienie. Wybierz jeden z nich, zapisz zmiany i ponownie załaduj Foundry.</p>",
-                "button": "Zapraszamy na przewodnik"
-            }
-        },
-        "dialog": {
-            "reload": {
-                "title": "Przeładować?",
-                "content": "Czy chcesz przeładować?",
-                "buttons": {
-                    "yes": "Tak",
-                    "no": "Nie"
-                }
-            }
-        },
-        "hover-text": {
-            "new-ring": "Nowy pierścień!"
-        },
-        "tours": {
-            "starter": {
-                "title": "Przewodnik dla początkujących SETT",
-                "steps": {
-                    "1": {
-                        "title": "Nawiguj do",
-                        "content": "Po otwarciu ustawień najpierw przejdź do ustawień \"Bazowe\""
-                    },
-                    "2": {
-                        "title": "Menu SETT",
-                        "content": "Powinieneś zobaczyć przycisk SETT, który został dodany, użyj go, aby włączyć nowe pierścienie!"
-                    },
-                    "3": {
-                        "title": "Następnie",
-                        "content": "Po włączeniu pierścieni upewnij się, że kliknąłeś przycisk Zapisz, a następnie zostaniesz poproszony o ponowne załadowanie Foundry"
-                    },
-                    "4": {
-                        "title": "Wybieranie pierścienia",
-                        "content": "Po wybraniu pierścienia zostanie wyświetlony monit o ponowne załadowanie, aby można było zaktualizować pierścienie"
-                    },
-                    "5": {
-                        "title": "Dzięki",
-                        "content": "Dzięki za przewodnik, pamiętaj, aby dać napiwek swojemu przewodnikowi (mnie) i serwerom (Ring Makers) przy wyjściu, jeśli masz na to ochotę :P."
-                    }
-                }
-            }
+        "player-color": {
+          "name": "Cel używa koloru gracza",
+          "hint": "Dla celu migania użyj koloru gracza (zastępuje wszelkie niestandardowe kolory)."
         }
-        
+      },
+      "damage-heal": {
+        "scale-on-%-hp": {
+          "name": "Skala obrażeń/czas trwania leczenia",
+          "hint": "Skalowanie czasu trwania obrażeń/leczenia na podstawie procentowej zmiany stanu zdrowia."
+        }
+      },
+      "duration": {
+        "name": "Czas trwania",
+        "hint": "Jak długo (w ms) powinien migać token dla wszystkich efektów (domyślnie 500 ms, będzie to skalowane, jeśli włączysz ustawienia skalujące czas trwania)."
+      },
+      "auto-coloring": {
+        "ring": {
+          "name": "Automatyczny kolor pierścienia tokena",
+          "hint": "Wybierz, czy moduł ma zmienić kolor dynamicznego pierścienia tokenów"
+        },
+        "background": {
+          "name": "Automatyczny kolor tła tokena",
+          "hint": "Wybierz, czy moduł ma zmieniać kolor tła dynamicznego tokena"
+        },
+        "choices": {
+          "unchanged": "Bez zmian",
+          "health": "Oparte na zdrowiu",
+          "disposition": "Rozmieszczenie",
+          "levelDiff": "Różnica poziomów"
+        },
+        "health-targets": {
+          "name": "Token oparty na zdrowiu ma zastosowanie do",
+          "hint": "Jeśli włączone jest automatyczne kolorowanie na podstawie stanu zdrowia, można to ustawić tak, aby dotyczyło tylko aktorów według ich dyspozycji.",
+          "all": "Wszyscy",
+          "friendly": "Przyjazne",
+          "non-friendly": "Nieprzyjazne",
+          "hostile": "Wrogowie",
+          "non-hostile": "Nie wrogowie"
+        },
+        "percent-color": {
+          "name": "Procentowy automatyczny kolor tokena",
+          "hint": "Jak duże powinno być nasycenie automatycznego kolorowania?"
+        },
+        "override-color": {
+          "name": "Automatyczne zastępowanie koloru",
+          "hint": "Wybrać, czy automatyczne kolorowanie powinno nadpisywać kolor, jeśli ma on ustawioną wartość dla tokena?"
+        }
+      },
+
+      "colors": {
+        "damage": {
+          "name": "[Kolor] obrażeń",
+          "hint": "Zmień kolor migania tokena po otrzymaniu obrażeń"
+        },
+        "healing": {
+          "name": "[Kolor] leczenia",
+          "hint": "Zmień kolor migania tokena podczas leczenia"
+        },
+        "target": {
+          "name": "[Kolor] celowania",
+          "hint": "Zmień kolor migania tokena podczas celowania (zakładając, że nie masz włączonego ustawienia koloru gracza)"
+        },
+        "status": {
+          "positive": {
+            "name": "[Kolor] pozytywnych efektów",
+            "hint": "Zmień kolor migania tokena po otrzymaniu pozytywnego stanu"
+          },
+          "negative": {
+            "name": "[Kolor] negatywnych efektów",
+            "hint": "Zmień kolor migania tokena po otrzymaniu negatywnego stanu"
+          }
+        }
+      },
+      "": {
+        "name": "",
+        "hint": ""
+      }
     }
+  }
 }
