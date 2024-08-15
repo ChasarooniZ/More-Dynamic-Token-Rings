@@ -1,3 +1,6 @@
+## [0.2.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.7...0.2.0) - An Option
+- `Rings`
+  - Added support for the new `Dynamic Token Rings Fit Modes` feature in [Fvtt version `12.331`](https://foundryvtt.com/releases/12.331) for all current rings
 ## [0.1.7](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.6...0.1.7) - Ringing in the New Day
 - `Rings`
   - `Added`
