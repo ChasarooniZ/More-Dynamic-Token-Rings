@@ -1,3 +1,9 @@
+## [0.2.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.2.0...0.2.1) - Chain++
+- `Rings`
+  - `Added`
+    - `Chasarooni Chains Ring (Grey)` - It has a dark background now :)
+  - `Changed`
+    - ~~`Chasarooni Chains Ring (Grey)`~~ ➜ `Chasarooni Chains Trainsparent Ring (Grey)`
 ## [0.2.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.1.7...0.2.0) - An Option
 - `Rings`
   - Added support for the new `Dynamic Token Rings Fit Modes` feature in [Fvtt version `12.331`](https://foundryvtt.com/releases/12.331) for all current rings
