@@ -1,6 +1,7 @@
 # List of Token Rings
 ## Table of Contents 
   - [Chasarooni Chains Ring (Grey)](#Chasarooni-Chains-Ring-(Grey))
+  - [Chasarooni Chains Transparent Ring (Grey)](#Chasarooni-Chains-Transparent-Ring-(Grey))
   - [Eldritch Dream Curse Ring (Colorable)](#Eldritch-Dream-Curse-Ring-Colorable)
   - [Eldritch Dream Curse Ring](#Eldritch-Dream-Curse-Ring)
   - [Joeundsoo Simple Sharp Ring](#Joeundsoo-Simple-Sharp-Ring)
@@ -9,6 +10,8 @@
   - [Volfied Runes Ring (Blue)](#Volfied-Runes-Ring-Blue)
 
 ## Chasarooni Chains Ring (Grey)
+![image](https://github.com/user-attachments/assets/1cb5d4ac-c72f-478e-8b36-c9dc6417b484)
+## Chasarooni Chains Transparent Ring (Grey)
 ![image](https://github.com/user-attachments/assets/9121ff26-de5b-47ae-b996-81a8a096b098)
 ## Eldritch Dream Curse Ring
 ![image](https://github.com/user-attachments/assets/0e3af7e5-46ce-45cc-b90c-5d42ca93def0)
