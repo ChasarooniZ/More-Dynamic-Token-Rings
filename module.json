@@ -1,6 +1,6 @@
 {
   "id": "more-dynamic-token-rings",
-  "title": "SETT: More Dynamic Token Rings",
+  "title": "SETT: Some Extra Token (ring) Types",
   "description": "",
   "version": "#{VERSION}#",
   "library": "false",
