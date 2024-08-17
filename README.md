@@ -8,7 +8,7 @@
 <!--- Forge Bazaar Install % Badge -->
 <!--- replace <your-module-name> with the `name` in your manifest -->
 
-# FoundryVTT Module
+# SETT: Some Extra Token (ring) Types
 Adds options for dynamic token rings
 
 [Page](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/) to Make your own Token Sprite Sheet
