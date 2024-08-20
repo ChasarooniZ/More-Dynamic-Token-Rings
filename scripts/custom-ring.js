@@ -1,4 +1,4 @@
-import { MODULE_ID } from "./module";
+import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module";
 
 export function registerCustomRingSettings() {
   const path = MODULE_ID + ".custom-ring.";
@@ -18,7 +18,7 @@ export function registerCustomRingSettings() {
     requiresReload: false,
     scope: "world",
     config: true,
-    default: '',
+    default: "",
     type: String,
     filePicker: image,
   });
@@ -28,7 +28,7 @@ export function registerCustomRingSettings() {
     requiresReload: false,
     scope: "world",
     config: true,
-    default: '',
+    default: "",
     type: String,
     filePicker: image,
   });
@@ -39,7 +39,7 @@ export function registerCustomRingSettings() {
     scope: "world",
     config: true,
     default: 0.11,
-    type: Number
+    type: Number,
   });
 
   game.settings.register(MODULE_ID, pre + "color-band.start", {
@@ -49,7 +49,7 @@ export function registerCustomRingSettings() {
     scope: "world",
     config: true,
     default: 0,
-    type: Number
+    type: Number,
   });
 
   game.settings.register(MODULE_ID, pre + "color-band.end", {
@@ -59,7 +59,7 @@ export function registerCustomRingSettings() {
     scope: "world",
     config: true,
     default: 1,
-    type: Number
+    type: Number,
   });
 
   game.settings.register(MODULE_ID, pre + "color-band.color", {
@@ -69,11 +69,11 @@ export function registerCustomRingSettings() {
     scope: "world",
     config: true,
     default: "#A51EE6",
-    type: new foundry.data.fields.ColorField()
+    type: new foundry.data.fields.ColorField(),
   });
 }
 
-export function registerCustomRing() {
+export function createCustomRing() {
   if (!game.user.isGM) return;
   if (!game.settings.get(MODULE_ID + ".custom-ring.enabled")) return;
 
@@ -82,5 +82,26 @@ export function registerCustomRing() {
   //Errors if no
   // creates JSON
   // Creates Image (stores both in module)
+}
+
+export function validateAddCustomRing() {
+  if (!game.user.isGM) return;
+  if (!game.settings.get(MODULE_ID + ".custom-ring.enabled")) return;
+
+  //Validates ring is there and adds it if is otherwise error
   // Adds to ring list as _Custom SETT Ring so it is at the top
+}
+
+export function getCustomRingData() {
+  const usName = "Custom SETT Ring";
+  const jsonName = "Custom-SETT-Ring.json"
+  let label = `_${usName}`;
+  return [
+    label,
+    new foundry.canvas.tokens.DynamicRingData({
+      label: "CustomSETTRing",
+      effects,
+      spritesheet: MODULE_BASE_PATH + "assets/rings/" + jsonName,
+    }),
+  ];
 }

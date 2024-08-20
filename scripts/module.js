@@ -1,10 +1,14 @@
 // import { RingDialog } from "./lib/ringConfig.js";
 import { RINGS } from "./ringHelpers.js";
 import { AUTHORS } from "./authorList.js";
+import {
+  getCustomRingData,
+  registerCustomRingSettings,
+} from "./custom-ring.js";
 
 export const MODULE_ID = "more-dynamic-token-rings";
-const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
-const effects = {
+export const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
+export const effects = {
   RING_PULSE: "TOKEN.RING.EFFECTS.RING_PULSE",
   RING_GRADIENT: "TOKEN.RING.EFFECTS.RING_GRADIENT",
   BKG_WAVE: "TOKEN.RING.EFFECTS.BKG_WAVE",
@@ -23,12 +27,16 @@ Hooks.once("init", async function () {
     },
   };
   registerSettings();
+  registerCustomRingSettings();
 
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
     RINGS.forEach(({ label, jsonPath, id }) => {
       if (game.settings.get(MODULE_ID, id))
         ringConfig.addConfig(...getRingDataRing(label, jsonPath));
     });
+    if (validateAddCustomRing()) {
+      ringConfig.addConfig(getCustomRingData());
+    }
   });
   Hooks.on("renderSettingsConfig", renderSettingsConfig);
 });
