@@ -1,56 +1,87 @@
 {
-    "I18N.LANGUAGE": "English",
-    "more-dynamic-token-rings": {
-        "module-settings": {
-            "button": "Configure Rings with SETT"
+  "I18N.LANGUAGE": "English",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Configure Rings with SETT",
+      "custom-ring": {
+        "enabled": {
+          "name": "Custom Ring Enabled",
+          "hint": "Enables custom ring to the Dynamic Ring Picker, note you must reload every time you change a property in order for it to update"
         },
-        "notifications": {
-            "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings",
-            "first-time-user": {
-                "content": "<h2>Welcome to SETT</h2><p>Hi, welcome to the module.</p><p>To access new token rings, click Configure Settings and navigate to the SETT module settings. Enable some of the rings there, save changes, and you'll be prompted to reload Foundry.  After doing so, open settings again and find the Core -> Dynamic Token Ring dropdown setting, which will now include the extra rings.  Select one of them, save changes, and reload Foundry once more.</p>",
-                "button": "Take a Tour"
-            }
+        "token-ring": {
+          "name": "Token Ring Image",
+          "hint": "Must be 2048 x 2048 or Issues will arise"
         },
-        "dialog": {
-            "reload": {
-                "title": "Reload?",
-                "content": "Do you want to reload?",
-                "buttons": {
-                    "yes": "Yes",
-                    "no": "No"
-                }
-            }
+        "token-bg": {
+          "name": "Token BG Image",
+          "hint": "Must be 2048 x 2048 or Issues will arise"
         },
-        "hover-text": {
-            "new-ring": "New Ring!"
+        "ring-thickness": {
+          "name": "Ring Thickness",
+          "hint": "How thick is the ring from the interior to the outside of the ring as a value from 0 to 1, 1 being 100%"
         },
-        "tours": {
-            "starter": {
-                "title": "SETT Starter Tour",
-                "steps": {
-                    "1": {
-                        "title": "Navigate To",
-                        "content": "After opening settings first navigate from into 'Core' settings"
-                    },
-                    "2": {
-                        "title": "SETT Menu",
-                        "content": "You should see the SETT button that has been inserted, use this to enable new rings!"
-                    },
-                    "3": {
-                        "title": "After that",
-                        "content": "After you have enabled rings make sure to click save, then you'll be prompted to reload foundry"
-                    },
-                    "4": {
-                        "title": "Selecting a Ring",
-                        "content": "Select a Ring here, it will prompt you to reload so that it can update the rings"
-                    },
-                    "5": {
-                        "title": "Thanks",
-                        "content": "Thanks for taking the tour, make sure to tip your tour guide (me) and your servers (Ring Makers) on you way out if you feel so inclined :P."
-                    }
-                }
-            }
+        "color-band": {
+          "start": {
+            "name": "Color Band Start",
+            "hint": "Where on the ring should the coloration start as a value from 0 to 1, 1 being 100%"
+          },
+          "end": {
+            "name": "Color Band End",
+            "hint": "Where on the ring should the coloration end as a value from 0 to 1, 1 being 100%"
+          },
+          "color": {
+            "name": "Color Band Color",
+            "hint": "Enter Color Hex value that is the 'white' when the ring is recolored (IE if you do a blue color the blue will be recolored the most)"
+          }
         }
-        
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Your Dynamic Ring List has been updated, reload to see the new rings",
+      "first-time-user": {
+        "content": "<h2>Welcome to SETT</h2><p>Hi, welcome to the module.</p><p>To access new token rings, click Configure Settings and navigate to the SETT module settings. Enable some of the rings there, save changes, and you'll be prompted to reload Foundry.  After doing so, open settings again and find the Core -> Dynamic Token Ring dropdown setting, which will now include the extra rings.  Select one of them, save changes, and reload Foundry once more.</p>",
+        "button": "Take a Tour"
+      }
+    },
+    "dialog": {
+      "reload": {
+        "title": "Reload?",
+        "content": "Do you want to reload?",
+        "buttons": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      }
+    },
+    "hover-text": {
+      "new-ring": "New Ring!"
+    },
+    "tours": {
+      "starter": {
+        "title": "SETT Starter Tour",
+        "steps": {
+          "1": {
+            "title": "Navigate To",
+            "content": "After opening settings first navigate from into 'Core' settings"
+          },
+          "2": {
+            "title": "SETT Menu",
+            "content": "You should see the SETT button that has been inserted, use this to enable new rings!"
+          },
+          "3": {
+            "title": "After that",
+            "content": "After you have enabled rings make sure to click save, then you'll be prompted to reload foundry"
+          },
+          "4": {
+            "title": "Selecting a Ring",
+            "content": "Select a Ring here, it will prompt you to reload so that it can update the rings"
+          },
+          "5": {
+            "title": "Thanks",
+            "content": "Thanks for taking the tour, make sure to tip your tour guide (me) and your servers (Ring Makers) on you way out if you feel so inclined :P."
+          }
+        }
+      }
     }
+  }
 }
