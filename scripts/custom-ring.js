@@ -1,3 +1,5 @@
+import { MODULE_ID } from "./module";
+
 export function registerCustomRingSettings() {
   const path = MODULE_ID + ".custom-ring.";
   const pre = "custom-ring.";
@@ -69,4 +71,16 @@ export function registerCustomRingSettings() {
     default: "#A51EE6",
     type: new foundry.data.fields.ColorField()
   });
+}
+
+export function registerCustomRing() {
+  if (!game.user.isGM) return;
+  if (!game.settings.get(MODULE_ID + ".custom-ring.enabled")) return;
+
+  // Grabs the data
+  //validates ring size (and other values etc.)
+  //Errors if no
+  // creates JSON
+  // Creates Image (stores both in module)
+  // Adds to ring list as _Custom SETT Ring so it is at the top
 }

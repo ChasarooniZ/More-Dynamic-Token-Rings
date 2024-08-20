@@ -2,7 +2,7 @@
 import { RINGS } from "./ringHelpers.js";
 import { AUTHORS } from "./authorList.js";
 
-const MODULE_ID = "more-dynamic-token-rings";
+export const MODULE_ID = "more-dynamic-token-rings";
 const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
 const effects = {
   RING_PULSE: "TOKEN.RING.EFFECTS.RING_PULSE",
