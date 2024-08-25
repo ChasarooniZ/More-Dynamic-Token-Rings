@@ -101,7 +101,7 @@ export function getCustomRingData() {
     new foundry.canvas.tokens.DynamicRingData({
       label: "CustomSETTRing",
       effects,
-      spritesheet: MODULE_BASE_PATH + "assets/rings/" + jsonName,
+      spritesheet: MODULE_BASE_PATH + "assets/rings/custom/" + jsonName,
     }),
   ];
 }
