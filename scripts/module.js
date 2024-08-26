@@ -176,11 +176,14 @@ function showRingDialog() {
       .ring-item h4 {
         margin: 5px 0;
         display: inline-block;
-        width: calc(100% - 30px);
+        width: calc(100% - 30px); /* Adjusted width to accommodate the checkbox */
+        vertical-align: middle;
       }
+      
       .ring-item label {
         float: right;
-        margin-right: 5px;
+        margin-right: 0; /* Ensures the checkbox is aligned with the right edge */
+        vertical-align: middle; /* Aligns the checkbox with the middle of the author's name */
       }
       #ring-search {
         width: 100%;
