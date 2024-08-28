@@ -19,6 +19,8 @@
 ![image](https://github.com/user-attachments/assets/e978412d-c97a-42bb-a816-15ba12be3186)
 ## Eldritch Dream Cyber Purple Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/9771a436-db91-4dc2-8e69-03fd9532c025)
+## Eldritch Dream Simple Gold Ring (Colorable)
+![image](https://github.com/user-attachments/assets/1d011684-cf66-4175-a785-5ba39d5e1432)
 ## Joeundsoo Simple Sharp Ring
 ![image](https://github.com/user-attachments/assets/41244467-32c0-4451-839c-30c21d5af317)
 ## Redeux Simple Ring
