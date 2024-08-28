@@ -13,6 +13,7 @@
       "name": "chasarooniZ"
     }
   ],
+  "persistentStorage": true, 
   "relationships": {
     "systems": [],
     "requires": [],

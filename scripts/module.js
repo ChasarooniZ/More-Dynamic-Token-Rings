@@ -4,132 +4,9 @@ import { AUTHORS } from "./authorList.js";
 import {
   getCustomRingData,
   registerCustomRingSettings,
+  createTokenRingDialog
 } from "./custom-ring.js";
-class TokenRingDialog extends Dialog {
-  constructor(options = {}) {
-    super(options);
-  }
 
-  static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
-      title: "Token Ring Sprite Sheet Generator",
-      template: MODULE_BASE_PATH + "templates/format.html", // Replace with your HTML template path
-      width: 400,
-      classes: ["fvtt-dialog"],
-      buttons: {
-        process: {
-          label: "Generate",
-          callback: (html) => this._processImages(html)
-        }
-      },
-      close: () => console.log("Dialog closed")
-    });
-  }
-
-  async _processImages(html) {
-    const image1File = html.find('[name="image1"]')[0].files[0];
-    const image2File = html.find('[name="image2"]')[0].files[0];
-
-    if (!image1File || !image2File) {
-      ui.notifications.error("Please upload both images.");
-      return;
-    }
-
-    // Load and validate images
-    const image1 = await this._loadImage(image1File);
-    const image2 = await this._loadImage(image2File);
-
-    if (image1.width !== 2048 || image1.height !== 2048 || image2.width !== 2048 || image2.height !== 2048) {
-      ui.notifications.error("Both images must be 2048 x 2048.");
-      return;
-    }
-
-    // Get input values
-    const thickness = parseInt(html.find('[name="thickness"]').val());
-    const innerRing = parseInt(html.find('[name="innerRing"]').val());
-    const outerRing = parseInt(html.find('[name="outerRing"]').val());
-    const color = html.find('[name="color"]').val();
-
-    // Process images and generate sprite sheet
-    const spriteSheet = await this._generateSpriteSheet(image1, image2, thickness, innerRing, outerRing, color);
-    await this._saveSpriteSheet(spriteSheet, "final_ring.webp");
-
-    // Save JSON data
-    const jsonData = {
-      thickness, innerRing, outerRing, color
-    };
-    await this._saveJSON(jsonData, "sprite_config.json");
-
-    ui.notifications.info("Processing and export complete!");
-  }
-
-  async _loadImage(file) {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const img = new Image();
-        img.onload = () => resolve(img);
-        img.src = e.target.result;
-      };
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-  }
-
-  async _generateSpriteSheet(image1, image2, thickness, innerRing, outerRing, color) {
-    let images = [image2, image1];
-    const collections = [];
-
-    while (images[0].width >= 256) {
-      const appendedImage = this._appendImages(images[0], images[1]);
-      collections.push(appendedImage);
-
-      images = images.map(img => this._shrinkImage(img));
-      images = images.concat(images); // Append two copies
-    }
-
-    let finale = collections[0];
-    for (let i = 1; i < collections.length; i++) {
-      finale = this._appendImages(finale, collections[i]);
-    }
-
-    return finale;
-  }
-
-  _appendImages(image1, image2) {
-    const canvas = document.createElement('canvas');
-    canvas.width = image1.width + image2.width;
-    canvas.height = image1.height;
-    const ctx = canvas.getContext('2d');
-    ctx.drawImage(image1, 0, 0);
-    ctx.drawImage(image2, image1.width, 0);
-    return canvas;
-  }
-
-  _shrinkImage(image) {
-    const canvas = document.createElement('canvas');
-    canvas.width = image.width / 2;
-    canvas.height = image.height / 2;
-    const ctx = canvas.getContext('2d');
-    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-    return canvas;
-  }
-
-  async _saveSpriteSheet(canvas, filename) {
-    canvas.toBlob(async (blob) => {
-      const file = new File([blob], filename, { type: 'image/webp' });
-      const uploadPath = `${filename}`;
-      await FilePicker.upload("data", uploadPath, file);
-    }, 'image/webp');
-  }
-
-  async _saveJSON(data, filename) {
-    const json = JSON.stringify(data, null, 2);
-    const file = new File([json], filename, { type: 'application/json' });
-    const uploadPath = `${filename}`;
-    await FilePicker.upload("data", uploadPath, file);
-  }
-}
 export const MODULE_ID = "more-dynamic-token-rings";
 export const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
 export const effects = {
@@ -138,6 +15,7 @@ export const effects = {
   BKG_WAVE: "TOKEN.RING.EFFECTS.BKG_WAVE",
   INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
 };
+
 Hooks.once("init", async function () {
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
   game.SETT = {
@@ -178,7 +56,7 @@ Hooks.once("ready", async function () {
   }
 
   // Create and render the dialog
-  new TokenRingDialog().render(true);
+  createTokenRingDialog();
 
 });
 
