@@ -10,5 +10,7 @@ export const RINGS_RAW = [
   "rings-volfied;-runes-ring-(blue).json",
   "rings-chasarooni;-chains-ring-(grey).json",
   "rings-chasarooni;-chains-transparent-ring-(grey).json",
-  "rings-eldritch-dream;-simple-gold-ring-(colored).json"
+  //"rings-eldritch-dream;-stop-watch-ring.json",
+  //"rings-eldritch-dream;-stop-watch-ring-(colored).json",
+  "rings-eldritch-dream;-cyber-purple-ring-(colored).json",
 ];

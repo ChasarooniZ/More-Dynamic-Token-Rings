@@ -126,13 +126,12 @@ function renderSettingsConfig(_, html) {
       <button type="button" class="SETT-button" style="width: 50%;position: relative;transform: translateX(95%);" onclick="(async () => { 
           game.SETT.showRingDialog(); 
       })()">
-          ${
-            isNewRing
-              ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
-                game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
-                '" data-tooltip-direction="UP"></i> '
-              : ""
-          }${localizedName}
+          ${isNewRing
+      ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
+      game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
+      '" data-tooltip-direction="UP"></i> '
+      : ""
+    }${localizedName}
       </button>
   `);
 }
@@ -157,25 +156,47 @@ function showRingDialog() {
     <style>
       .ring-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         overflow-y: auto;
-        max-height: calc(100vh - 200px); /* Adjust based on desired height */
+        max-height: calc(80vh - 200px); /* Adjust based on desired height */
       }
       .ring-item {
         border: 1px solid #ccc;
         padding: 10px;
         border-radius: 5px;
       }
-      .ring-item h2, .ring-item h3, .ring-item label {
+      .ring-item h3 {
         margin: 5px 0;
       }
       .ring-item img {
         max-width: 100%;
         height: auto;
       }
+      .ring-item h4 {
+        margin: 5px 0;
+        display: inline-block;
+        width: calc(100% - 30px); /* Adjusted width to accommodate the checkbox */
+        vertical-align: middle;
+      }
+      
+      .ring-item label {
+        float: right;
+        margin-right: 0; /* Ensures the checkbox is aligned with the right edge */
+        vertical-align: middle; /* Aligns the checkbox with the middle of the author's name */
+      }
+      #ring-search {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
     </style>
-    <form><div class="ring-grid">`;
+    <form>
+      <input type="text" id="ring-search" placeholder="Search by Ring Name or Author">
+      <div class="ring-grid">`;
 
     rings.forEach((ring) => {
       const author = authors.find((auth) => auth.name === ring.author);
@@ -183,22 +204,19 @@ function showRingDialog() {
       const isActive = ringActivationMap[ring.id] || false;
 
       con += `
-      <div class="ring-item">
-        <h3>${
-          new_rings.includes(ring.id)
-            ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
-              game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
-              '" data-tooltip-direction="UP"></i> '
-            : ""
+      <div class="ring-item" data-ring-name="${ring.name.toLowerCase()}" data-author-name="${ring.author.toLowerCase()}">
+        <h3>${new_rings.includes(ring.id)
+          ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
+          game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
+          '" data-tooltip-direction="UP"></i> '
+          : ""
         }${ring.name}</h3>
         <h4><a href="${authorLink}">${ring.author}</a></h4>
-        <img src="${ring.preview}" alt="${ring.label}">
         <label>
-          <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${
-            ring.id
-          }" ${isActive ? "checked" : ""}>
-          Activate
+          <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${ring.id
+        }" ${isActive ? "checked" : ""}>
         </label>
+        <img src="${ring.preview}" alt="${ring.label}">
       </div>`;
     });
 
@@ -211,6 +229,7 @@ function showRingDialog() {
 
     return con;
   }
+
 
   const content = generateDialogContent(
     RINGS,
@@ -225,7 +244,22 @@ function showRingDialog() {
     buttons: {},
     render: (html) => {
       // Make the dialog wider
-      html.closest(".dialog").css({ width: "800px" });
+      //html.closest(".dialog").css({ width: "800px" });
+
+      // Implement search functionality
+      const searchInput = html.find('#ring-search');
+      searchInput.on('input', function () {
+        const searchTerm = searchInput.val().toLowerCase();
+        html.find('.ring-item').each(function () {
+          const ringName = $(this).data('ring-name');
+          const authorName = $(this).data('author-name');
+          if (ringName.includes(searchTerm) || authorName.includes(searchTerm)) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      });
 
       html.find('button[name="submit"]').click(() => {
         const updatedMap = {};
@@ -261,7 +295,7 @@ function showRingDialog() {
         dialog.close();
       });
     },
-  }).render(true, { width: 800, height: 600, top: 50 });
+  }).render(true, { width: 1000, height: 700, top: 50 });
   game.settings.set(
     MODULE_ID,
     "old-rings",

@@ -1,4 +1,12 @@
-## [0.2.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.2.0...0.2.1) - New Names
+## [0.3.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.2.2...0.3.0) - Searching for rings
+- `Ring Selection`
+  - Added Search to ring selection
+  - Increased width so that you can see more rings at once
+  - Moved the enable checkbox to the header (@shemetz)
+- `Rings`
+  - `Added`
+    - Eldritch Dream: Cyber Purple Ring (Colorable)
+## [0.2.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.2.1...0.2.2) - New Names
 - `Name`
   - New name for the module is `SETT: Some Extra Token (ring) Type` thanks Jackson Bockus the legend
 - `Languages`
