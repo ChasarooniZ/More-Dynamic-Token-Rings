@@ -13,6 +13,10 @@
 ![image](https://github.com/user-attachments/assets/1cb5d4ac-c72f-478e-8b36-c9dc6417b484)
 ## Chasarooni Chains Transparent Ring (Grey)
 ![image](https://github.com/user-attachments/assets/9121ff26-de5b-47ae-b996-81a8a096b098)
+## Eldritch Blue Aura Ring (Colorable)
+![image](https://github.com/user-attachments/assets/4d67afbd-2afa-4cef-90a5-3a2e98705dff)
+## Eldritch Dream Bronze Spiral Ring (Colorable)
+![image](https://github.com/user-attachments/assets/cb76e3ba-9c45-4865-b288-6448a0852019)
 ## Eldritch Dream Curse Ring
 ![image](https://github.com/user-attachments/assets/0e3af7e5-46ce-45cc-b90c-5d42ca93def0)
 ## Eldritch Dream Curse Ring (Colorable)
@@ -21,6 +25,8 @@
 ![image](https://github.com/user-attachments/assets/9771a436-db91-4dc2-8e69-03fd9532c025)
 ## Eldritch Dream Simple Gold Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/1d011684-cf66-4175-a785-5ba39d5e1432)
+## Eldritch Dream Pink Metal Ring (Colorable)
+![image](https://github.com/user-attachments/assets/4cb88d58-90b0-46b0-bcd3-306cc89e5ce6)
 ## Joeundsoo Simple Sharp Ring
 ![image](https://github.com/user-attachments/assets/41244467-32c0-4451-839c-30c21d5af317)
 ## Redeux Simple Ring
