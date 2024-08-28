@@ -13,7 +13,6 @@
       "name": "chasarooniZ"
     }
   ],
-  "persistentStorage": true, 
   "relationships": {
     "systems": [],
     "requires": [],
@@ -40,6 +39,9 @@
       "path": "languages/pl.json"
     }
   ],
+  "flags": {
+    "persistentStorage": true
+  },
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
