@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.3.0...0.3.1) - Eldritch Dreamin
+- `Rings`
+  - `Added`
+    - **Eldritch Dream Blue Aura Ring (Colorable)**
+    - **Eldritch Dream Bronze Spiral Ring (Colorable)**
+    - **Eldritch Dream Simple Gold Ring (Colorable)**
+    - **Eldritch Dream Pink Metal Ring (Colorable)**
+
+*(Rings added from [The Border Project](https://ko-fi.com/eldritchdream/goal?g=29))*
 ## [0.3.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.2.2...0.3.0) - Searching for rings
 - `Ring Selection`
   - Added Search to ring selection

@@ -1,11 +1,13 @@
 {
+
 	"config": {
 		"defaultColorBand": {
 			"startRadius": 0,
-			"endRadius": 0.748
+			"endRadius": 1
 		},
-		"defaultRingColor": "#CF98CF"
+		"defaultRingColor": "#7B538B"
 	},
+
 	"frames": {
 
 		"token-ring-gargantuan-bkg":
@@ -90,7 +92,7 @@
 		}},
 	"meta": {
 		"version": "1.1",
-		"image": "rings-eldritch-dream;-cyber-purple-ring-(colored).webp",
+		"image": "rings-eldritch-dream;-pink-metal-ring-(colored).webp",
 		"format": "RGBA8888",
 		"size": {"w":7680,"h":2048},
 		"scale": "1"
