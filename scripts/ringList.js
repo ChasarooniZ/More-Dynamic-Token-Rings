@@ -17,5 +17,5 @@ export const RINGS_RAW = [
   "rings-eldritch-dream;-blue-aura-ring-(colored).json",
   "rings-eldritch-dream;-bronze-spiral-ring-(colored).json",
   "rings-eldritch-dream;-dual-glow-ring-(colored).json",
-  "rings-eldritch-dream;-pink-metal-ring-(colored).json",
+  //"rings-eldritch-dream;-pink-metal-ring-(colored).json", //TODO Make this only have a specific band
 ];

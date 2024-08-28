@@ -2,9 +2,9 @@
 	"config": {
 		"defaultColorBand": {
 			"startRadius": 0,
-			"endRadius": 1.5
+			"endRadius": 0.748
 		},
-		"defaultRingColor": "#9737E9"
+		"defaultRingColor": "#CF98CF"
 	},
 	"frames": {
 
