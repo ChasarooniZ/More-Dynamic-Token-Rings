@@ -1,4 +1,4 @@
-import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module";
+import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module.js";
 
 export function registerCustomRingSettings() {
   const path = MODULE_ID + ".custom-ring.";
