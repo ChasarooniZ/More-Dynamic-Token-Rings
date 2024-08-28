@@ -39,9 +39,7 @@
       "path": "languages/pl.json"
     }
   ],
-  "flags": {
-    "persistentStorage": true
-  },
+  "persistentStorage": true,
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
