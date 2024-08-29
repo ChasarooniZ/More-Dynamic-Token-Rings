@@ -56,7 +56,7 @@ export function registerCustomRingSettings() {
 
 export function createCustomRing() {
   if (!game.user.isGM) return;
-  if (!game.settings.get(MODULE_ID + ".custom-ring.enabled")) return;
+  if (!game.settings.get(MODULE_ID, "custom-ring.enabled")) return;
 
   // Grabs the data
   //validates ring size (and other values etc.)
