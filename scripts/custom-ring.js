@@ -65,7 +65,7 @@ export function createCustomRing() {
   // Creates Image (stores both in module)
 }
 
-export function validateAddCustomRing() {
+export async function validateAddCustomRing() {
   if (!game.user.isGM) return;
   if (!game.settings.get(MODULE_ID + ".custom-ring.enabled")) return;
   const result = await FilePicker.browse('data', "modules/more-dynamic-token-rings/storage/custom-ring");
