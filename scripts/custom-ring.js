@@ -2,7 +2,7 @@ import { getBaseJSON } from "./custom-ring-cfg.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module.js";
 
 export function registerCustomRingSettings() {
-  const path = MODULE_ID + ".custom-ring.";
+  const path = MODULE_ID + "module-settings.custom-ring.";
   const pre = "custom-ring.";
   game.settings.register(MODULE_ID, pre + "enabled", {
     name: game.i18n.localize(path + "enabled" + ".name"),
