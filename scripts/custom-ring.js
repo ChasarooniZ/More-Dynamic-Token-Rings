@@ -1,3 +1,4 @@
+import { getBaseJSON } from "./custom-ring-cfg.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module.js";
 
 export function registerCustomRingSettings() {
@@ -10,27 +11,7 @@ export function registerCustomRingSettings() {
     scope: "world",
     config: true,
     default: false,
-    type: String,
-  });
-  game.settings.register(MODULE_ID, pre + "token-ring", {
-    name: game.i18n.localize(path + "token-ring" + ".name"),
-    hint: game.i18n.localize(path + "token-ring" + ".hint"),
-    requiresReload: false,
-    scope: "world",
-    config: true,
-    default: "",
-    type: String,
-    filePicker: image,
-  });
-  game.settings.register(MODULE_ID, pre + "token-bg", {
-    name: game.i18n.localize(path + "token-bg" + ".name"),
-    hint: game.i18n.localize(path + "token-bg" + ".hint"),
-    requiresReload: false,
-    scope: "world",
-    config: true,
-    default: "",
-    type: String,
-    filePicker: image,
+    type: Boolean,
   });
   game.settings.register(MODULE_ID, pre + "ring-thickness", {
     name: game.i18n.localize(path + "ring-thickness" + ".name"),
@@ -87,21 +68,28 @@ export function createCustomRing() {
 export function validateAddCustomRing() {
   if (!game.user.isGM) return;
   if (!game.settings.get(MODULE_ID + ".custom-ring.enabled")) return;
+  const result = await FilePicker.browse('data', "modules/more-dynamic-token-rings/storage/custom-ring");
+  if (result.files.includes("custom-ring.json") && result.files.includes("custom-ring.webp")) {
+    return true;
+  } else {
+    console.error("SETT: Custom Ring doesn't exist, please actually upload it")
+    return false;
+  }
 
   //Validates ring is there and adds it if is otherwise error
   // Adds to ring list as _Custom SETT Ring so it is at the top
 }
 
 export function getCustomRingData() {
-  const usName = "Custom SETT Ring";
-  const jsonName = "Custom-SETT-Ring.json"
+  const usName = "_Custom SETT Ring";
+  const jsonName = "custom-ring.json"
   let label = `_${usName}`;
   return [
     label,
     new foundry.canvas.tokens.DynamicRingData({
       label: "CustomSETTRing",
       effects,
-      spritesheet: MODULE_BASE_PATH + "assets/rings/custom/" + jsonName,
+      spritesheet: MODULE_BASE_PATH + "storage/custom-ring/" + jsonName,
     }),
   ];
 }
@@ -113,12 +101,16 @@ export function createTokenRingDialog() {
     content: `
       <form>
         <div class="form-group">
-          <label>Token Ring Image (2048x2048):</label>
+          <label>Dynamic Token Ring Image (2048x2048):</label>
           <input type="file" id="image1" accept="image/*">
         </div>
         <div class="form-group">
-          <label>Token Border Image (2048x2048):</label>
+          <label>Dynamic Token Ring Background Image (2048x2048):</label>
           <input type="file" id="image2" accept="image/*">
+        </div>
+        <div class="form-group">
+          <label>Ring Quality (%):</label>
+          <input type="number" id="quality" value="80" min="1">
         </div>
         <div class="form-group">
           <label>Thickness:</label>
@@ -207,7 +199,7 @@ async function processAndSaveImages(image1, image2, thickness, innerRing, outerR
     finalImage = appendImages(finalImage, collections[i]);
   }
 
-  await saveAsWebP(finalImage, 'final_ring.webp');
+  await saveAsWebP(finalImage, 'custom_ring.webp');
   await saveConfigJSON(thickness, innerRing, outerRing, ringColor);
 
   ui.notifications.info("Processing and export complete!");
@@ -241,23 +233,18 @@ async function saveAsWebP(canvas, filename) {
       const file = new File([blob], filename, { type: 'image/webp' });
       const result = await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, {notify:true});
       resolve(result);
-    }, 'image/webp');
+    }, 'image/webp', 0.8); //Quality is 80% by default
   });
 }
 
 
 // Function to save the configuration as a JSON file in Foundry
 async function saveConfigJSON(thickness, innerRing, outerRing, ringColor) {
-  const config = {
-    thickness,
-    innerRing,
-    outerRing,
-    ringColor
-  };
+  const config = getBaseJSON(innerRing, outerRing, ringColor, thickness);
 
   const jsonString = JSON.stringify(config, null, 2);
   const blob = new Blob([jsonString], { type: 'application/json' });
-  const file = new File([blob], 'token_ring_config.json', { type: 'application/json' });
+  const file = new File([blob], 'custom_ring.json', { type: 'application/json' });
 
   await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, {notify:true});
 }

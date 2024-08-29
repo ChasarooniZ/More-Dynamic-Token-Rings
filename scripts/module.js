@@ -28,8 +28,8 @@ Hooks.once("init", async function () {
       starter: starterTour,
     },
   };
-  registerSettings();
   registerCustomRingSettings();
+  registerSettings();
 
   Hooks.on("initializeDynamicTokenRingConfig", (ringConfig) => {
     RINGS.forEach(({ label, jsonPath, id }) => {
