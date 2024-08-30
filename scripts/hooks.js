@@ -47,13 +47,13 @@ export async function ready() {
 }
 
 export function initializeDynamicTokenRingConfig(ringConfig) {
+  if (validateAddCustomRing()) {
+    ringConfig.addConfig(...getCustomRingData());
+  }
   RINGS.forEach(({ label, jsonPath, id }) => {
     if (game.settings.get(MODULE_ID, id))
       ringConfig.addConfig(...getRingDataRing(label, jsonPath));
   });
-  if (validateAddCustomRing()) {
-    ringConfig.addConfig(...getCustomRingData());
-  }
 }
 
 
