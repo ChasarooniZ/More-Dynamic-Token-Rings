@@ -82,7 +82,7 @@ export async function validateAddCustomRing() {
 
 export function getCustomRingData() {
   const usName = "Custom SETT Ring";
-  const jsonName = "custom-ring.json"
+  const jsonName = "custom_ring.json"
   let label = `_${usName}`;
   return [
     label,
