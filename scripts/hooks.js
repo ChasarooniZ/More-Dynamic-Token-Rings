@@ -52,7 +52,7 @@ export function initializeDynamicTokenRingConfig(ringConfig) {
       ringConfig.addConfig(...getRingDataRing(label, jsonPath));
   });
   if (validateAddCustomRing()) {
-    ringConfig.addConfig(getCustomRingData());
+    ringConfig.addConfig(...getCustomRingData());
   }
 }
 
