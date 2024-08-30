@@ -231,7 +231,7 @@ async function saveAsWebP(canvas, filename) {
   return new Promise((resolve) => {
     canvas.toBlob(async (blob) => {
       const file = new File([blob], filename, { type: 'image/webp' });
-      const result = await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, {notify:true});
+      const result = await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, { notify: true });
       resolve(result);
     }, 'image/webp', 0.8); //Quality is 80% by default
   });
@@ -246,5 +246,5 @@ async function saveConfigJSON(thickness, innerRing, outerRing, ringColor) {
   const blob = new Blob([jsonString], { type: 'application/json' });
   const file = new File([blob], 'custom_ring.json', { type: 'application/json' });
 
-  await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, {notify:true});
+  await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, { notify: true });
 }
