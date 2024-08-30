@@ -1,15 +1,9 @@
 import { RINGS } from "./ringHelpers.js";
-import { MODULE_ID } from "./module.js";
+import { MODULE_ID, effects  } from "./module.js";
 import {
   getCustomRingData,
   createTokenRingDialog, validateAddCustomRing
 } from "./custom-ring.js";
-export const effects = {
-  RING_PULSE: "TOKEN.RING.EFFECTS.RING_PULSE",
-  RING_GRADIENT: "TOKEN.RING.EFFECTS.RING_GRADIENT",
-  BKG_WAVE: "TOKEN.RING.EFFECTS.BKG_WAVE",
-  INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
-};
 
 export function renderSettingsConfig(_, html) {
   if (!game.user.isGM)
