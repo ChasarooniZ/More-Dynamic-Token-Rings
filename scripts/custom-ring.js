@@ -81,13 +81,13 @@ export async function validateAddCustomRing() {
 }
 
 export function getCustomRingData() {
-  const usName = "_Custom SETT Ring";
+  const usName = "Custom SETT Ring";
   const jsonName = "custom-ring.json"
   let label = `_${usName}`;
   return [
     label,
     new foundry.canvas.tokens.DynamicRingData({
-      label: "CustomSETTRing",
+      label,
       effects,
       spritesheet: MODULE_BASE_PATH + "storage/custom-ring/" + jsonName,
     }),

@@ -10,3 +10,11 @@ export const AUTHORS = [
   { name: "Volfied", link: "https://www.metamorphic-digital.com/" },
   { name: "", link: "" },
 ];
+
+
+export const ICONS = {
+  kofi: '<i class="fa-sharp-duotone fa-solid fa-mug-hot"></i>',
+  patreon: '<i class="fa-brands fa-patreon"></i>',
+  website: '<i class="fa-solid fa-globe"></i>',
+  github: '<i class="fa-brands fa-github"></i>',
+}
