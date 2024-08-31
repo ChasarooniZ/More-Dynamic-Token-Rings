@@ -66,7 +66,7 @@ export function addCustomRingButton(_, html) {
 
   // Add import/export buttons before the 'share-flash' setting
   moduleTab
-    .find(`[name="more-dynamic-tokens.custom-ring.enabled"]`)
+    .find(`[name="more-dynamic-token-rings.custom-ring.enabled"]`)
     .closest(".form-group").before(`
     <div class="SETT-button-container">${button}
     </div>`);
