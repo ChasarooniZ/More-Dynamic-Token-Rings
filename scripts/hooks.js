@@ -1,8 +1,7 @@
 import { RINGS } from "./ringHelpers.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module.js";
 import {
-  getCustomRingData,
-  createTokenRingDialog, validateAddCustomRing
+  getCustomRingData, validateAddCustomRing
 } from "./custom-ring.js";
 
 export function renderSettingsConfig(_, html) {
@@ -40,9 +39,6 @@ export async function ready() {
       whisper: [game.userId],
     });
   }
-
-  // Create and render the dialog
-  createTokenRingDialog();
 
 }
 

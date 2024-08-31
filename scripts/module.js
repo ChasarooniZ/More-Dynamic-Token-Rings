@@ -2,6 +2,7 @@
 import { RINGS } from "./ringHelpers.js";
 import { AUTHORS } from "./authorList.js";
 import {
+  createTokenRingDialog,
   registerCustomRingSettings,
 } from "./custom-ring.js";
 import { initializeDynamicTokenRingConfig, ready, renderSettingsConfig } from "./hooks.js";
@@ -26,6 +27,9 @@ Hooks.once("init", async function () {
     tours: {
       starter: starterTour,
     },
+    custom: {
+      menu: createTokenRingDialog,
+    }
   };
   registerCustomRingSettings();
   registerSettings();
