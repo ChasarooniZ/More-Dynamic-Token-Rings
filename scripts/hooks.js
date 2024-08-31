@@ -30,7 +30,7 @@ export function renderSettingsConfig(_, html) {
   const moduleTab = html.find(`.tab[data-tab=${MODULE_ID}]`);
   const button = `
       <button type="button" class="SETT-button-settings" onclick="(async () => { 
-        game.SETT.api.custom.menu 
+        game.SETT.custom.menu 
       })()">Custom Ring Maker
       </button>`;
 
