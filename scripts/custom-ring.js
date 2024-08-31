@@ -53,23 +53,6 @@ export function registerCustomRingSettings() {
     type: new foundry.data.fields.ColorField(),
   });
   //Add custom ring button
-  Hooks.on("renderSettingsConfig", addCustomRingButton);
-}
-
-export function addCustomRingButton(_, html) {
-  const moduleTab = html.find(`.tab[data-tab=${MODULE_ID}]`);
-  const button = `
-      <button type="button" class="SETT-button-settings" onclick="(async () => { 
-        game.SETT.api.custom.menu 
-      })()">Custom Ring Maker
-      </button>`;
-
-  // Add import/export buttons before the 'share-flash' setting
-  moduleTab
-    .find(`[name="more-dynamic-token-rings.custom-ring.enabled"]`)
-    .closest(".form-group").before(`
-    <div class="SETT-button-container">${button}
-    </div>`);
 }
 
 export function createCustomRing() {
