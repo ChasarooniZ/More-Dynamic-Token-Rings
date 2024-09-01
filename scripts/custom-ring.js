@@ -99,7 +99,7 @@ export function getCustomRingData() {
 export function createTokenRingDialog() {
   const defaultSettings = {
     quality: 80,
-    thickness: game.settings.get(MODULE_ID, "custom-ring.thickness") || 0.1,
+    thickness: game.settings.get(MODULE_ID, "custom-ring.ring-thickness") || 0.1,
     innerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.start") || 0,
     outerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.end") || 1,
     ringColor: game.settings.get(MODULE_ID, "custom-ring.color-band.color") || "#ffffff"
