@@ -210,14 +210,16 @@ export async function createCustomTokenRingDialog() {
         const header = html.closest('.dialog').find('a.header-button.control.close');
         const kofiButton = $(
           `<a href="https://ko-fi.com/chasarooni" title="Support me on Ko-fi">
-             <i class="fas fa-coffee" data-tooltip="Donate to me to get rid of this!" style="--fa-animation-duration: 4s; --fa-fade-opacity: 0.7;"></i>
+             <i class="fas fa-coffee fa-fade" data-tooltip="Donate to me to get rid of this!"></i>
            </a>`
         ).css({
           'margin-left': 'auto',
           'margin-right': '10px',
           'font-size': '1.25em',
           'color': '#d9534f',
-          'text-decoration': 'none'
+          'text-decoration': 'none',
+          "--fa-animation-duration": "4s",
+          '--fa-fade-opacity': 0.7
         });
 
         header.before(kofiButton);
