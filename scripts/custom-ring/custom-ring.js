@@ -216,9 +216,9 @@ export async function createCustomTokenRingDialog() {
              <i class="fas fa-coffee fa-fade" data-tooltip="Donate to me to get rid of this!"></i>
            </a>`
         ).css({
-          'margin-left': 'auto',
-          'margin-right': '10px',
-          'font-size': '1.25em',
+          // 'margin-left': 'auto',
+          // 'margin-right': '10px',
+          'font-size': '1em',
           'color': '#d9534f',
           'text-decoration': 'none',
           "--fa-animation-duration": "4s",
