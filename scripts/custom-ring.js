@@ -97,39 +97,48 @@ export function getCustomRingData() {
 
 // Function to create the dialog box in Foundry VTT
 export function createTokenRingDialog() {
+  const defaultSettings = {
+    quality: game.settings.get(MODULE_ID, "ringQuality") || 80,
+    thickness: game.settings.get(MODULE_ID, "custom-ring.thickness") || 0.1,
+    innerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.start") || 0,
+    outerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.end") || 1,
+    ringColor: game.settings.get(MODULE_ID, "custom-ring.color-band.color") || "#ffffff"
+  };
+
   new Dialog({
     title: "Create Token Ring Sprite Sheet",
     content: `
-      <form>
-        <div class="form-group">
-          <label>Dynamic Token Ring Image (2048x2048):</label>
-          <input type="file" id="image1" accept="image/*">
-        </div>
-        <div class="form-group">
-          <label>Dynamic Token Ring Background Image (2048x2048):</label>
-          <input type="file" id="image2" accept="image/*">
-        </div>
-        <div class="form-group">
-          <label>Ring Quality (%):</label>
-          <input type="number" id="quality" value="80" min="1">
-        </div>
-        <div class="form-group">
-          <label>Thickness:</label>
-          <input type="number" id="thickness" value="10" min="1">
-        </div>
-        <div class="form-group">
-          <label>Inner Ring:</label>
-          <input type="number" id="innerRing" value="30" min="1">
-        </div>
-        <div class="form-group">
-          <label>Outer Ring:</label>
-          <input type="number" id="outerRing" value="50" min="1">
-        </div>
-        <div class="form-group">
-          <label>Color:</label>
-          <input type="color" id="ringColor" value="#ffffff">
-        </div>
-      </form>
+    <form>
+    <div class="form-group">
+      <label>Dynamic Token Ring Image (2048x2048):</label>
+      <input type="file" id="image1" accept="image/*">
+    </div>
+    <div class="form-group">
+      <label>Dynamic Token Ring Background Image (2048x2048):</label>
+      <input type="file" id="image2" accept="image/*">
+    </div>
+    <div class="form-group">
+      <label>Ring Quality (%):</label>
+      <input type="number" id="quality" value="80" min="1">
+    </div>
+    <div class="form-group">
+      <label>Thickness:</label>
+      <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
+    </div>
+    <div class="form-group">
+      <label>Inner Ring:</label>
+      <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
+    </div>
+    <div class="form-group">
+      <label>Outer Ring:</label>
+      <input type="number" id="outerRing" value="${defaultSettings.outerRing}" min="1">
+    </div>
+    <div class="form-group">
+      <label>Color:</label>
+      <input type="color" id="ringColor" value="${defaultSettings.ringColor}">
+      <input type="text" id="ringColorHex" value="${defaultSettings.ringColor}" size="7" style="margin-left: 5px;">
+    </div>
+  </form>
     `,
     buttons: {
       process: {
@@ -154,9 +163,10 @@ export function createTokenRingDialog() {
           if (image1.width !== 2048 || image1.height !== 2048 || image2.width !== 2048 || image2.height !== 2048) {
             ui.notifications.error("Both images must be 2048x2048.");
             return;
+          } else {
+            processAndSaveImages(image1, image2);
           }
-
-          processAndSaveImages(image1, image2, thickness, innerRing, outerRing, ringColor);
+          processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor)
         }
       },
       cancel: {
@@ -164,7 +174,15 @@ export function createTokenRingDialog() {
         label: "Cancel"
       }
     },
-    default: "process"
+    default: "process",
+    render: html => {
+      const colorInput = html.find("#ringColor");
+      const hexInput = html.find("#ringColorHex");
+
+      // Sync color picker and hex input
+      colorInput.on("input", () => hexInput.val(colorInput.val()));
+      hexInput.on("input", () => colorInput.val(hexInput.val()));
+    }
   }).render(true);
 }
 
@@ -184,7 +202,7 @@ function loadImage(file) {
 }
 
 // Function to process and save images
-async function processAndSaveImages(image1, image2, thickness, innerRing, outerRing, ringColor) {
+async function processAndSaveImages(image1, image2) {
   const collections = [];
 
   let images = [image2, image1];
@@ -201,9 +219,12 @@ async function processAndSaveImages(image1, image2, thickness, innerRing, outerR
   }
 
   await saveAsWebP(finalImage, 'custom_ring.webp');
-  await saveConfigJSON(thickness, innerRing, outerRing, ringColor);
 
   ui.notifications.info("Processing and export complete!");
+}
+
+async function processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor) {
+  await saveConfigJSON(thickness, innerRing, outerRing, ringColor);
 }
 
 // Function to append two images side by side
