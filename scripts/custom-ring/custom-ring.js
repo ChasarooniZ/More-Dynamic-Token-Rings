@@ -119,11 +119,11 @@ export async function createCustomTokenRingDialog() {
     content: `
     <form>
     <div class="form-group">
-      <label>Dynamic Token Ring Image (2048x2048):</label>
+      <label>Dynamic Token Ring:</label>
       <input type="file" id="image1" accept="image/*">
     </div>
     <div class="form-group">
-      <label>Dynamic Token Ring Background Image (2048x2048):</label>
+      <label>Dynamic BG:</label>
       <input type="file" id="image2" accept="image/*">
     </div>
     <div class="form-group">
@@ -136,11 +136,11 @@ export async function createCustomTokenRingDialog() {
     </div>
     <h3>Ring Coloration</h3>
     <div class="form-group">
-      <label>Inner Coloration %:</label>
+      <label>Inner %:</label>
       <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
     </div>
     <div class="form-group">
-      <label>Outer Ring:</label>
+      <label>Outer %:</label>
       <input type="number" id="outerRing" value="${defaultSettings.outerRing}" min="1">
     </div>
     <div class="form-group">
