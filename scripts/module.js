@@ -87,7 +87,7 @@ function getMap() {
   return ringActivationMap;
 }
 
-function showRingDialog() {
+async function showRingDialog() {
   const ringActivationMap = getMap();
   const old_rings = game.settings.get(MODULE_ID, "old-rings");
   const new_rings = RINGS.filter((ring) => !old_rings.includes(ring.id)).map(
