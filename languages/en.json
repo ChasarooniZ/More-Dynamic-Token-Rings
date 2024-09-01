@@ -33,6 +33,10 @@
             "name": "Color Band Color",
             "hint": "Enter Color Hex value that is the 'white' when the ring is recolored (IE if you do a blue color the blue will be recolored the most)"
           }
+        },
+        "kofi-code": {
+          "name": "Code from Kofi",
+          "hint": "If you donate any amount ever to my kofi you can remove the header icon and messages from the Custom Ring Maker"
         }
       }
     },

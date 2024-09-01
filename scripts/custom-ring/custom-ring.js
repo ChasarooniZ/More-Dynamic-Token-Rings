@@ -13,15 +13,6 @@ export function registerCustomRingSettings() {
     default: false,
     type: Boolean,
   });
-  game.settings.register(MODULE_ID, pre + "kofi-code", {
-    name: game.i18n.localize(path + "kofi-code" + ".name"),
-    hint: game.i18n.localize(path + "kofi-code" + ".hint"),
-    requiresReload: true,
-    scope: "world",
-    config: true,
-    default: "",
-    type: String,
-  });
   game.settings.register(MODULE_ID, pre + "ring-thickness", {
     name: game.i18n.localize(path + "ring-thickness" + ".name"),
     hint: game.i18n.localize(path + "ring-thickness" + ".hint"),
@@ -61,7 +52,15 @@ export function registerCustomRingSettings() {
     default: "#A51EE6",
     type: new foundry.data.fields.ColorField(),
   });
-  //Add custom ring button
+  game.settings.register(MODULE_ID, pre + "kofi-code", {
+    name: game.i18n.localize(path + "kofi-code" + ".name"),
+    hint: game.i18n.localize(path + "kofi-code" + ".hint"),
+    requiresReload: true,
+    scope: "world",
+    config: true,
+    default: "",
+    type: String,
+  });
 }
 
 export function createCustomRing() {
