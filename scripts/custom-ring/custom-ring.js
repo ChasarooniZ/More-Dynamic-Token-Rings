@@ -56,7 +56,7 @@ export function registerCustomRingSettings() {
   game.settings.register(MODULE_ID, pre + "kofi-code", {
     name: game.i18n.localize(path + "kofi-code" + ".name"),
     hint: game.i18n.localize(path + "kofi-code" + ".hint"),
-    requiresReload: true,
+    requiresReload: false,
     scope: "world",
     config: true,
     default: "",
