@@ -6,16 +6,7 @@ import {
   registerCustomRingSettings,
 } from "./custom-ring/custom-ring.js";
 import { initializeDynamicTokenRingConfig, ready, renderSettingsConfig } from "./hooks.js";
-
-export const MODULE_ID = "more-dynamic-token-rings";
-export const MODULE_BASE_PATH = `modules/${MODULE_ID}/`;
-export const effects = {
-  RING_PULSE: "TOKEN.RING.EFFECTS.RING_PULSE",
-  RING_GRADIENT: "TOKEN.RING.EFFECTS.RING_GRADIENT",
-  BKG_WAVE: "TOKEN.RING.EFFECTS.BKG_WAVE",
-  INVISIBILITY: "TOKEN.RING.EFFECTS.INVISIBILITY",
-};
-
+import { MODULE_ID } from "./const.js";
 Hooks.once("init", async function () {
   // Create a hook to add a custom token ring configuration. This ring configuration will appear in the settings.
   game.SETT = {
@@ -50,6 +41,17 @@ function registerSettings() {
     default: [],
     type: Array,
   });
+
+  game.settings.register(MODULE_ID, "set-ring-to", {
+    name: "set-ring-to",
+    hint: "",
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: "",
+    type: String,
+  });
+
 
   game.settings.register(MODULE_ID, "first-time-user", {
     name: "first-time-user",

@@ -1,5 +1,5 @@
 import { RINGS } from "./ringHelpers.js";
-import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module.js";
+import { MODULE_BASE_PATH, MODULE_ID,effects } from "./const.js";
 import {
   getCustomRingData, validateAddCustomRing
 } from "./custom-ring/custom-ring.js";
