@@ -98,7 +98,7 @@ export function getCustomRingData() {
 // Function to create the dialog box in Foundry VTT
 export function createTokenRingDialog() {
   const defaultSettings = {
-    quality: game.settings.get(MODULE_ID, "ringQuality") || 80,
+    quality: 80,
     thickness: game.settings.get(MODULE_ID, "custom-ring.thickness") || 0.1,
     innerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.start") || 0,
     outerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.end") || 1,
