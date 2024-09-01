@@ -160,19 +160,22 @@ export async function createCustomTokenRingDialog() {
           const outerRing = parseInt(html.find("#outerRing").val());
           const ringColor = html.find("#ringColor").val();
 
-          if (!image1File || !image2File) {
-            ui.notifications.error("Please upload both images.");
+          if ((image1File && !image2File) || (image2File && !image1File)) {
+            ui.notifications.error("Please upload both images to create a ring");
             return;
           }
 
-          const image1 = await loadImage(image1File);
-          const image2 = await loadImage(image2File);
+          //Only do image processing if they actually added an image
+          if (image1File || image2File) {
+            const image1 = await loadImage(image1File);
+            const image2 = await loadImage(image2File);
 
-          if (image1.width !== 2048 || image1.height !== 2048 || image2.width !== 2048 || image2.height !== 2048) {
-            ui.notifications.error("Both images must be 2048x2048.");
-            return;
-          } else {
-            await processAndSaveImages(image1, image2);
+            if (image1.width !== 2048 || image1.height !== 2048 || image2.width !== 2048 || image2.height !== 2048) {
+              ui.notifications.error("Both images must be 2048x2048.");
+              return;
+            } else {
+              await processAndSaveImages(image1, image2);
+            }
           }
           await processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor)
           if (!checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))) {
@@ -188,6 +191,7 @@ export async function createCustomTokenRingDialog() {
             ];
             ui.notifications.info(tsundereKoFiLines[Math.floor(Math.random() * tsundereKoFiLines.length)]);
           }
+          await askToReload();
         }
       },
       cancel: {
