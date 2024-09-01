@@ -4,7 +4,7 @@ import { AUTHORS } from "./authorList.js";
 import {
   createTokenRingDialog,
   registerCustomRingSettings,
-} from "./custom-ring.js";
+} from "./custom-ring/custom-ring.js";
 import { initializeDynamicTokenRingConfig, ready, renderSettingsConfig } from "./hooks.js";
 
 export const MODULE_ID = "more-dynamic-token-rings";
