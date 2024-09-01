@@ -182,6 +182,22 @@ export function createTokenRingDialog() {
       // Sync color picker and hex input
       colorInput.on("input", () => hexInput.val(colorInput.val()));
       hexInput.on("input", () => colorInput.val(hexInput.val()));
+
+         // Add Ko-fi button to the dialog header
+         const header = html.closest('.dialog').find('.window-title');
+         const kofiButton = $(
+           `<a href="https://ko-fi.com/chasarooni" title="Support me on Ko-fi">
+             <i class="fas fa-coffee"></i>
+           </a>`
+         ).css({
+           'margin-left': 'auto',
+           'margin-right': '10px',
+           'font-size': '1.25em',
+           'color': '#d9534f',
+           'text-decoration': 'none'
+         });
+   
+         header.append(kofiButton);
     }
   }).render(true);
 }
