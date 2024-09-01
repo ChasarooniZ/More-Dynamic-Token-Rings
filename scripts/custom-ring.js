@@ -83,7 +83,7 @@ export async function validateAddCustomRing() {
 
 export function getCustomRingData() {
   const usName = "Custom SETT Ring";
-  const jsonName = "custom_ring.json"
+  const jsonName = "custom-ring.json"
   let label = `_${usName}`;
   return [
     label,
@@ -234,7 +234,7 @@ async function processAndSaveImages(image1, image2) {
     finalImage = appendImages(finalImage, collections[i]);
   }
 
-  await saveAsWebP(finalImage, 'custom_ring.webp');
+  await saveAsWebP(finalImage, 'custom-ring.webp');
 
   ui.notifications.info("Processing and export complete!");
 }
@@ -282,7 +282,7 @@ async function saveConfigJSON(thickness, innerRing, outerRing, ringColor) {
 
   const jsonString = JSON.stringify(config, null, 2);
   const blob = new Blob([jsonString], { type: 'application/json' });
-  const file = new File([blob], 'custom_ring.json', { type: 'application/json' });
+  const file = new File([blob], 'custom-ring.json', { type: 'application/json' });
 
   await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, { notify: true });
 }

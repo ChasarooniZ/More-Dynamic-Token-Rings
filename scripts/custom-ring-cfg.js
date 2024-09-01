@@ -91,7 +91,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
         },
         "meta": {
             "version": "1.1",
-            "image": "custom_ring.webp",
+            "image": "custom-ring.webp",
             "format": "RGBA8888",
             "size": { "w": 7680, "h": 2048 },
             "scale": "1"
