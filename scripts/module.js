@@ -204,7 +204,7 @@ async function showRingDialog() {
         });
       });
 
-      html.find('button[name="submit"]').click(() => {
+      html.find('button[name="submit"]').click(async () => {
         const updatedMap = {};
 
         html.find('input[type="checkbox"]').each((_index, element) => {
@@ -228,7 +228,7 @@ async function showRingDialog() {
   );
 }
 
-export async function askToReload(){
+export async function askToReload() {
   return new Dialog({
     title: game.i18n.localize(MODULE_ID + ".dialog.reload.title"),
     content: `<p>${game.i18n.localize(
