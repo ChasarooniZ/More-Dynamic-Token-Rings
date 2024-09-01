@@ -187,7 +187,7 @@ export function createCustomTokenRingDialog() {
       const header = html.closest('.dialog').find('.window-header');
       const kofiButton = $(
         `<a href="https://ko-fi.com/chasarooni" title="Support me on Ko-fi">
-             <i class="fas fa-coffee"></i>
+             <i class="fas fa-coffee" data-tooltip="Donate to me :)" style="--fa-animation-duration: 4s; --fa-fade-opacity: 0.7;"></i>
            </a>`
       ).css({
         'margin-left': 'auto',
