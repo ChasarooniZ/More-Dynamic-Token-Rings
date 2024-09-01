@@ -1,5 +1,6 @@
 import { getBaseJSON } from "./custom-ring-json-cfg.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "../const.js";
+import { askToReload } from "../module.js";
 
 export function registerCustomRingSettings() {
   const path = MODULE_ID + ".module-settings.custom-ring.";
