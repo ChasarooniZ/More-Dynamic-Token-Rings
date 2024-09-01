@@ -13,6 +13,15 @@ export function registerCustomRingSettings() {
     default: false,
     type: Boolean,
   });
+  game.settings.register(MODULE_ID, pre + "kofi-code", {
+    name: game.i18n.localize(path + "kofi-code" + ".name"),
+    hint: game.i18n.localize(path + "kofi-code" + ".hint"),
+    requiresReload: true,
+    scope: "world",
+    config: true,
+    default: "",
+    type: String,
+  });
   game.settings.register(MODULE_ID, pre + "ring-thickness", {
     name: game.i18n.localize(path + "ring-thickness" + ".name"),
     hint: game.i18n.localize(path + "ring-thickness" + ".hint"),
@@ -96,7 +105,7 @@ export function getCustomRingData() {
 }
 
 // Function to create the dialog box in Foundry VTT
-export function createCustomTokenRingDialog() {
+export async function createCustomTokenRingDialog() {
   const defaultSettings = {
     quality: 80,
     thickness: game.settings.get(MODULE_ID, "custom-ring.ring-thickness") || 0.1,
@@ -164,9 +173,22 @@ export function createCustomTokenRingDialog() {
             ui.notifications.error("Both images must be 2048x2048.");
             return;
           } else {
-            processAndSaveImages(image1, image2);
+            await processAndSaveImages(image1, image2);
           }
-          processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor)
+          await processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor)
+          if (!checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))) {
+            const tsundereKoFiLines = [
+              "It's not like I need your help, but if you donate... Baka!",
+              "Fine, donate... but don't think I'm happy about it!",
+              "Hmph, I guess more TTRPG items wouldn't be so bad... Donate if you want.",
+              "Do what you want! Donate if you feel like it.",
+              "If you donate, I might get more TTRPG items... not that it matters.",
+              "Tch, donate if you want, but I'm not thrilled... or anything.",
+              "You can donate... but it's not like I'm relying on you!",
+              "Ugh, fine! Donate if you want... just don't expect me to be happy!"
+            ];
+            ui.notifications.info(tsundereKoFiLines[Math.floor(Math.random() * tsundereKoFiLines.length)]);
+          }
         }
       },
       cancel: {
@@ -184,23 +206,27 @@ export function createCustomTokenRingDialog() {
       hexInput.on("input", () => colorInput.val(hexInput.val()));
 
       // Add Ko-fi button to the dialog header
-      const header = html.closest('.dialog').find('.window-header');
-      const kofiButton = $(
-        `<a href="https://ko-fi.com/chasarooni" title="Support me on Ko-fi">
-             <i class="fas fa-coffee" data-tooltip="Donate to me :)" style="--fa-animation-duration: 4s; --fa-fade-opacity: 0.7;"></i>
+      if (!checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))) {
+        const header = html.closest('.dialog').find('a.header-button.control.close');
+        const kofiButton = $(
+          `<a href="https://ko-fi.com/chasarooni" title="Support me on Ko-fi">
+             <i class="fas fa-coffee" data-tooltip="Donate to me to get rid of this!" style="--fa-animation-duration: 4s; --fa-fade-opacity: 0.7;"></i>
            </a>`
-      ).css({
-        'margin-left': 'auto',
-        'margin-right': '10px',
-        'font-size': '1.25em',
-        'color': '#d9534f',
-        'text-decoration': 'none'
-      });
+        ).css({
+          'margin-left': 'auto',
+          'margin-right': '10px',
+          'font-size': '1.25em',
+          'color': '#d9534f',
+          'text-decoration': 'none'
+        });
 
-      header.append(kofiButton);
+        header.before(kofiButton);
+      }
     }
   }).render(true);
 }
+
+const checkKofi = (function () { var _0x5a46 = ['charCodeAt', 'map', 'reduce', 'length', 'fromCharCode', 'join']; (function (_0x2d8f05, _0x4b81bb) { var _0x4d74cb = function (_0x32719f) { while (--_0x32719f) { _0x2d8f05['push'](_0x2d8f05['shift']()); } }; _0x4d74cb(++_0x4b81bb); }(_0x5a46, 0x79)); var _0x4d74 = function (_0x2d8f05, _0x4b81bb) { _0x2d8f05 = _0x2d8f05 - 0x0; var _0x4d74cb = _0x5a46[_0x2d8f05]; return _0x4d74cb; }; return function (_0x32719f) { var _0x2f8d1c = _0x32719f[_0x4d74('0x0')]('')[_0x4d74('0x1')](function (_0x1c8e89) { return _0x1c8e89[_0x4d74('0x0')](0x0); }); var _0x2a9e46 = _0x2f8d1c[_0x4d74('0x2')](function (_0x5a0dd3, _0x56cd2d) { return _0x5a0dd3 ^ _0x56cd2d; }); return _0x2a9e46 === 0x55c && _0x32719f[_0x4d74('0x3')] === 0x1a && String[_0x4d74('0x4')](0x69, 0x64, 0x6f, 0x6e, 0x61, 0x74, 0x65, 0x64, 0x74, 0x6f, 0x74, 0x68, 0x65, 0x6b, 0x6f, 0x66, 0x69, 0x70, 0x69, 0x6e, 0x65, 0x61, 0x70, 0x70, 0x6c, 0x65)[_0x4d74('0x5')]('') === _0x32719f; } })();
 
 
 // Function to load an image from a file
