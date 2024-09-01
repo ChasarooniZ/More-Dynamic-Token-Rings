@@ -134,8 +134,9 @@ export async function createCustomTokenRingDialog() {
       <label>Thickness:</label>
       <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
     </div>
+    <h3>Ring Coloration</h3>
     <div class="form-group">
-      <label>Inner Ring:</label>
+      <label>Inner Coloration %:</label>
       <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
     </div>
     <div class="form-group">
@@ -156,6 +157,7 @@ export async function createCustomTokenRingDialog() {
         callback: async (html) => {
           const image1File = html.find("#image1")[0].files[0];
           const image2File = html.find("#image2")[0].files[0];
+          const quality = parseInt(html.find("#quality").val())/100;
           const thickness = parseInt(html.find("#thickness").val());
           const innerRing = parseInt(html.find("#innerRing").val());
           const outerRing = parseInt(html.find("#outerRing").val());
@@ -175,7 +177,7 @@ export async function createCustomTokenRingDialog() {
               ui.notifications.error("Both images must be 2048x2048.");
               return;
             } else {
-              await processAndSaveImages(image1, image2);
+              await processAndSaveImages(image1, image2, quality);
             }
           }
           await processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor)
@@ -250,7 +252,7 @@ function loadImage(file) {
 }
 
 // Function to process and save images
-async function processAndSaveImages(image1, image2) {
+async function processAndSaveImages(image1, image2, quality) {
   const collections = [];
 
   let images = [image2, image1];
@@ -266,7 +268,7 @@ async function processAndSaveImages(image1, image2) {
     finalImage = appendImages(finalImage, collections[i]);
   }
 
-  await saveAsWebP(finalImage, 'custom-ring.webp');
+  await saveAsWebP(finalImage, 'custom-ring.webp', quality);
 
   ui.notifications.info("Processing and export complete!");
 }
@@ -297,13 +299,13 @@ function shrinkImage(image) {
 }
 
 // Function to save a canvas as a WebP file in Foundry
-async function saveAsWebP(canvas, filename) {
+async function saveAsWebP(canvas, filename, quality) {
   return new Promise((resolve) => {
     canvas.toBlob(async (blob) => {
       const file = new File([blob], filename, { type: 'image/webp' });
       const result = await FilePicker.uploadPersistent(MODULE_ID, 'custom-ring', file, {}, { notify: true });
       resolve(result);
-    }, 'image/webp', 0.8); //Quality is 80% by default
+    }, 'image/webp', quality ?? 0.8); //Quality is 80% by default
   });
 }
 
