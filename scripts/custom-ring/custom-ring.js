@@ -123,7 +123,7 @@ export async function createCustomTokenRingDialog() {
       <input type="file" id="image1" accept="image/*">
     </div>
     <div class="form-group">
-      <label>Dynamic BG:</label>
+      <label>Dynamic Token BG:</label>
       <input type="file" id="image2" accept="image/*">
     </div>
     <div class="form-group">
