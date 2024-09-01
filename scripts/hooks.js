@@ -2,7 +2,7 @@ import { RINGS } from "./ringHelpers.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "./module.js";
 import {
   getCustomRingData, validateAddCustomRing
-} from "./custom-ring.js";
+} from "./custom-ring/custom-ring.js";
 
 export function renderSettingsConfig(_, html) {
   if (!game.user.isGM)
