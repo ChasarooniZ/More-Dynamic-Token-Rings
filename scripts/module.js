@@ -94,7 +94,7 @@ function showRingDialog() {
     (ring) => ring.id
   );
 
-  function generateDialogContent(rings, authors, ringActivationMap, new_rings) {
+  async function generateDialogContent(rings, authors, ringActivationMap, new_rings) {
     let con = `
     <style>
       .ring-grid {
