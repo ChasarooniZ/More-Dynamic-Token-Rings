@@ -31,7 +31,7 @@ export function renderSettingsConfig(_, html) {
   const button = `
       <button type="button" class="SETT-button-settings" onclick="(async () => { 
         game.SETT.custom.menu() 
-      })()"> ${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.settings-button")}
+      })()"> ${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.menu.settings-button")}
       </button>`;
 
   // Add import/export buttons before the 'share-flash' setting
