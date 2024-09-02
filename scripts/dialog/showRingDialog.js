@@ -12,7 +12,7 @@ export async function showRingDialog() {
     (ring) => ring.id
   );
 
-  async function generateDialogContent(rings, authors, ringActivationMap, new_rings) {
+  function generateDialogContent(rings, authors, ringActivationMap, new_rings) {
     let con = `
     <style>
       .ring-grid {
