@@ -13,7 +13,46 @@ export function registerCustomRingSettings() {
     config: true,
     default: false,
     type: Boolean,
+  });  game.settings.register(MODULE_ID, pre + "ring-thickness", {
+    name: game.i18n.localize(path + "ring-thickness" + ".name"),
+    hint: game.i18n.localize(path + "ring-thickness" + ".hint"),
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: 0.11,
+    type: Number,
   });
+
+  game.settings.register(MODULE_ID, pre + "color-band.start", {
+    name: game.i18n.localize(path + "color-band.start" + ".name"),
+    hint: game.i18n.localize(path + "color-band.start" + ".hint"),
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: 0,
+    type: Number,
+  });
+
+  game.settings.register(MODULE_ID, pre + "color-band.end", {
+    name: game.i18n.localize(path + "color-band.end" + ".name"),
+    hint: game.i18n.localize(path + "color-band.end" + ".hint"),
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: 1,
+    type: Number,
+  });
+
+  game.settings.register(MODULE_ID, pre + "color-band.color", {
+    name: game.i18n.localize(path + "color-band.color" + ".name"),
+    hint: game.i18n.localize(path + "color-band.color" + ".hint"),
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: "#A51EE6",
+    type: new foundry.data.fields.ColorField(),
+  });
+
   game.settings.register(MODULE_ID, pre + "kofi-code", {
     name: game.i18n.localize(path + "kofi-code" + ".name"),
     hint: game.i18n.localize(path + "kofi-code" + ".hint"),
