@@ -72,6 +72,13 @@ export function initializeDynamicTokenRingConfig(ringConfig) {
     if (game.settings.get(MODULE_ID, id))
       ringConfig.addConfig(...getRingDataRing(label, jsonPath));
   });
+
+  //Sets the ring after token Ring Config setup
+  const setRingTo = game.settings.get(MODULE_ID, "set-ring-to")
+  if (setRingTo) {
+    game.settings.set("core", "dynamicTokenRing", setRingTo)
+    game.settings.unset(MODULE_ID, "set-ring-to")
+  }
 }
 
 
@@ -86,7 +93,7 @@ function getRingDataRing(label, jsonName) {
   ];
 }
 
-function convertText(input) {
+export function convertText(input) {
   // Split the input string by spaces
   let words = input.toLowerCase().split(" ");
   //Remove all non alphanumeric characters

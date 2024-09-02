@@ -6,7 +6,7 @@ import { MODULE_ID } from "../const.js";
  * @returns
  */
 
-export async function askToReload(ringID) {
+export async function askToReload(ringID = null) {
   return new Dialog({
     title: game.i18n.localize(MODULE_ID + ".dialog.reload.title"),
     content: `<p>${game.i18n.localize(
@@ -18,6 +18,9 @@ export async function askToReload(ringID) {
           MODULE_ID + ".dialog.reload.buttons.yes"
         ),
         callback: () => {
+          if (ringID !== null) {
+            game.settings.set(MODULE_ID, "set-ring-to", ringID);
+          }
           foundry.utils.debouncedReload();
         }
       },

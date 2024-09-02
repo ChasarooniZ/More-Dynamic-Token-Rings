@@ -2,6 +2,7 @@ import { getBaseJSON } from "./customRingJsonCfg.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "../const.js";
 import { askToReload } from "../dialog/askToReloadDialog";
 import { downloadCustomRing } from "./export.js";
+import { convertText } from "../hooks.js";
 
 export function registerCustomRingSettings() {
   const path = MODULE_ID + ".module-settings.custom-ring.";
@@ -96,7 +97,7 @@ export function getCustomRingData() {
   const jsonName = "custom-ring.json"
   let label = `_${usName}`;
   return [
-    label,
+    convertText(usName),
     new foundry.canvas.tokens.DynamicRingData({
       label,
       effects,
