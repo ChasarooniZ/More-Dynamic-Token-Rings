@@ -143,7 +143,7 @@ export async function createCustomTokenRingDialog() {
       <label>${game.i18n.localize(prefix + "token-img.quality.label")} (%):</label>
       <input type="number" id="quality" value="80" min="1">
     </div>
-    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.thickness.tooltip"
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "thickness.tooltip"
     )}<img src='${IMGS.thickness}'>">
       <label>${game.i18n.localize(prefix + "thickness.label")}:</label>
       <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
