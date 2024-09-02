@@ -74,6 +74,14 @@ export async function createCustomTokenRingDialog() {
     outerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.end") || 1,
     ringColor: game.settings.get(MODULE_ID, "custom-ring.color-band.color") || "#ffffff"
   };
+  const IMGS = {
+    ring: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-ring.gif',
+    bg: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-bg.gif',
+    thickness: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-thickness.webp',
+    inner: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-inner.webp',
+    outer: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-outer.webp',
+    color: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-color.webp',
+  }
 
   const prefix = MODULE_ID + '.module-settings.custom-ring.menu.fields.';
 
@@ -81,38 +89,46 @@ export async function createCustomTokenRingDialog() {
     title: "Create Token Ring Sprite Sheet",
     content: `
     <form>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.ring.tooltip"
+    )}<img src='${IMGS.ring}'>">>
       <label>${game.i18n.localize(prefix + "token-img.ring.label")}:</label>
       <input type="file" id="image1" accept="image/*">
     </div>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.background.tooltip"
+    )}<img src='${IMGS.bg}'>">>
       <label>${game.i18n.localize(prefix + "token-img.background.label")}:</label>
       <input type="file" id="image2" accept="image/*">
     </div>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.quality.tooltip"
+    )}">>
       <label>${game.i18n.localize(prefix + "token-img.quality.label")} (%):</label>
       <input type="number" id="quality" value="80" min="1">
     </div>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.thickness.tooltip"
+    )}<img src='${IMGS.thickness}'>">>
       <label>${game.i18n.localize(prefix + "thickness.label")}:</label>
       <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
     </div>
     <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.coloration.inner.tooltip"
+    )}<img src='${IMGS.inner}'>">>
       <label>${game.i18n.localize(prefix + "coloration.inner.label")}:</label>
       <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
     </div>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.coloration.outer.tooltip"
+    )}<img src='${IMGS.outer}'>">>
       <label>${game.i18n.localize(prefix + "coloration.outer.label")}:</label>
       <input type="number" id="outerRing" value="${defaultSettings.outerRing}" min="1">
     </div>
-    <div class="form-group">
+    <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.coloration.color.tooltip"
+    )}<img src='${IMGS.color}'>">>
       <label>${game.i18n.localize(prefix + "coloration.color.label")}:</label>
       <input type="color" id="ringColor" value="${defaultSettings.ringColor}">
       <input type="text" id="ringColorHex" value="${defaultSettings.ringColor}" size="7" style="margin-left: 5px;">
     </div>
   </form>
     `,
+
     buttons: {
       process: {
         icon: "<i class='fas fa-check'></i>",
