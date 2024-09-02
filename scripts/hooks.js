@@ -61,7 +61,12 @@ export async function ready() {
       whisper: [game.userId],
     });
   }
-
+  //Sets the ring after token Ring Config setup
+  const setRingTo = game.settings.get(MODULE_ID, "set-ring-to")
+  if (setRingTo) {
+    game.settings.set("core", "dynamicTokenRing", setRingTo)
+    game.settings.set(MODULE_ID, "set-ring-to", "")
+  }
 }
 
 export function initializeDynamicTokenRingConfig(ringConfig) {
@@ -72,13 +77,6 @@ export function initializeDynamicTokenRingConfig(ringConfig) {
     if (game.settings.get(MODULE_ID, id))
       ringConfig.addConfig(...getRingDataRing(label, jsonPath));
   });
-
-  //Sets the ring after token Ring Config setup
-  const setRingTo = game.settings.get(MODULE_ID, "set-ring-to")
-  if (setRingTo) {
-    game.settings.set("core", "dynamicTokenRing", setRingTo)
-    game.settings.set(MODULE_ID, "set-ring-to", "")
-  }
 }
 
 
