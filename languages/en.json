@@ -6,6 +6,12 @@
       "custom-ring": {
         "menu": {
           "header": "Create Token Ring Sprite Sheet & JSON",
+          "icons": {
+            "kofi": {
+              "title": "Support me on Ko-fi",
+              "tooltip": "Donate to me to get rid of this!"
+            }
+          },
           "fields": {
             "token-img": {
               "ring": {
@@ -43,8 +49,24 @@
           },
           "error": {
             "upload-both": "Please upload both images to create a ring",
-            "2048-min": "Both images must be 2048px x 2048px."
-          } 
+            "2048-min": "Both images must be 2048px x 2048px.",
+            "failed-to-download": {
+              "json": "Failed to download JSON:",
+              "image": "Failed to download or convert image:"
+            },
+            "does-not-exist": "SETT: Custom Ring doesn't exist, please actually create one"
+          },
+          "buttons": {
+            "create": {
+              "label": "Create"
+            },
+            "export": {
+              "label": "Export"
+            },
+            "cancel": {
+              "label": "Cancel"
+            }
+          }
         },
         "enabled": {
           "name": "Custom Ring Enabled",

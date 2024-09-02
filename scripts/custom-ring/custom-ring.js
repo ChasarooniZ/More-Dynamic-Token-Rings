@@ -1,6 +1,7 @@
 import { getBaseJSON } from "./custom-ring-json-cfg.js";
 import { MODULE_BASE_PATH, MODULE_ID, effects } from "../const.js";
 import { askToReload } from "../module.js";
+import { downloadCustomRing } from "./export.js";
 
 export function registerCustomRingSettings() {
   const path = MODULE_ID + ".module-settings.custom-ring.";
@@ -82,7 +83,7 @@ export async function validateAddCustomRing() {
   if (result.files.includes("custom-ring.json") && result.files.includes("custom-ring.webp")) {
     return true;
   } else {
-    console.error("SETT: Custom Ring doesn't exist, please actually upload it")
+    console.error(game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.error.does-not-exist'))
     return false;
   }
 
@@ -169,9 +170,9 @@ export async function createCustomTokenRingDialog() {
     `,
 
     buttons: {
-      process: {
+      create: {
         icon: "<i class='fas fa-check'></i>",
-        label: "Create",
+        label: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.buttons.create.label'),
         callback: async (html) => {
           const image1File = html.find("#image1")[0].files[0];
           const image2File = html.find("#image2")[0].files[0];
@@ -215,12 +216,19 @@ export async function createCustomTokenRingDialog() {
           await askToReload();
         }
       },
+      export: {
+        icon: "<i class='fas fa-file-export'></i>",
+        label: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.buttons.export.label'),
+        callback: async () => {
+          await downloadCustomRing();
+        }
+      },
       cancel: {
         icon: "<i class='fas fa-times'></i>",
-        label: "Cancel"
+        label: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.buttons.cancel.label')
       }
     },
-    default: "process",
+    default: "create",
     render: html => {
       const colorInput = html.find("#ringColor");
       const hexInput = html.find("#ringColorHex");
@@ -232,9 +240,10 @@ export async function createCustomTokenRingDialog() {
       // Add Ko-fi button to the dialog header
       if (!checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))) {
         const header = html.closest('.dialog').find('a.header-button.control.close');
+        
         const kofiButton = $(
-          `<a href="https://ko-fi.com/chasarooni" title="Support me on Ko-fi">
-             <i class="fas fa-coffee fa-fade" data-tooltip="Donate to me to get rid of this!"></i>
+          `<a href="https://ko-fi.com/chasarooni" title="${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.icons.kofi.title')}">
+             <i class="fas fa-coffee fa-fade" data-tooltip="${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.icons.kofi.tooltip')}"></i>
            </a>`
         ).css({
           // 'margin-left': 'auto',
@@ -287,8 +296,6 @@ async function processAndSaveImages(image1, image2, quality) {
   }
 
   await saveAsWebP(finalImage, 'custom-ring.webp', quality);
-
-  ui.notifications.info("Processing and export complete!");
 }
 
 async function processAndSaveConfigJSON(thickness, innerRing, outerRing, ringColor) {
