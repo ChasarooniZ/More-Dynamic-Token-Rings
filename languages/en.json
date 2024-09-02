@@ -4,35 +4,46 @@
     "module-settings": {
       "button": "Configure Rings with SETT",
       "custom-ring": {
+        "menu": {
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Dynamic Token Ring",
+                "tooltip": "Must be 2048px x 2048px"
+              },
+              "background": {
+                "label": "Dynamic Token BG",
+                "tooltip": "Must be 2048px x 2048px"
+              },
+              "quality": {
+                "label": "Ring Quality",
+                "tooltip": "Quality of the generated Webp, recommend 80%"
+              }
+            },
+            "thickness": {
+              "label": "Ring Thickness",
+              "tooltip": "How thick is the ring from the interior to the outside of the ring as a value from 0 to 1, 1 being 100%"
+            },
+            "coloration": {
+              "label": "Ring Coloration",
+              "inner": {
+                "label": "Inner Edge",
+                "tooltip": "Where on the ring should the coloration start as a value from 0 to 1, 1 being 100% distance from the center"
+              },
+              "outer": {
+                "label": "Outer Edge",
+                "tooltip": "Where on the ring should the coloration end as a value from 0 to 1.5, 1 being 100% distance from the center"
+              },
+              "color": {
+                "label": "Color",
+                "tooltip": "Enter Color Hex value that is the 'white' when the ring is recolored (IE if you do a blue color the blue will be recolored the most)"
+              }
+            }
+          }
+        },
         "enabled": {
           "name": "Custom Ring Enabled",
           "hint": "Enables custom ring to the Dynamic Ring Picker, note you must reload every time you change a property in order for it to update"
-        },
-        "token-ring": {
-          "name": "Token Ring Image",
-          "hint": "Must be 2048 x 2048 or Issues will arise"
-        },
-        "token-bg": {
-          "name": "Token BG Image",
-          "hint": "Must be 2048 x 2048 or Issues will arise"
-        },
-        "ring-thickness": {
-          "name": "Ring Thickness",
-          "hint": "How thick is the ring from the interior to the outside of the ring as a value from 0 to 1, 1 being 100%"
-        },
-        "color-band": {
-          "start": {
-            "name": "Color Band Start",
-            "hint": "Where on the ring should the coloration start as a value from 0 to 1, 1 being 100%"
-          },
-          "end": {
-            "name": "Color Band End",
-            "hint": "Where on the ring should the coloration end as a value from 0 to 1, 1 being 100%"
-          },
-          "color": {
-            "name": "Color Band Color",
-            "hint": "Enter Color Hex value that is the 'white' when the ring is recolored (IE if you do a blue color the blue will be recolored the most)"
-          }
         },
         "kofi-code": {
           "name": "Code from Kofi",

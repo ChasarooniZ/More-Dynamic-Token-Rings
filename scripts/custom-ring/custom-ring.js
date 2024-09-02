@@ -114,37 +114,39 @@ export async function createCustomTokenRingDialog() {
     ringColor: game.settings.get(MODULE_ID, "custom-ring.color-band.color") || "#ffffff"
   };
 
+  const prefix = MODULE_ID + '.module-settings.custom-ring.menu.fields.';
+
   new Dialog({
     title: "Create Token Ring Sprite Sheet",
     content: `
     <form>
     <div class="form-group">
-      <label>Dynamic Token Ring:</label>
+      <label>${game.i18n.localize(prefix + "token-img.ring.label")}:</label>
       <input type="file" id="image1" accept="image/*">
     </div>
     <div class="form-group">
-      <label>Dynamic Token BG:</label>
+      <label>${game.i18n.localize(prefix + "token-img.background.label")}:</label>
       <input type="file" id="image2" accept="image/*">
     </div>
     <div class="form-group">
-      <label>Ring Quality (%):</label>
+      <label>${game.i18n.localize(prefix + "token-img.quality.label")} (%):</label>
       <input type="number" id="quality" value="80" min="1">
     </div>
     <div class="form-group">
-      <label>Thickness:</label>
+      <label>${game.i18n.localize(prefix + "thickness.label")}:</label>
       <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
     </div>
-    <h3>Ring Coloration</h3>
+    <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
     <div class="form-group">
-      <label>Inner %:</label>
+      <label>${game.i18n.localize(prefix + "coloration.inner.label")}:</label>
       <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
     </div>
     <div class="form-group">
-      <label>Outer %:</label>
+      <label>${game.i18n.localize(prefix + "coloration.outer.label")}:</label>
       <input type="number" id="outerRing" value="${defaultSettings.outerRing}" min="1">
     </div>
     <div class="form-group">
-      <label>Color:</label>
+      <label>${game.i18n.localize(prefix + "coloration.color.label")}:</label>
       <input type="color" id="ringColor" value="${defaultSettings.ringColor}">
       <input type="text" id="ringColorHex" value="${defaultSettings.ringColor}" size="7" style="margin-left: 5px;">
     </div>
@@ -157,7 +159,7 @@ export async function createCustomTokenRingDialog() {
         callback: async (html) => {
           const image1File = html.find("#image1")[0].files[0];
           const image2File = html.find("#image2")[0].files[0];
-          const quality = parseInt(html.find("#quality").val())/100;
+          const quality = parseInt(html.find("#quality").val()) / 100;
           const thickness = parseInt(html.find("#thickness").val());
           const innerRing = parseInt(html.find("#innerRing").val());
           const outerRing = parseInt(html.find("#outerRing").val());
