@@ -121,7 +121,7 @@ export async function showRingDialog() {
       html.find('.ring-item img').on('click', function() {
         const ringId = $(this).data('ring-id');
         console.log('Clicked ring ID:', ringId);
-        await askToReload(ringId);
+        askToReload(ringId);
       });
 
       html.find('button[name="submit"]').click(async () => {
