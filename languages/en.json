@@ -5,6 +5,7 @@
       "button": "Configure Rings with SETT",
       "custom-ring": {
         "menu": {
+          "settings-button": "Custom Ring Maker",
           "header": "Create Token Ring Sprite Sheet & JSON",
           "icons": {
             "kofi": {
