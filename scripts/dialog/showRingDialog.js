@@ -75,7 +75,7 @@ export async function showRingDialog() {
         <label>
           <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${ring.id}" ${isActive ? "checked" : ""}>
         </label>
-        <img src="${ring.preview}" alt="${ring.label}" data-ring-id="${ring.id}">
+        <img src="${ring.preview}" alt="${ring.label}" data-ring-id="${convertText(ring.label)}">
       </div>`;
     });
 
@@ -121,6 +121,7 @@ export async function showRingDialog() {
       html.find('.ring-item img').on('click', function() {
         const ringId = $(this).data('ring-id');
         console.log('Clicked ring ID:', ringId);
+        await askToReload(ringId);
       });
 
       html.find('button[name="submit"]').click(async () => {
