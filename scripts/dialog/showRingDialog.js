@@ -3,6 +3,7 @@ import { AUTHORS } from "../authorList.js";
 import { MODULE_ID } from "../const.js";
 import { getMap } from "../module.js";
 import { askToReload } from "./askToReloadDialog.js";
+import { convertText } from "../hooks.js";
 
 
 export async function showRingDialog() {
