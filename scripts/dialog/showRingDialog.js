@@ -1,8 +1,8 @@
 import { RINGS } from "../ringHelpers.js";
 import { AUTHORS } from "../authorList.js";
 import { MODULE_ID } from "../const.js";
-import { getMap } from "../module";
-import { askToReload } from "./askToReloadDialog";
+import { getMap } from "../module.js";
+import { askToReload } from "./askToReloadDialog.js";
 
 
 export async function showRingDialog() {
