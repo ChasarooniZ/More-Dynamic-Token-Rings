@@ -125,42 +125,42 @@ export async function createCustomTokenRingDialog() {
   const prefix = MODULE_ID + '.module-settings.custom-ring.menu.fields.';
 
   new Dialog({
-    title: "Create Token Ring Sprite Sheet",
+    title: MODULE_ID + '.module-settings.custom-ring.menu.header',
     content: `
     <form>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.ring.tooltip"
-    )}<img src='${IMGS.ring}'>">
+    )}<img src='${IMGS.ring}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "token-img.ring.label")}:</label>
       <input type="file" id="image1" accept="image/*">
     </div>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.background.tooltip"
-    )}<img src='${IMGS.bg}'>">
+    )}<img src='${IMGS.bg}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "token-img.background.label")}:</label>
       <input type="file" id="image2" accept="image/*">
     </div>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.quality.tooltip"
-    )}">
+    )}" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "token-img.quality.label")} (%):</label>
       <input type="number" id="quality" value="80" min="1">
     </div>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "thickness.tooltip"
-    )}<img src='${IMGS.thickness}'>">
+    )}<img src='${IMGS.thickness}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "thickness.label")}:</label>
       <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
     </div>
     <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "coloration.inner.tooltip"
-    )}<img src='${IMGS.inner}'>">
+    )}<img src='${IMGS.inner}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "coloration.inner.label")}:</label>
       <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
     </div>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "coloration.outer.tooltip"
-    )}<img src='${IMGS.outer}'>">
+    )}<img src='${IMGS.outer}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "coloration.outer.label")}:</label>
       <input type="number" id="outerRing" value="${defaultSettings.outerRing}" min="1">
     </div>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "coloration.color.tooltip"
-    )}<img src='${IMGS.color}'>">
+    )}<img src='${IMGS.color}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "coloration.color.label")}:</label>
       <input type="color" id="ringColor" value="${defaultSettings.ringColor}">
       <input type="text" id="ringColorHex" value="${defaultSettings.ringColor}" size="7" style="margin-left: 5px;">

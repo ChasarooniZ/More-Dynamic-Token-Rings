@@ -5,6 +5,7 @@
       "button": "Configure Rings with SETT",
       "custom-ring": {
         "menu": {
+          "header": "Create Token Ring Sprite Sheet & JSON",
           "fields": {
             "token-img": {
               "ring": {
