@@ -40,7 +40,11 @@
                 "tooltip": "Enter Color Hex value that is the 'white' when the ring is recolored (IE if you do a blue color the blue will be recolored the most)"
               }
             }
-          }
+          },
+          "error": {
+            "upload-both": "Please upload both images to create a ring",
+            "2048-min": "Both images must be 2048px x 2048px."
+          } 
         },
         "enabled": {
           "name": "Custom Ring Enabled",

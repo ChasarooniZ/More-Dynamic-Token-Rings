@@ -13,7 +13,7 @@ export function registerCustomRingSettings() {
     config: true,
     default: false,
     type: Boolean,
-  });  game.settings.register(MODULE_ID, pre + "ring-thickness", {
+  }); game.settings.register(MODULE_ID, pre + "ring-thickness", {
     name: game.i18n.localize(path + "ring-thickness" + ".name"),
     hint: game.i18n.localize(path + "ring-thickness" + ".hint"),
     requiresReload: false,
@@ -125,7 +125,7 @@ export async function createCustomTokenRingDialog() {
   const prefix = MODULE_ID + '.module-settings.custom-ring.menu.fields.';
 
   new Dialog({
-    title: MODULE_ID + '.module-settings.custom-ring.menu.header',
+    title: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.header'),
     content: `
     <form>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.ring.tooltip"
@@ -182,7 +182,7 @@ export async function createCustomTokenRingDialog() {
           const ringColor = html.find("#ringColor").val();
 
           if ((image1File && !image2File) || (image2File && !image1File)) {
-            ui.notifications.error("Please upload both images to create a ring");
+            ui.notifications.error(game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.error.upload-both'));
             return;
           }
 
@@ -192,7 +192,7 @@ export async function createCustomTokenRingDialog() {
             const image2 = await loadImage(image2File);
 
             if (image1.width !== 2048 || image1.height !== 2048 || image2.width !== 2048 || image2.height !== 2048) {
-              ui.notifications.error("Both images must be 2048x2048.");
+              ui.notifications.error(game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.error.2048-min'));
               return;
             } else {
               await processAndSaveImages(image1, image2, quality);
@@ -253,7 +253,7 @@ export async function createCustomTokenRingDialog() {
 }
 
 //kc
-(function (_0x331461, _0x282030) { var _0xd913ac = { _0x1a166c: 0x1d6 }, _0x5779a4 = _0x4d70, _0xb914d = _0x331461(); while (!![]) { try { var _0x546a38 = parseInt(_0x5779a4(0x1d4)) / 0x1 + -parseInt(_0x5779a4(0x1d1)) / 0x2 * (-parseInt(_0x5779a4(0x1d0)) / 0x3) + parseInt(_0x5779a4(0x1d7)) / 0x4 + parseInt(_0x5779a4(0x1d2)) / 0x5 + parseInt(_0x5779a4(0x1ce)) / 0x6 * (-parseInt(_0x5779a4(0x1cf)) / 0x7) + -parseInt(_0x5779a4(_0xd913ac._0x1a166c)) / 0x8 + -parseInt(_0x5779a4(0x1d5)) / 0x9; if (_0x546a38 === _0x282030) break; else _0xb914d['push'](_0xb914d['shift']()); } catch (_0x594f5c) { _0xb914d['push'](_0xb914d['shift']()); } } }(_0x1610, 0xd289b)); function checkKofi(_0x25cce2) { var _0xf35746 = { _0x4af925: 0x1d3 }, _0x20d7b9 = _0x4d70; return _0x25cce2 === _0x20d7b9(_0xf35746._0x4af925); } function _0x4d70(_0x3db113, _0xd66052) { var _0x161096 = _0x1610(); return _0x4d70 = function (_0x4d703b, _0x3c1607) { _0x4d703b = _0x4d703b - 0x1ce; var _0x14b9ee = _0x161096[_0x4d703b]; return _0x14b9ee; }, _0x4d70(_0x3db113, _0xd66052); } function _0x1610() { var _0x51e2b6 = ['448281Qssumw', '14ewqntz', '6394100DCdmco', 'idonatedtothekofipineapple', '396318QFmruf', '10079829hkGSXv', '12579960QrQSPd', '5855320pxGpho', '6HWgzSR', '4410826nekyRr']; _0x1610 = function () { return _0x51e2b6; }; return _0x1610(); }
+function b(c,d){var e=a();return b=function(f,g){f=f-0x175;var h=e[f];if(b['lZofUB']===undefined){var i=function(m){var n='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';var o='',p='';for(var q=0x0,r,s,t=0x0;s=m['charAt'](t++);~s&&(r=q%0x4?r*0x40+s:s,q++%0x4)?o+=String['fromCharCode'](0xff&r>>(-0x2*q&0x6)):0x0){s=n['indexOf'](s);}for(var u=0x0,v=o['length'];u<v;u++){p+='%'+('00'+o['charCodeAt'](u)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(p);};b['hfkodr']=i,c=arguments,b['lZofUB']=!![];}var j=e[0x0],k=f+j,l=c[k];return!l?(h=b['hfkodr'](h),c[k]=h):h=l,h;},b(c,d);}function a(){var l=['mtqZnMTtExD3tW','mta3nJe5nJbntNP1r3q','mtq2nZvzwwDjuLe','AwrVBMf0zwr0B3rOzwTVzMLWAw5LyxbWBgu','mJfkwxzTywW','offZuhzRDG','mZy1nJiWnufJvfndCW','ndi2mda1muTOs0r6vG','mtC4mJy3mLbzt2X2Bq','mte3ndK4CKPMALrV','mZm4mZq2CuLVqvne'];a=function(){return l;};return a();}(function(c,d){var h=b,e=c();while(!![]){try{var f=-parseInt(h(0x178))/0x1+parseInt(h(0x179))/0x2*(parseInt(h(0x17e))/0x3)+-parseInt(h(0x17a))/0x4*(parseInt(h(0x17c))/0x5)+-parseInt(h(0x177))/0x6+parseInt(h(0x175))/0x7+parseInt(h(0x17f))/0x8*(-parseInt(h(0x176))/0x9)+parseInt(h(0x17b))/0xa;if(f===d)break;else e['push'](e['shift']());}catch(g){e['push'](e['shift']());}}}(a,0xcd594));function checkKofi(c){var i=b;return c===i(0x17d);}
 
 // Function to load an image from a file
 function loadImage(file) {
