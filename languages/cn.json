@@ -1,0 +1,130 @@
+{
+  "I18N.LANGUAGE": "简体中文",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "使用SETT配置指环",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "自定义指环制作器",
+          "header": "创建令牌指环精灵表和JSON",
+          "icons": {
+            "kofi": {
+              "title": "在Ko-fi上支持我",
+              "tooltip": "捐赠以去除此项！"
+            }
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "动态令牌指环",
+                "tooltip": "必须为2048px x 2048px"
+              },
+              "background": {
+                "label": "动态令牌背景",
+                "tooltip": "必须为2048px x 2048px"
+              },
+              "quality": {
+                "label": "指环质量",
+                "tooltip": "生成的Webp质量，建议80%"
+              }
+            },
+            "thickness": {
+              "label": "指环厚度",
+              "tooltip": "指环从内部到外部的厚度，值从0到1，1表示100%"
+            },
+            "coloration": {
+              "label": "指环着色",
+              "inner": {
+                "label": "内边缘",
+                "tooltip": "指环上着色开始的位置，值从0到1，1表示距离中心100%"
+              },
+              "outer": {
+                "label": "外边缘",
+                "tooltip": "指环上着色结束的位置，值从0到1.5，1表示距离中心100%"
+              },
+              "color": {
+                "label": "颜色",
+                "tooltip": "输入指环重新着色时'白色'的十六进制颜色值（例如，如果您选择蓝色，则蓝色将被重新着色最多）"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "请上传两张图片以创建指环",
+            "2048-min": "两张图片都必须为2048px x 2048px。",
+            "failed-to-download": {
+              "json": "下载JSON失败：",
+              "image": "下载或转换图片失败："
+            },
+            "does-not-exist": "SETT：自定义指环不存在，请实际创建一个"
+          },
+          "buttons": {
+            "create": {
+              "label": "创建"
+            },
+            "export": {
+              "label": "导出"
+            },
+            "cancel": {
+              "label": "取消"
+            }
+          }
+        },
+        "enabled": {
+          "name": "启用自定义指环",
+          "hint": "在动态指环选择器中启用自定义指环，注意每次更改属性时都需要重新加载以更新"
+        },
+        "kofi-code": {
+          "name": "来自Kofi的代码",
+          "hint": "如果您曾经向我的kofi捐赠任何金额，您可以从自定义指环制作器中移除头部图标和消息"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "您的动态指环列表已更新，重新加载以查看新指环",
+      "first-time-user": {
+        "content": "<h2>欢迎使用SETT</h2><p>您好，欢迎使用本模块。</p><p>要访问新的令牌指环，请点击配置设置并导航到SETT模块设置。在那里启用一些指环，保存更改，然后系统会提示您重新加载Foundry。完成后，再次打开设置并找到Core -> 动态令牌指环下拉设置，现在将包括额外的指环。选择其中一个，保存更改，然后再次重新加载Foundry。</p>",
+        "button": "开始导览"
+      }
+    },
+    "dialog": {
+      "reload": {
+        "title": "重新加载？",
+        "content": "您想重新加载吗？",
+        "buttons": {
+          "yes": "是",
+          "no": "否"
+        }
+      }
+    },
+    "hover-text": {
+      "new-ring": "新指环！"
+    },
+    "tours": {
+      "starter": {
+        "title": "SETT入门导览",
+        "steps": {
+          "1": {
+            "title": "导航至",
+            "content": "打开设置后，首先导航到'Core'设置"
+          },
+          "2": {
+            "title": "SETT菜单",
+            "content": "您应该看到插入的SETT按钮，使用它来启用新指环！"
+          },
+          "3": {
+            "title": "之后",
+            "content": "启用指环后，确保点击保存，然后系统会提示您重新加载Foundry"
+          },
+          "4": {
+            "title": "选择指环",
+            "content": "在这里选择一个指环，它会提示您重新加载以更新指环"
+          },
+          "5": {
+            "title": "谢谢",
+            "content": "感谢您参加导览，如果您愿意，请记得在离开时给您的导游（我）和服务器（指环制作者）小费 :P"
+          }
+        }
+      }
+    }
+  }
+}

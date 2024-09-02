@@ -1,0 +1,130 @@
+{
+  "I18N.LANGUAGE": "Français",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Configurer les anneaux avec SETT",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "Créateur d'anneaux personnalisés",
+          "header": "Créer une feuille de sprites et un JSON d'anneau de jeton",
+          "icons": {
+            "kofi": {
+              "title": "Soutenez-moi sur Ko-fi",
+              "tooltip": "Faites un don pour vous en débarrasser !"
+            }
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Anneau de jeton dynamique",
+                "tooltip": "Doit être de 2048px x 2048px"
+              },
+              "background": {
+                "label": "Fond de jeton dynamique",
+                "tooltip": "Doit être de 2048px x 2048px"
+              },
+              "quality": {
+                "label": "Qualité de l'anneau",
+                "tooltip": "Qualité du Webp généré, recommandé 80%"
+              }
+            },
+            "thickness": {
+              "label": "Épaisseur de l'anneau",
+              "tooltip": "Quelle est l'épaisseur de l'anneau de l'intérieur à l'extérieur comme une valeur de 0 à 1, 1 étant 100%"
+            },
+            "coloration": {
+              "label": "Coloration de l'anneau",
+              "inner": {
+                "label": "Bord intérieur",
+                "tooltip": "Où sur l'anneau la coloration doit-elle commencer comme une valeur de 0 à 1, 1 étant 100% de distance du centre"
+              },
+              "outer": {
+                "label": "Bord extérieur",
+                "tooltip": "Où sur l'anneau la coloration doit-elle se terminer comme une valeur de 0 à 1.5, 1 étant 100% de distance du centre"
+              },
+              "color": {
+                "label": "Couleur",
+                "tooltip": "Entrez la valeur Hex de la couleur qui est le 'blanc' lorsque l'anneau est recoloré (c'est-à-dire si vous choisissez une couleur bleue, le bleu sera le plus recoloré)"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "Veuillez télécharger les deux images pour créer un anneau",
+            "2048-min": "Les deux images doivent être de 2048px x 2048px.",
+            "failed-to-download": {
+              "json": "Échec du téléchargement du JSON :",
+              "image": "Échec du téléchargement ou de la conversion de l'image :"
+            },
+            "does-not-exist": "SETT : L'anneau personnalisé n'existe pas, veuillez en créer un réellement"
+          },
+          "buttons": {
+            "create": {
+              "label": "Créer"
+            },
+            "export": {
+              "label": "Exporter"
+            },
+            "cancel": {
+              "label": "Annuler"
+            }
+          }
+        },
+        "enabled": {
+          "name": "Anneau personnalisé activé",
+          "hint": "Active l'anneau personnalisé dans le sélecteur d'anneaux dynamiques, notez que vous devez recharger chaque fois que vous changez une propriété pour qu'elle soit mise à jour"
+        },
+        "kofi-code": {
+          "name": "Code de Kofi",
+          "hint": "Si vous faites un don de n'importe quel montant à mon kofi, vous pouvez supprimer l'icône d'en-tête et les messages du Créateur d'anneaux personnalisés"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Votre liste d'anneaux dynamiques a été mise à jour, rechargez pour voir les nouveaux anneaux",
+      "first-time-user": {
+        "content": "<h2>Bienvenue dans SETT</h2><p>Bonjour, bienvenue dans le module.</p><p>Pour accéder aux nouveaux anneaux de jeton, cliquez sur Configurer les paramètres et naviguez vers les paramètres du module SETT. Activez certains des anneaux là-bas, sauvegardez les changements, et on vous demandera de recharger Foundry. Après l'avoir fait, ouvrez à nouveau les paramètres et trouvez le paramètre déroulant Core -> Anneau de jeton dynamique, qui inclura maintenant les anneaux supplémentaires. Sélectionnez-en un, sauvegardez les changements, et rechargez Foundry une fois de plus.</p>",
+        "button": "Faire une visite"
+      }
+    },
+    "dialog": {
+      "reload": {
+        "title": "Recharger ?",
+        "content": "Voulez-vous recharger ?",
+        "buttons": {
+          "yes": "Oui",
+          "no": "Non"
+        }
+      }
+    },
+    "hover-text": {
+      "new-ring": "Nouvel anneau !"
+    },
+    "tours": {
+      "starter": {
+        "title": "Visite de démarrage SETT",
+        "steps": {
+          "1": {
+            "title": "Naviguer vers",
+            "content": "Après avoir ouvert les paramètres, naviguez d'abord vers les paramètres 'Core'"
+          },
+          "2": {
+            "title": "Menu SETT",
+            "content": "Vous devriez voir le bouton SETT qui a été inséré, utilisez-le pour activer de nouveaux anneaux !"
+          },
+          "3": {
+            "title": "Après cela",
+            "content": "Après avoir activé les anneaux, assurez-vous de cliquer sur sauvegarder, puis on vous demandera de recharger Foundry"
+          },
+          "4": {
+            "title": "Sélectionner un anneau",
+            "content": "Sélectionnez un anneau ici, il vous demandera de recharger pour qu'il puisse mettre à jour les anneaux"
+          },
+          "5": {
+            "title": "Merci",
+            "content": "Merci d'avoir fait la visite, n'oubliez pas de donner un pourboire à votre guide touristique (moi) et à vos serveurs (Créateurs d'anneaux) en partant si vous vous sentez enclin à le faire :P."
+          }
+        }
+      }
+    }
+  }
+}

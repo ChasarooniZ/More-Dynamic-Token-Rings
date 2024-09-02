@@ -1,0 +1,130 @@
+{
+  "I18N.LANGUAGE": "Deutsch",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Ringe mit SETT konfigurieren",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "Benutzerdefinierter Ring-Ersteller",
+          "header": "Token-Ring-Sprite-Sheet & JSON erstellen",
+          "icons": {
+            "kofi": {
+              "title": "Unterstütze mich auf Ko-fi",
+              "tooltip": "Spende, um dies loszuwerden!"
+            }
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Dynamischer Token-Ring",
+                "tooltip": "Muss 2048px x 2048px sein"
+              },
+              "background": {
+                "label": "Dynamischer Token-Hintergrund",
+                "tooltip": "Muss 2048px x 2048px sein"
+              },
+              "quality": {
+                "label": "Ring-Qualität",
+                "tooltip": "Qualität des generierten Webp, 80% empfohlen"
+              }
+            },
+            "thickness": {
+              "label": "Ring-Dicke",
+              "tooltip": "Wie dick ist der Ring von innen nach außen als Wert von 0 bis 1, wobei 1 100% entspricht"
+            },
+            "coloration": {
+              "label": "Ring-Färbung",
+              "inner": {
+                "label": "Innerer Rand",
+                "tooltip": "Wo auf dem Ring soll die Färbung beginnen, als Wert von 0 bis 1, wobei 1 100% Entfernung vom Zentrum entspricht"
+              },
+              "outer": {
+                "label": "Äußerer Rand",
+                "tooltip": "Wo auf dem Ring soll die Färbung enden, als Wert von 0 bis 1,5, wobei 1 100% Entfernung vom Zentrum entspricht"
+              },
+              "color": {
+                "label": "Farbe",
+                "tooltip": "Geben Sie den Hex-Farbwert ein, der 'weiß' ist, wenn der Ring umgefärbt wird (d.h. wenn Sie eine blaue Farbe wählen, wird Blau am stärksten umgefärbt)"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "Bitte laden Sie beide Bilder hoch, um einen Ring zu erstellen",
+            "2048-min": "Beide Bilder müssen 2048px x 2048px groß sein.",
+            "failed-to-download": {
+              "json": "JSON konnte nicht heruntergeladen werden:",
+              "image": "Bild konnte nicht heruntergeladen oder konvertiert werden:"
+            },
+            "does-not-exist": "SETT: Benutzerdefinierter Ring existiert nicht, bitte erstellen Sie tatsächlich einen"
+          },
+          "buttons": {
+            "create": {
+              "label": "Erstellen"
+            },
+            "export": {
+              "label": "Exportieren"
+            },
+            "cancel": {
+              "label": "Abbrechen"
+            }
+          }
+        },
+        "enabled": {
+          "name": "Benutzerdefinierter Ring aktiviert",
+          "hint": "Aktiviert benutzerdefinierten Ring im Dynamischen Ring-Auswähler. Beachten Sie, dass Sie jedes Mal neu laden müssen, wenn Sie eine Eigenschaft ändern, damit sie aktualisiert wird"
+        },
+        "kofi-code": {
+          "name": "Code von Kofi",
+          "hint": "Wenn Sie jemals einen beliebigen Betrag an mein Kofi spenden, können Sie das Header-Symbol und die Nachrichten aus dem Benutzerdefinierten Ring-Ersteller entfernen"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Ihre dynamische Ringliste wurde aktualisiert. Laden Sie neu, um die neuen Ringe zu sehen",
+      "first-time-user": {
+        "content": "<h2>Willkommen bei SETT</h2><p>Hallo, willkommen zum Modul.</p><p>Um auf neue Token-Ringe zuzugreifen, klicken Sie auf Einstellungen konfigurieren und navigieren Sie zu den SETT-Moduleinstellungen. Aktivieren Sie dort einige der Ringe, speichern Sie die Änderungen, und Sie werden aufgefordert, Foundry neu zu laden. Öffnen Sie danach erneut die Einstellungen und suchen Sie die Core -> Dynamischer Token-Ring Dropdown-Einstellung, die jetzt die zusätzlichen Ringe enthält. Wählen Sie einen davon aus, speichern Sie die Änderungen und laden Sie Foundry erneut.",
+        "button": "Eine Tour machen"
+      }
+    },
+    "dialog": {
+      "reload": {
+        "title": "Neu laden?",
+        "content": "Möchten Sie neu laden?",
+        "buttons": {
+          "yes": "Ja",
+          "no": "Nein"
+        }
+      }
+    },
+    "hover-text": {
+      "new-ring": "Neuer Ring!"
+    },
+    "tours": {
+      "starter": {
+        "title": "SETT Starter-Tour",
+        "steps": {
+          "1": {
+            "title": "Navigieren Sie zu",
+            "content": "Navigieren Sie nach dem Öffnen der Einstellungen zuerst zu den 'Core'-Einstellungen"
+          },
+          "2": {
+            "title": "SETT-Menü",
+            "content": "Sie sollten den eingefügten SETT-Button sehen. Verwenden Sie diesen, um neue Ringe zu aktivieren!"
+          },
+          "3": {
+            "title": "Danach",
+            "content": "Nachdem Sie Ringe aktiviert haben, stellen Sie sicher, dass Sie auf Speichern klicken. Dann werden Sie aufgefordert, Foundry neu zu laden"
+          },
+          "4": {
+            "title": "Einen Ring auswählen",
+            "content": "Wählen Sie hier einen Ring aus. Sie werden aufgefordert, neu zu laden, damit die Ringe aktualisiert werden können"
+          },
+          "5": {
+            "title": "Danke",
+            "content": "Vielen Dank für die Tour. Vergessen Sie nicht, Ihrem Tourguide (mir) und Ihren Servern (Ring-Erstellern) beim Verlassen ein Trinkgeld zu geben, wenn Sie möchten :P."
+          }
+        }
+      }
+    }
+  }
+}

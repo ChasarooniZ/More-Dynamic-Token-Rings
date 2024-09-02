@@ -1,0 +1,130 @@
+{
+  "I18N.LANGUAGE": "Português (Brasil)",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Configurar Anéis com SETT",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "Criador de Anel Personalizado",
+          "header": "Criar Folha de Sprites e JSON do Anel de Token",
+          "icons": {
+            "kofi": {
+              "title": "Me apoie no Ko-fi",
+              "tooltip": "Doe para se livrar disso!"
+            }
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Anel de Token Dinâmico",
+                "tooltip": "Deve ter 2048px x 2048px"
+              },
+              "background": {
+                "label": "Fundo de Token Dinâmico",
+                "tooltip": "Deve ter 2048px x 2048px"
+              },
+              "quality": {
+                "label": "Qualidade do Anel",
+                "tooltip": "Qualidade do Webp gerado, recomenda-se 80%"
+              }
+            },
+            "thickness": {
+              "label": "Espessura do Anel",
+              "tooltip": "Quão espesso é o anel do interior ao exterior como um valor de 0 a 1, sendo 1 100%"
+            },
+            "coloration": {
+              "label": "Coloração do Anel",
+              "inner": {
+                "label": "Borda Interna",
+                "tooltip": "Onde no anel a coloração deve começar como um valor de 0 a 1, sendo 1 100% de distância do centro"
+              },
+              "outer": {
+                "label": "Borda Externa",
+                "tooltip": "Onde no anel a coloração deve terminar como um valor de 0 a 1.5, sendo 1 100% de distância do centro"
+              },
+              "color": {
+                "label": "Cor",
+                "tooltip": "Insira o valor Hex da cor que é o 'branco' quando o anel é recolorido (ou seja, se você escolher uma cor azul, o azul será o mais recolorido)"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "Por favor, carregue ambas as imagens para criar um anel",
+            "2048-min": "Ambas as imagens devem ter 2048px x 2048px.",
+            "failed-to-download": {
+              "json": "Falha ao baixar JSON:",
+              "image": "Falha ao baixar ou converter imagem:"
+            },
+            "does-not-exist": "SETT: O Anel Personalizado não existe, por favor crie um de verdade"
+          },
+          "buttons": {
+            "create": {
+              "label": "Criar"
+            },
+            "export": {
+              "label": "Exportar"
+            },
+            "cancel": {
+              "label": "Cancelar"
+            }
+          }
+        },
+        "enabled": {
+          "name": "Anel Personalizado Ativado",
+          "hint": "Ativa o anel personalizado no Seletor de Anel Dinâmico, note que você deve recarregar toda vez que mudar uma propriedade para que ela seja atualizada"
+        },
+        "kofi-code": {
+          "name": "Código do Kofi",
+          "hint": "Se você doar qualquer quantia ao meu kofi, você pode remover o ícone do cabeçalho e as mensagens do Criador de Anel Personalizado"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Sua lista de Anéis Dinâmicos foi atualizada, recarregue para ver os novos anéis",
+      "first-time-user": {
+        "content": "<h2>Bem-vindo ao SETT</h2><p>Olá, bem-vindo ao módulo.</p><p>Para acessar novos anéis de token, clique em Configurar Configurações e navegue até as configurações do módulo SETT. Ative alguns dos anéis lá, salve as alterações e você será solicitado a recarregar o Foundry. Depois de fazer isso, abra as configurações novamente e encontre a configuração suspensa Core -> Anel de Token Dinâmico, que agora incluirá os anéis extras. Selecione um deles, salve as alterações e recarregue o Foundry mais uma vez.</p>",
+        "button": "Fazer um Tour"
+      }
+    },
+    "dialog": {
+      "reload": {
+        "title": "Recarregar?",
+        "content": "Você quer recarregar?",
+        "buttons": {
+          "yes": "Sim",
+          "no": "Não"
+        }
+      }
+    },
+    "hover-text": {
+      "new-ring": "Novo Anel!"
+    },
+    "tours": {
+      "starter": {
+        "title": "Tour Inicial do SETT",
+        "steps": {
+          "1": {
+            "title": "Navegar Para",
+            "content": "Depois de abrir as configurações, primeiro navegue para as configurações 'Core'"
+          },
+          "2": {
+            "title": "Menu SETT",
+            "content": "Você deve ver o botão SETT que foi inserido, use-o para ativar novos anéis!"
+          },
+          "3": {
+            "title": "Depois disso",
+            "content": "Depois de ativar os anéis, certifique-se de clicar em salvar, então você será solicitado a recarregar o Foundry"
+          },
+          "4": {
+            "title": "Selecionando um Anel",
+            "content": "Selecione um anel aqui, ele solicitará que você recarregue para que possa atualizar os anéis"
+          },
+          "5": {
+            "title": "Obrigado",
+            "content": "Obrigado por fazer o tour, não se esqueça de dar uma gorjeta ao seu guia turístico (eu) e aos seus servidores (Criadores de Anéis) ao sair, se você se sentir inclinado a fazê-lo :P"
+          }
+        }
+      }
+    }
+  }
+}
