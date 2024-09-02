@@ -77,7 +77,7 @@ export function initializeDynamicTokenRingConfig(ringConfig) {
   const setRingTo = game.settings.get(MODULE_ID, "set-ring-to")
   if (setRingTo) {
     game.settings.set("core", "dynamicTokenRing", setRingTo)
-    game.settings.unset(MODULE_ID, "set-ring-to")
+    game.settings.set(MODULE_ID, "set-ring-to", "")
   }
 }
 
