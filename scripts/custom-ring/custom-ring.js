@@ -340,10 +340,10 @@ async function saveAsWebP(canvas, filename, quality) {
 // Function to save the configuration as a JSON file in Foundry
 async function saveConfigJSON(thickness, innerRing, outerRing, ringColor) {
   const config = getBaseJSON(innerRing, outerRing, ringColor, thickness);
-  game.settings.set(MODULE_ID, "custom-ring.ring-thickness", thickness)
-  game.settings.set(MODULE_ID, "custom-ring.color-band.start", innerRing)
-  game.settings.set(MODULE_ID, "custom-ring.color-band.end", outerRing)
-  game.settings.set(MODULE_ID, "custom-ring.color-band.color", Color.fromString(ringColor))
+  await game.settings.set(MODULE_ID, "custom-ring.ring-thickness", thickness)
+  await game.settings.set(MODULE_ID, "custom-ring.color-band.start", innerRing)
+  await game.settings.set(MODULE_ID, "custom-ring.color-band.end", outerRing)
+  await game.settings.set(MODULE_ID, "custom-ring.color-band.color", ringColor)
 
   const jsonString = JSON.stringify(config, null, 2);
   const blob = new Blob([jsonString], { type: 'application/json' });
