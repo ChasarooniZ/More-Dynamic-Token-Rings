@@ -29,7 +29,7 @@ export async function createCustomTokenRingDialog() {
     content: `
     <p><a href="https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/custom-rings/CUSTOM_RING_GUIDE.md">${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide")}</a></p>
     <form>
-    <h3>${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.parts.spritesheet')}</h3>
+    <h2>${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.parts.spritesheet')}</h2>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.ring.tooltip"
     )}<img src='${IMGS.ring}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "token-img.ring.label")}:</label>
@@ -40,7 +40,7 @@ export async function createCustomTokenRingDialog() {
       <label>${game.i18n.localize(prefix + "token-img.background.label")}:</label>
       <input type="file" id="image2" accept="image/*">
     </div>
-    <h3>${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.parts.json')}</h3>
+    <h2>${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.parts.json')}</h2>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.quality.tooltip"
     )}" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "token-img.quality.label")} (%):</label>
@@ -51,7 +51,7 @@ export async function createCustomTokenRingDialog() {
       <label>${game.i18n.localize(prefix + "thickness.label")}:</label>
       <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
     </div>
-    <h4>${game.i18n.localize(prefix + "coloration.label")}</h4>
+    <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "coloration.inner.tooltip"
     )}<img src='${IMGS.inner}'>" data-tooltip-direction="LEFT">
       <label>${game.i18n.localize(prefix + "coloration.inner.label")}:</label>
