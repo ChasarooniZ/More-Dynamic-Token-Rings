@@ -1,7 +1,7 @@
 import { MODULE_ID } from "../const.js";
 import { askToReload } from "../dialog/askToReloadDialog.js";
 import { downloadCustomRing } from "./export.js";
-import { loadImage, processAndSaveImages, processAndSaveConfigJSON, checkKofi } from "./custom-ring";
+import { loadImage, processAndSaveImages, processAndSaveConfigJSON, checkKofi } from "./custom-ring.js";
 
 // Function to create the dialog box in Foundry VTT
 
