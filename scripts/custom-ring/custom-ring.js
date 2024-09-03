@@ -79,7 +79,7 @@ export async function validateAddCustomRing() {
   if (!game.user.isGM) return;
   if (!game.settings.get(MODULE_ID, "custom-ring.enabled")) return;
   const result = await FilePicker.browse('data', "modules/more-dynamic-token-rings/storage/custom-ring");
-  if (result.files.includes("custom-ring.json") && result.files.includes("custom-ring.webp")) {
+  if (result.files.includes("modules/more-dynamic-token-rings/storage/custom-ring/custom-ring.json") && result.files.includes("modules/more-dynamic-token-rings/storage/custom-ring/custom-ring.webp")) {
     return true;
   } else {
     console.error(game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.error.does-not-exist'))
