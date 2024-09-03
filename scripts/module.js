@@ -2,9 +2,9 @@
 import { RINGS } from "./ringHelpers.js";
 import { AUTHORS } from "./authorList.js";
 import {
-  createCustomTokenRingDialog,
   registerCustomRingSettings,
 } from "./custom-ring/custom-ring.js";
+import { createCustomTokenRingDialog } from "./custom-ring/createCustomTokenRingDialog";
 import { initializeDynamicTokenRingConfig, ready, renderSettingsConfig } from "./hooks.js";
 import { MODULE_ID } from "./const.js";
 import { showRingDialog } from "./dialog/showRingDialog.js";

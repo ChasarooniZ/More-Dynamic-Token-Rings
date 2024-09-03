@@ -16,6 +16,10 @@
           "content": {
             "link-to-guide": "Link to Guide Here (video to come later)"
           },
+          "parts": {
+            "spritesheet": "Ring Sprite Sheet Config",
+            "json": "Ring JSON Config"
+          },
           "fields": {
             "token-img": {
               "ring": {
