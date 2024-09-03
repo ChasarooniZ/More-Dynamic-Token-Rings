@@ -129,6 +129,7 @@ export async function createCustomTokenRingDialog() {
   new Dialog({
     title: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.header'),
     content: `
+    <p><a href="https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/custom-rings/CUSTOM_RING_GUIDE.md">${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide")}</a></p>
     <form>
     <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.ring.tooltip"
     )}<img src='${IMGS.ring}'>" data-tooltip-direction="LEFT">

@@ -13,6 +13,9 @@
               "tooltip": "Donate to me to get rid of this!"
             }
           },
+          "content": {
+            "link-to-guide": "Link to Guide Here (video to come later)"
+          },
           "fields": {
             "token-img": {
               "ring": {
