@@ -25,9 +25,10 @@ Welcome to the guide for making custom rings using SETT. Best of luck!
 
 ![image](https://github.com/user-attachments/assets/631463bd-59df-478c-97d7-0bd7b558bee8)
 10. Save the Ring Image with either a `.png` or `.webp` file type
-![image](https://github.com/user-attachments/assets/68f692af-c955-4f6b-a8c7-465783177294)
 
+![image](https://github.com/user-attachments/assets/68f692af-c955-4f6b-a8c7-465783177294)
 11. Toggle off the Ring layer and on the Ring Background Layer
+
 ![image](https://github.com/user-attachments/assets/76d94216-09a1-40cb-a5c1-36a941355bf2)
 
 12. Do the same for the Background Image as in **Step 10**
@@ -35,6 +36,7 @@ Welcome to the guide for making custom rings using SETT. Best of luck!
 ## Add To Game
 *when it is added it'll be under the name `_Custom SETT Ring`
 1. Go to SETT Settings and click the `Custom Ring Maker Button`
+
 ![image](https://github.com/user-attachments/assets/630865be-7a79-4e3f-936c-03d8f9036f0e)
 2. Upload your images, set the values below based on the Hover over tooltip, or leave as is
 3. For Color you generally want it to match the color you're recoloring on the ring itself
