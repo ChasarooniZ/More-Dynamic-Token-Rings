@@ -75,8 +75,9 @@ export async function ready() {
   handleVersion(game.settings.get(MODULE_ID, "last-version"), game.modules.get('more-dynamic-token-rings').version)
 }
 
-export function initializeDynamicTokenRingConfig(ringConfig) {
-  if (validateAddCustomRing()) {
+export async function initializeDynamicTokenRingConfig(ringConfig) {
+  const isCustom = await validateAddCustomRing();
+  if (isCustom) {
     ringConfig.addConfig(...getCustomRingData());
   }
   RINGS.forEach(({ label, jsonPath, id }) => {
