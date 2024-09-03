@@ -1,12 +1,12 @@
 # Custom Rings Guide
 Welcome to the guide for making custom rings using SETT. Best of luck!
 - [Custom Rings Guide](#custom-rings-guide)
-    - [Preface](#preface)
+  - [Preface](#preface)
   - [Making your Ring and BG](#making-your-ring-and-bg)
   - [Add To Game](#add-to-game)
   - [Submitting](#submitting)
   - [FAQ](#faq)
-### Preface
+## Preface
 - I use [Paint.net](https://www.getpaint.net/) as an image editing software as it is free and has layers (feel free to use whatever software you want though, the general concepts should apply)
 - [Ring creation Style Guide](https://foundryvtt.com/article/dynamic-token-rings/)
 ## Making your Ring and BG
