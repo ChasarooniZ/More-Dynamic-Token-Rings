@@ -4,7 +4,7 @@ import { AUTHORS } from "./authorList.js";
 import {
   registerCustomRingSettings,
 } from "./custom-ring/custom-ring.js";
-import { createCustomTokenRingDialog } from "./custom-ring/createCustomTokenRingDialog";
+import { createCustomTokenRingDialog } from "./custom-ring/createCustomTokenRingDialog.js";
 import { initializeDynamicTokenRingConfig, ready, renderSettingsConfig } from "./hooks.js";
 import { MODULE_ID } from "./const.js";
 import { showRingDialog } from "./dialog/showRingDialog.js";
