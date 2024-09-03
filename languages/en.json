@@ -84,7 +84,8 @@
       "first-time-user": {
         "content": "<h2>Welcome to SETT</h2><p>Hi, welcome to the module.</p><p>To access new token rings, click Configure Settings and navigate to the SETT module settings. Enable some of the rings there, save changes, and you'll be prompted to reload Foundry.  After doing so, open settings again and find the Core -> Dynamic Token Ring dropdown setting, which will now include the extra rings.  Select one of them, save changes, and reload Foundry once more.</p>",
         "button": "Take a Tour"
-      }
+      },
+      "reload-to-switch": "After adding the new Dynamic Ring restarting again to actually activate it!"
     },
     "dialog": {
       "reload": {

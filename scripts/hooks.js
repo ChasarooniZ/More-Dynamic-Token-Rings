@@ -66,6 +66,9 @@ export async function ready() {
   if (setRingTo) {
     game.settings.set("core", "dynamicTokenRing", setRingTo)
     game.settings.set(MODULE_ID, "set-ring-to", "")
+    ui.notifications.notify(
+      game.i18n.localize(MODULE_ID + ".notifications.reload-to-switch")
+    );
     foundry.utils.debouncedReload();
   }
 }
