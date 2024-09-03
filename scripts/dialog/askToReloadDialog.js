@@ -19,7 +19,11 @@ export async function askToReload(ringID = null) {
         ),
         callback: () => {
           if (ringID !== null) {
-            game.settings.set(MODULE_ID, "set-ring-to", ringID);
+            if (Object.keys(CONFIG.Token.ring.configLabels).includes(ringID)) {
+              game.settings.set("core", "dynamicTokenRing", ringID)
+            } else {
+              game.settings.set(MODULE_ID, "set-ring-to", ringID);
+            }
           }
           foundry.utils.debouncedReload();
         }
