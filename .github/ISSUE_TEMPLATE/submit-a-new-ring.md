@@ -9,7 +9,7 @@ assignees: ChasarooniZ
 
 Ideally attach a copy of your Ring's Ring and background if you have it, you can [Follow the guide here](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings?tab=readme-ov-file#creating-new-rings) for how to format it (2/3rds rule, pink for parts that color etc.).
 
-_just realized it saves as webp and github won't let you directly attach it..._
+**Want to speed up the process?** Use the Custom Ring Feature and export and upload the `.png` and `.json` using the [guide here](update with guide link)
 
 
 also here is a default background if you don't have one [default token bg](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/master/tutorial/ring_background_DEFAULT.webp)
@@ -25,4 +25,4 @@ Put licensing/link to licensing here, or if its yours just be like, "Oh this is 
  _If you don't put have anything to plug, i'll link your profile to a verified charity instead_
 
 ### Misc
-For anything else that needs to be note (special color FX radii etc.
+For anything else that needs to be note (special color FX radii etc).
