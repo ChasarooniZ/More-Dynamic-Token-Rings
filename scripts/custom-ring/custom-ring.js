@@ -343,7 +343,7 @@ async function saveConfigJSON(thickness, innerRing, outerRing, ringColor) {
   game.settings.set(MODULE_ID, "custom-ring.ring-thickness", thickness)
   game.settings.set(MODULE_ID, "custom-ring.color-band.start", innerRing)
   game.settings.set(MODULE_ID, "custom-ring.color-band.end", outerRing)
-  game.settings.set(MODULE_ID, "custom-ring.color-band.color", ringColor)
+  game.settings.set(MODULE_ID, "custom-ring.color-band.color", Color.fromString(ringColor))
 
   const jsonString = JSON.stringify(config, null, 2);
   const blob = new Blob([jsonString], { type: 'application/json' });
