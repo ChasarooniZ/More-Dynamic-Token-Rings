@@ -126,6 +126,12 @@
             "content": "Thanks for taking the tour, make sure to tip your tour guide (me) and your servers (Ring Makers) on you way out if you feel so inclined :P."
           }
         }
+      },
+      "custom": {
+        "notification": {
+          "title": "New Feature to make Custom Rings",
+          "step": "You'll need to go to the SETT module settings and click the new button to access it. Best of luck, and enjoy the new options!"
+        }
       }
     }
   }

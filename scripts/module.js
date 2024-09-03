@@ -63,6 +63,17 @@ function registerSettings() {
     default: true,
     type: Boolean,
   });
+
+  game.settings.register(MODULE_ID, "last-version", {
+    name: "last-version",
+    hint: "",
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: '',
+    type: String,
+  });
+
   RINGS.forEach(({ label, author, id }) => {
     registerASetting(label, author, id);
   });

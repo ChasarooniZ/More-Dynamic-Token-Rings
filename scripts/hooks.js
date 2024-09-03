@@ -3,6 +3,7 @@ import { MODULE_BASE_PATH, MODULE_ID, effects } from "./const.js";
 import {
   getCustomRingData, validateAddCustomRing
 } from "./custom-ring/custom-ring.js";
+import { handleVersion } from "./updates/handleVersion.js";
 
 export function renderSettingsConfig(_, html) {
   if (!game.user.isGM)
@@ -71,6 +72,7 @@ export async function ready() {
     );
     foundry.utils.debouncedReload();
   }
+  handleVersion(game.settings.get(MODULE_ID, "last-version"), game.modules.get('more-dynamic-token-rings').version)
 }
 
 export function initializeDynamicTokenRingConfig(ringConfig) {
