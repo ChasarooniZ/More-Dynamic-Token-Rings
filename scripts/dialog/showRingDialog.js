@@ -76,7 +76,8 @@ export async function showRingDialog() {
         <label>
           <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${ring.id}" ${isActive ? "checked" : ""}>
         </label>
-        <img src="${ring.preview}" alt="${ring.label}" data-id="${ring.id}" data-ring-id="${convertText(ring.label)}">
+        <img src="${ring.preview}" alt="${ring.label}" data-id="${ring.id}" data-ring-id="${convertText(ring.label)}" style="
+        cursor: pointer;" data-tooltip="${game.i18n.localize(MODULE_ID + ".hover-text.click-ring")}">
       </div>`;
     });
 
