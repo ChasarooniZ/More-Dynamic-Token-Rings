@@ -179,9 +179,9 @@ export async function createCustomTokenRingDialog() {
           const image1File = html.find("#image1")[0].files[0];
           const image2File = html.find("#image2")[0].files[0];
           const quality = parseInt(html.find("#quality").val()) / 100;
-          const thickness = parseInt(html.find("#thickness").val());
-          const innerRing = parseInt(html.find("#innerRing").val());
-          const outerRing = parseInt(html.find("#outerRing").val());
+          const thickness = parseFloat(html.find("#thickness").val());
+          const innerRing = parseFloat(html.find("#innerRing").val());
+          const outerRing = parseFloat(html.find("#outerRing").val());
           const ringColor = html.find("#ringColor").val();
 
           if ((image1File && !image2File) || (image2File && !image1File)) {
