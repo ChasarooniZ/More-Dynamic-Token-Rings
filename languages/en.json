@@ -102,6 +102,10 @@
           "yes": "Yes",
           "no": "No"
         }
+      },
+      "ring-submission": {
+        "title": "Ring Submission",
+        "content": "Do you want to submit this ring (which is copyright free or you have the legal rights to) to the module?"
       }
     },
     "hover-text": {

@@ -119,6 +119,7 @@ export async function createCustomTokenRingDialog() {
                 label: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.buttons.export.label'),
                 callback: async () => {
                     await downloadCustomRing();
+                    await submitRingDialog()
                 }
             },
             cancel: {
