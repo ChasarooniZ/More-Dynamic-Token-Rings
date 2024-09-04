@@ -1,3 +1,7 @@
+## [0.4.4](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.3...0.4.4) - Better Preview
+- `Rings`
+  - Added a better preview for each ring when hovering over them to help make your decision a bit easier
+  - Made Ring Navigation just a little bit higher
 ## [0.4.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.2...0.4.3) - New Rings
 - `Rings`
   - `Added`

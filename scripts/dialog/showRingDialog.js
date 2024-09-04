@@ -144,7 +144,7 @@ export async function showRingDialog() {
         dialog.close();
       });
     },
-  }).render(true, { width: 1000, height: 700, top: 50 });
+  }).render(true, { width: 1000, height: 750, top: 50 });
   game.settings.set(
     MODULE_ID,
     "old-rings",
