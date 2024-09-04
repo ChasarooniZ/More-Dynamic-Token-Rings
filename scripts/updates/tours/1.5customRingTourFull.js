@@ -1,5 +1,5 @@
 import { MODULE_ID } from "../../const.js";
-const prefix = MODULE_ID + 'tours.custom.full.'
+const prefix = MODULE_ID + '.tours.custom.full.'
 export const customRingFullTour = () => {
     const t = new Tour({
         namespace: "core",
