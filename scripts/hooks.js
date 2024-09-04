@@ -21,7 +21,7 @@ export function renderSettingsConfig(_, html) {
           game.SETT.showRingDialog(); 
       })()">
           ${isNewRing
-      ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
+      ? '<i class="fa-solid fa-circle-exclamation fa-beat-fade" style="--fa-beat-fade-opacity: 0.8; --fa-beat-fade-scale: 1.05; --fa-animation-duration: 1.5s;" data-tooltip="' +
       game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
       '" data-tooltip-direction="UP"></i> '
       : ""}${localizedName}
@@ -41,6 +41,23 @@ export function renderSettingsConfig(_, html) {
     .closest(".form-group").before(`
     <div class="SETT-button-container">${button}
     </div>`);
+
+
+  // Add second copy of the SETT Button without styling
+  moduleTab.find(`[name="more-dynamic-token-rings.custom-ring.enabled"]`)
+    .closest(".form-group")
+    .after(`
+    <button type="button" onclick="(async () => { 
+        game.SETT.showRingDialog(); 
+    })()">
+        ${isNewRing
+        ? '<i class="fa-solid fa-circle-exclamation fa-beat-fade" style="--fa-beat-fade-opacity: 0.8; --fa-beat-fade-scale: 1.05; --fa-animation-duration: 1.5s;" data-tooltip="' +
+        game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
+        '" data-tooltip-direction="UP"></i> '
+        : ""}${localizedName}
+    </button>
+`);
+
   if (checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))) {
     const kofisetting = $('input[name="more-dynamic-token-rings.custom-ring.kofi-code"]').closest('.form-group');
     kofisetting.hide();

@@ -69,7 +69,7 @@ export async function showRingDialog() {
       con += `
       <div class="ring-item" data-ring-name="${ring.name.toLowerCase()}" data-author-name="${ring.author.toLowerCase()}">
         <h3>${new_rings.includes(ring.id)
-          ? '<i class="fa-solid fa-circle-exclamation" data-tooltip="' +
+          ? '<i class="fa-solid fa-circle-exclamation fa-beat-fade" style="--fa-beat-fade-opacity: 0.8; --fa-beat-fade-scale: 1.05; --fa-animation-duration: 1.5s;" data-tooltip="' +
           game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
           '" data-tooltip-direction="UP"></i> '
           : ""}${ring.name}</h3>
