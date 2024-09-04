@@ -6,9 +6,7 @@
 			"endRadius": 0
 		}
 	},
-
 	"frames": {
-
 		"token-ring-gargantuan-bkg":
 		{
 			"frame": {"x":0,"y":0,"w":2048,"h":2048},

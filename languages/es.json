@@ -1,0 +1,175 @@
+{
+  "I18N.LANGUAGE": "Español",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Configurar anillos con SETT",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "Creador de anillos personalizados",
+          "header": "Crear hoja de sprites y JSON de anillo de token",
+          "icons": {
+            "kofi": {
+              "title": "Apóyame en Ko-fi",
+              "tooltip": "¡Dona para deshacerte de esto!"
+            }
+          },
+          "content": {
+            "link-to-guide": "Enlace a la guía aquí"
+          },
+          "parts": {
+            "spritesheet": "Configuración de hoja de sprites del anillo",
+            "json": "Configuración JSON del anillo"
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Anillo de token dinámico",
+                "tooltip": "Debe ser de 2048px x 2048px"
+              },
+              "background": {
+                "label": "Fondo de token dinámico",
+                "tooltip": "Debe ser de 2048px x 2048px"
+              },
+              "quality": {
+                "label": "Calidad del anillo",
+                "tooltip": "Calidad del Webp generado, se recomienda 80%"
+              }
+            },
+            "thickness": {
+              "label": "Grosor del anillo",
+              "tooltip": "Qué tan grueso es el anillo desde el interior hasta el exterior como un valor de 0 a 1, siendo 1 el 100%"
+            },
+            "coloration": {
+              "label": "Coloración del anillo",
+              "inner": {
+                "label": "Borde interior",
+                "tooltip": "Dónde debe comenzar la coloración en el anillo como un valor de 0 a 1, siendo 1 el 100% de distancia desde el centro"
+              },
+              "outer": {
+                "label": "Borde exterior",
+                "tooltip": "Dónde debe terminar la coloración en el anillo como un valor de 0 a 1.5, siendo 1 el 100% de distancia desde el centro"
+              },
+              "color": {
+                "label": "Color",
+                "tooltip": "Ingrese el valor Hex del color que es el 'blanco' cuando el anillo se recolora (es decir, si eliges un color azul, el azul será el más recoloreado)"
+              }
+            }
+          },
+          "error": {
+            "upload-both": "Por favor, sube ambas imágenes para crear un anillo",
+            "2048-min": "Ambas imágenes deben ser de 2048px x 2048px.",
+            "failed-to-download": {
+              "json": "Error al descargar JSON:",
+              "image": "Error al descargar o convertir la imagen:"
+            },
+            "does-not-exist": "SETT: El anillo personalizado no existe, por favor crea uno realmente"
+          },
+          "buttons": {
+            "create": {
+              "label": "Crear"
+            },
+            "export": {
+              "label": "Exportar"
+            },
+            "cancel": {
+              "label": "Cancelar"
+            }
+          }
+        },
+        "enabled": {
+          "name": "Anillo personalizado habilitado",
+          "hint": "Habilita el anillo personalizado en el Selector de anillos dinámicos, ten en cuenta que debes recargar cada vez que cambies una propiedad para que se actualice"
+        },
+        "kofi-code": {
+          "name": "Código de Kofi",
+          "hint": "Si donas cualquier cantidad a mi kofi, puedes eliminar el icono del encabezado y los mensajes del Creador de anillos personalizados"
+        }
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Tu lista de anillos dinámicos ha sido actualizada, recarga para ver los nuevos anillos",
+      "first-time-user": {
+        "content": "<h2>Bienvenido a SETT</h2><p>Hola, bienvenido al módulo.</p><p>Para acceder a nuevos anillos de token, haz clic en Configurar ajustes y navega a los ajustes del módulo SETT. Habilita algunos de los anillos allí, guarda los cambios y se te pedirá que recargues Foundry. Después de hacerlo, abre los ajustes nuevamente y busca la configuración desplegable Core -> Anillo de token dinámico, que ahora incluirá los anillos adicionales. Selecciona uno de ellos, guarda los cambios y vuelve a recargar Foundry.</p>",
+        "button": "Hacer un recorrido"
+      },
+      "reload-to-switch": "¡Después de agregar el nuevo Anillo Dinámico, reinicia nuevamente para activarlo realmente!"
+    },
+    "dialog": {
+      "reload": {
+        "title": "¿Recargar?",
+        "content": "¿Quieres recargar?",
+        "buttons": {
+          "yes": "Sí",
+          "no": "No"
+        }
+      },
+      "ring-submission": {
+        "title": "Envío de anillo",
+        "content": "¿Quieres enviar este anillo (que está libre de derechos de autor o del que tienes los derechos legales) al módulo?"
+      }
+    },
+    "hover-text": {
+      "new-ring": "¡Nuevo anillo!",
+      "click-ring": "Al hacer clic, se te pedirá que recargues para activar rápidamente el anillo. [IMPORTANTE] esto NO guardará ningún otro cambio realizado en el menú, ¡así que envíalos primero!"
+    },
+    "tours": {
+      "starter": {
+        "title": "Recorrido inicial de SETT",
+        "steps": {
+          "1": {
+            "title": "Navegar a",
+            "content": "Después de abrir los ajustes, primero navega hacia los ajustes 'Core'"
+          },
+          "2": {
+            "title": "Menú SETT",
+            "content": "Deberías ver el botón SETT que se ha insertado, ¡úsalo para habilitar nuevos anillos!"
+          },
+          "3": {
+            "title": "Después de eso",
+            "content": "Después de habilitar los anillos, asegúrate de hacer clic en guardar, luego se te pedirá que recargues Foundry"
+          },
+          "4": {
+            "title": "Seleccionar un anillo",
+            "content": "Selecciona un anillo aquí, te pedirá que recargues para que pueda actualizar los anillos"
+          },
+          "5": {
+            "title": "Gracias",
+            "content": "Gracias por hacer el recorrido, asegúrate de dar propina a tu guía turístico (yo) y a tus servidores (Creadores de anillos) al salir si te sientes inclinado a hacerlo :P."
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨Anillos personalizados✨",
+          "step": "¡Hay una nueva función! Para acceder a ella, deberás ir a la configuración del módulo SETT y hacer clic en el nuevo botón en la parte superior de esa configuración para usar el nuevo Sistema de Creación de Anillos Personalizados. ¡Buena suerte y disfruta de las nuevas opciones!"
+        },
+        "full": {
+          "1": {
+            "title": "Guía de anillos personalizados",
+            "content": "Aquí he enlazado una guía general para usar esta función. Te recomiendo al menos echarle un vistazo primero para evitar cualquier confusión. Este recorrido solo te mostrará lo básico"
+          },
+          "2": {
+            "title": "Imágenes de hoja de sprites del anillo",
+            "content": "Aquí puedes subir el Anillo Dinámico y el Fondo para crear la 'Hoja de Sprites del Anillo Dinámico'. Ten en cuenta que necesitas agregar ambos a la vez para guardar correctamente la hoja de sprites. Si solo quieres editar la configuración de un anillo personalizado que ya has creado, simplemente ignora estos."
+          },
+          "3": {
+            "title": "Configuración del anillo",
+            "content": "Aquí están los ajustes de configuración para el anillo personalizado, pasa el cursor sobre ellos para ver una descripción de cada uno, así como una ayuda visual"
+          },
+          "4": {
+            "title": "Crear anillo",
+            "content": "Este botón guardará tu anillo y fondo subidos en una hoja de sprites si los tienes, así como guardará tus datos de configuración en el json del anillo. Después de crear el anillo, necesitarás recargar para habilitar tu nuevo anillo personalizado."
+          },
+          "5": {
+            "title": "Exportar anillo",
+            "content": "Este botón te permite exportar la hoja de sprites del anillo y su json correspondiente. ¡Luego puedes enviar estos archivos en github para que posiblemente se agreguen al módulo!"
+          },
+          "6": {
+            "title": "¡Buena suerte! ✈",
+            "content": "¡Buena suerte y feliz creación de anillos!<hr><i>también considera donar en <a href='https://ko-fi.com/chasarooni'>kofi</a> para que pueda motivarme a hacer más cosas geniales como esta</i>"
+          }
+        }
+      }
+    }
+  }
+}

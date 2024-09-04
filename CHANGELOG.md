@@ -1,3 +1,16 @@
+## [0.4.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.3.1...0.4.0) - Customizing your Ringperience
+- `Custom Rings`
+  - Added the ability to create your own Custom Dynamic Token Ring
+  - To access this click the new button in the `SETT` Module Settings
+  - You can now also export them to make the uplaod process easier
+  - (it also includes an intro tutorial)
+- `Selecting Rings`
+  - Added an option for a "1 click experience" by jsut clicking the portrait (@shemetz)
+- `Languages`
+  - Added support (machine translated) for Chinese, German, Spanish, French, Japanese, Korean, Brazilian
+- `Misc`
+  - Added under the hood support for more tours to be added to the module
+  - Refactored lots of code
 ## [0.3.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.3.0...0.3.1) - Eldritch Dreamin
 - `Rings`
   - `Added`

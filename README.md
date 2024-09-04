@@ -18,6 +18,7 @@ Adds options for dynamic token rings
   - [Table of Contents](#table-of-contents)
   - [Current Rings](#current-rings)
   - [Creating New Rings](#creating-new-rings)
+  - [Custom Rings](#custom-rings)
   - [Changelog](#changelog)
   - [Contributors](#contributors)
   - [Sources](#sources-licensing)
@@ -32,6 +33,8 @@ Have a normal token ring that you want to become a dynamic ring. Just make a sim
 > It is also recommended to add the magenta coloration for parts of the token ring that should animate and change color
 
 1. Take a (2048px x 2048px) version of your Ring + Background and [register an issue](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/new?assignees=ChasarooniZ&labels=Ring+Submission&projects=&template=submit-a-new-ring.md&title=%5BRing+Submission%5D+) here.
+## Custom Rings
+Head here to see the guide for making [Custom Rings](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/main/CUSTOM_RING_GUIDE.md)
 ## Changelog
 You can access the changelog [here](/CHANGELOG.md).
 ## Contributors
@@ -39,5 +42,5 @@ You can see everyone else who contributed to the module [here](CONTRIBUTORS.md)
 ## Sources & Licensing
 MIT License applies to the CODE,all rings are owned by their respective owners and are only licensed for use of this module.
 - [joeundsoo](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/issues/3) gave permission
-- [redeux](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/master/permissions/redeux%20permission.png) gave permission
+- [redeux](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/main/permissions/redeux%20permission.png) gave permission
 - [Chain Ring] (Used Pro Trial of vecteezy which required no attreibution for that art)
