@@ -74,20 +74,12 @@ export function createCustomRing() {
   // creates JSON
   // Creates Image (stores both in module)
 }
-
-export const ringFilesExist = await checkFilesExists();
-async function checkFilesExists() {
-  const result = await FilePicker.browse('data', "modules/more-dynamic-token-rings/storage/custom-ring");
-  return !!(result.files.includes("modules/more-dynamic-token-rings/storage/custom-ring/custom-ring.json") && result.files.includes("modules/more-dynamic-token-rings/storage/custom-ring/custom-ring.webp"));
-}
-
 export function validateAddCustomRing() {
   if (!game.user.isGM) return false;
   if (!game.settings.get(MODULE_ID, "custom-ring.enabled")) return false;
-  if (!ringFilesExist) {
-    console.error(game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.error.does-not-exist'))
-    return false;
-  }
+
+  // const result = await FilePicker.browse('data', "modules/more-dynamic-token-rings/storage/custom-ring");
+  // return !!(result.files.includes("modules/more-dynamic-token-rings/storage/custom-ring/custom-ring.json") && result.files.includes("modules/more-dynamic-token-rings/storage/custom-ring/custom-ring.webp"));
 
   //Validates ring is there and adds it if is otherwise error
   // Adds to ring list as _Custom SETT Ring so it is at the top

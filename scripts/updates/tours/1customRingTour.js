@@ -1,5 +1,5 @@
 export const customRingTour = () => {
-    return new Tour({
+    const t =  new Tour({
         namespace: "core",
         id: "sett-custom-ring-notification-tour",
         title: game.i18n.localize(MODULE_ID + ".tours.custom.notification.title"),
@@ -11,4 +11,5 @@ export const customRingTour = () => {
             }
         ]
     })
+    t.start();
 }
