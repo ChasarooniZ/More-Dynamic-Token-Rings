@@ -110,7 +110,8 @@
     },
     "hover-text": {
       "new-ring": "Novo Anel!",
-      "click-ring": "Quando clicado, pedirá para você recarregar para ativar rapidamente o anel. [IMPORTANTE] isso NÃO salvará quaisquer outras alterações feitas no menu, então envie-as primeiro!"
+      "click-ring": "Quando clicado, pedirá para você recarregar para ativar rapidamente o anel.",
+      "click-ring-warning": "[IMPORTANTE] isso NÃO salvará quaisquer outras alterações feitas no menu, então envie-as primeiro!"
     },
     "tours": {
       "starter": {

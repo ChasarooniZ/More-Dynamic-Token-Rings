@@ -110,7 +110,8 @@
     },
     "hover-text": {
       "new-ring": "Nowy pierścień!",
-      "click-ring": "Po kliknięciu zostaniesz poproszony o przeładowanie, aby szybko aktywować pierścień. [WAŻNE] to NIE zapisze żadnych innych zmian w menu, więc najpierw je zatwierdź!"
+      "click-ring": "Po kliknięciu zostaniesz poproszony o przeładowanie, aby szybko aktywować pierścień.",
+      "click-ring-warning": "[WAŻNE] to NIE zapisze żadnych innych zmian w menu, więc najpierw je zatwierdź!"
     },
     "tours": {
       "starter": {

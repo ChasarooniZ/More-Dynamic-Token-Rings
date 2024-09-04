@@ -110,7 +110,8 @@
     },
     "hover-text": {
       "new-ring": "Neuer Ring!",
-      "click-ring": "Beim Klicken werden Sie aufgefordert, neu zu laden, um den Ring schnell zu aktivieren. [WICHTIG] Dies wird keine anderen Änderungen im Menü speichern, also reichen Sie diese zuerst ein!"
+      "click-ring": "Beim Klicken werden Sie aufgefordert, neu zu laden, um den Ring schnell zu aktivieren.",
+      "click-ring-warning": "[WICHTIG] Dies wird keine anderen Änderungen im Menü speichern, also reichen Sie diese zuerst ein!"
     },
     "tours": {
       "starter": {

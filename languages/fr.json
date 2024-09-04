@@ -110,7 +110,8 @@
     },
     "hover-text": {
       "new-ring": "Nouvel anneau !",
-      "click-ring": "En cliquant, vous serez invité à recharger pour activer rapidement l'anneau. [IMPORTANT] cela NE sauvegardera PAS les autres modifications apportées dans le menu, alors soumettez-les d'abord !"
+      "click-ring": "En cliquant, vous serez invité à recharger pour activer rapidement l'anneau.",
+      "click-ring-warning": "[IMPORTANT] cela NE sauvegardera PAS les autres modifications apportées dans le menu, alors soumettez-les d'abord !"
     },
     "tours": {
       "starter": {
