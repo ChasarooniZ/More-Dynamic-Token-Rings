@@ -113,6 +113,7 @@ export async function createCustomTokenRingDialog() {
             ];
             ui.notifications.info(tsundereKoFiLines[Math.floor(Math.random() * tsundereKoFiLines.length)]);
           }
+          await game.settings.set(MODULE_ID, "custom-ring.enabled", true);
           await askToReload();
         }
       },
