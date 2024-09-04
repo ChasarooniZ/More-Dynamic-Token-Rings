@@ -76,7 +76,7 @@ export async function ready() {
 }
 
 export async function initializeDynamicTokenRingConfig(ringConfig) {
-  const isCustom = await validateAddCustomRing();
+  const isCustom = validateAddCustomRing();
   if (isCustom) {
     ringConfig.addConfig(...getCustomRingData());
   }
