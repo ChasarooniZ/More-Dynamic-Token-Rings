@@ -1,14 +1,16 @@
 # List of Token Rings
 ## Table of Contents 
-  - - [List of Token Rings](#list-of-token-rings)
+- [List of Token Rings](#list-of-token-rings)
   - [Table of Contents](#table-of-contents)
   - [Chasarooni Chains Ring (Grey)](#chasarooni-chains-ring-grey)
   - [Chasarooni Chains Transparent Ring (Grey)](#chasarooni-chains-transparent-ring-grey)
   - [Eldritch Dream Blue Aura Ring (Colorable)](#eldritch-dream-blue-aura-ring-colorable)
   - [Eldritch Dream Bronze Spiral Ring (Colorable)](#eldritch-dream-bronze-spiral-ring-colorable)
+  - [Eldritch Dream Classy Black](#eldritch-dream-classy-black)
   - [Eldritch Dream Curse Ring](#eldritch-dream-curse-ring)
   - [Eldritch Dream Curse Ring (Colorable)](#eldritch-dream-curse-ring-colorable)
   - [Eldritch Dream Cyber Purple Ring (Colorable)](#eldritch-dream-cyber-purple-ring-colorable)
+  - [Eldritch Dream Dual Glow Ring](#eldritch-dream-dual-glow-ring)
   - [Eldritch Dream Simple Gold Ring (Colorable)](#eldritch-dream-simple-gold-ring-colorable)
   - [Eldritch Dream Pink Metal Ring (Colorable)](#eldritch-dream-pink-metal-ring-colorable)
   - [Joeundsoo Simple Sharp Ring](#joeundsoo-simple-sharp-ring)
@@ -16,7 +18,7 @@
   - [Redeux Simple Ring (Clear)](#redeux-simple-ring-clear)
   - [Redeux Simple Transparent Ring](#redeux-simple-transparent-ring)
   - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
-
+  - [Volfied Runes Ring (Black)](#volfied-runes-ring-black)
 ## Chasarooni Chains Ring (Grey)
 ![image](https://github.com/user-attachments/assets/1cb5d4ac-c72f-478e-8b36-c9dc6417b484)
 ## Chasarooni Chains Transparent Ring (Grey)
