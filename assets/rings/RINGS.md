@@ -2,8 +2,10 @@
 ## Table of Contents 
 - [List of Token Rings](#list-of-token-rings)
   - [Table of Contents](#table-of-contents)
+  - [Chasarooni](#chasarooni)
     - [Chasarooni Chains Ring (Grey)](#chasarooni-chains-ring-grey)
     - [Chasarooni Chains Transparent Ring (Grey)](#chasarooni-chains-transparent-ring-grey)
+  - [Eldritch Dream](#eldritch-dream)
     - [Eldritch Dream Blue Aura Ring (Colorable)](#eldritch-dream-blue-aura-ring-colorable)
     - [Eldritch Dream Bronze Spiral Ring (Colorable)](#eldritch-dream-bronze-spiral-ring-colorable)
     - [Eldritch Dream Classy Black](#eldritch-dream-classy-black)
@@ -13,16 +15,22 @@
     - [Eldritch Dream Dual Glow Ring](#eldritch-dream-dual-glow-ring)
     - [Eldritch Dream Simple Gold Ring (Colorable)](#eldritch-dream-simple-gold-ring-colorable)
     - [Eldritch Dream Pink Metal Ring (Colorable)](#eldritch-dream-pink-metal-ring-colorable)
+  - [Joeundsoo](#joeundsoo)
     - [Joeundsoo Simple Sharp Ring](#joeundsoo-simple-sharp-ring)
+  - [Redeux](#redeux)
     - [Redeux Simple Ring](#redeux-simple-ring)
     - [Redeux Simple Ring (Clear)](#redeux-simple-ring-clear)
     - [Redeux Simple Transparent Ring](#redeux-simple-transparent-ring)
+  - [Volfied](#volfied)
     - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
     - [Volfied Runes Ring (Black)](#volfied-runes-ring-black)
+
+## [Chasarooni](https://ko-fi.com/Chasarooni)
 ### Chasarooni Chains Ring (Grey)
 ![image](https://github.com/user-attachments/assets/1cb5d4ac-c72f-478e-8b36-c9dc6417b484)
 ### Chasarooni Chains Transparent Ring (Grey)
 ![image](https://github.com/user-attachments/assets/9121ff26-de5b-47ae-b996-81a8a096b098)
+## [Eldritch Dream](https://ko-fi.com/eldritchdream)
 ### Eldritch Dream Blue Aura Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/4d67afbd-2afa-4cef-90a5-3a2e98705dff)
 ### Eldritch Dream Bronze Spiral Ring (Colorable)
@@ -41,14 +49,20 @@
 ![image](https://github.com/user-attachments/assets/1d011684-cf66-4175-a785-5ba39d5e1432)
 ### Eldritch Dream Pink Metal Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/4cb88d58-90b0-46b0-bcd3-306cc89e5ce6)
+
+## [Joeundsoo](https://primaryimmune.org/donate)
 ### Joeundsoo Simple Sharp Ring
 ![image](https://github.com/user-attachments/assets/41244467-32c0-4451-839c-30c21d5af317)
+
+## [Redeux](https://ko-fi.com/redeux)
 ### Redeux Simple Ring
 ![image](https://github.com/user-attachments/assets/a6d40580-09df-4034-8e87-244043b5f905)
 ### Redeux Simple Ring (Clear)
 ![image](https://github.com/user-attachments/assets/de143f7c-72a4-4d1b-9082-97f50cce157a)
 ### Redeux Simple Transparent Ring
 ![image](https://github.com/user-attachments/assets/ebd9c69b-89ce-4c3b-adaf-73bc15a928cb)
+
+## [Volfied](https://www.metamorphic-digital.com/)
 ### Volfied Runes Ring (Blue)
 ![image](https://github.com/user-attachments/assets/b2f0c8d7-151e-4776-b012-9c3a15e6eee2)
 ### Volfied Runes Ring (Black)
