@@ -13,13 +13,14 @@ export async function createCustomTokenRingDialog() {
         outerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.end") || 1,
         ringColor: game.settings.get(MODULE_ID, "custom-ring.color-band.color") || "#ffffff"
     };
+    const IMG_BASE_URL = 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/';
     const IMGS = {
-        ring: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-ring.gif',
-        bg: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-bg.gif',
-        thickness: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-thickness.webp',
-        inner: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-inner.webp',
-        outer: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-outer.webp',
-        color: 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/dynamic-coloration-color.webp',
+        ring: IMG_BASE_URL + 'dynamic-ring.gif',
+        bg: IMG_BASE_URL + 'dynamic-bg.gif',
+        thickness: IMG_BASE_URL + 'dynamic-coloration-thickness.webp',
+        inner: IMG_BASE_URL + 'dynamic-coloration-inner.webp',
+        outer: IMG_BASE_URL + 'dynamic-coloration-outer.webp',
+        color: IMG_BASE_URL + 'dynamic-coloration-color.webp',
     };
 
     const prefix = MODULE_ID + '.module-settings.custom-ring.menu.fields.';
