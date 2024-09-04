@@ -3,6 +3,7 @@ import { askToReload } from "../dialog/askToReloadDialog.js";
 import { downloadCustomRing } from "./export.js";
 import { loadImage, processAndSaveImages, processAndSaveConfigJSON, checkKofi } from "./custom-ring.js";
 import { customRingFullTour } from "../updates/tours/1.5customRingTourFull.js";
+import { submitRingDialog } from "../dialog/openRingSubmissionDialog.js";
 
 // Function to create the dialog box in Foundry VTT
 
