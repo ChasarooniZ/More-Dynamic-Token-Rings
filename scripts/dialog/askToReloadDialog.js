@@ -17,13 +17,15 @@ export async function askToReload(ringID = null) {
         label: game.i18n.localize(
           MODULE_ID + ".dialog.reload.buttons.yes"
         ),
-        callback: () => {
+        callback: async () => {
           if (ringID !== null) {
             if (Object.keys(CONFIG.Token.ring.configLabels).includes(ringID)) {
-              game.settings.set("core", "dynamicTokenRing", ringID)
+              await game.settings.set("core", "dynamicTokenRing", ringID)
             } else {
               game.settings.set(MODULE_ID, "set-ring-to", ringID);
             }
+          } else {
+            await game.settings.set(MODULE_ID, "open-ring-config", true);
           }
           foundry.utils.debouncedReload();
         }

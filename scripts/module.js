@@ -84,6 +84,16 @@ function registerSettings() {
     type: Array,
   });
 
+  game.settings.register(MODULE_ID, "open-ring-config", {
+    name: "open-ring-config",
+    hint: "",
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: false,
+    type: Boolean,
+  });
+
   RINGS.forEach(({ label, author, id }) => {
     registerASetting(label, author, id);
   });

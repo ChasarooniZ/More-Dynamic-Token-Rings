@@ -73,6 +73,31 @@ export async function ready() {
     foundry.utils.debouncedReload();
   }
   handleVersion(game.settings.get(MODULE_ID, "last-version"), game.modules.get('more-dynamic-token-rings').version)
+  if (game.settings.get(MODULE_ID, "open-ring-config")) {
+    game.settings.set(MODULE_ID, "open-ring-config", false);
+    game.settings.sheet.render(true, { activeCategory: "core" });
+    const selector = `[name="core.dynamicTokenRing"]`
+    const timeout = 2000;
+    await new Promise((resolve, reject) => {
+      if (document.querySelector(selector)) {
+        return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver(() => {
+        if (document.querySelector(selector)) {
+          resolve(document.querySelector(selector));
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+
+      this.wait(timeout).then(reject);
+    });
+  }
 }
 
 export async function initializeDynamicTokenRingConfig(ringConfig) {
