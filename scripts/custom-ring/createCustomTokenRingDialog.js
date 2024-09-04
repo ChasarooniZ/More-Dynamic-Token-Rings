@@ -28,11 +28,11 @@ export async function createCustomTokenRingDialog() {
     new Dialog({
         title: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.header'),
         content: `
-    <p>
+    <p class="SETT custom-ring guide">
     <a href="https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/custom-rings/CUSTOM_RING_GUIDE.md">${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide")}</a>
   </p>
   <form>
-    <span class="custom-ring spritesheet">
+    <span class="SETT custom-ring spritesheet">
       <h2>${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.parts.spritesheet')}</h2>
       <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.ring.tooltip")} <img src='${IMGS.ring}'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(prefix + "token-img.ring.label")}:</label>
         <input type="file" id="image1" accept="image/*">
@@ -41,7 +41,7 @@ export async function createCustomTokenRingDialog() {
         <input type="file" id="image2" accept="image/*">
       </div>
     </span>
-    <span class="custom-ring json">
+    <span class="SETT custom-ring json">
       <h2>${game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.parts.json')}</h2>
       <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "token-img.quality.tooltip")}" data-tooltip-direction="LEFT">
         <label>${game.i18n.localize(prefix + "token-img.quality.label")} (%):</label>
@@ -50,7 +50,7 @@ export async function createCustomTokenRingDialog() {
       <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "thickness.tooltip")} <img src='${IMGS.thickness}'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(prefix + "thickness.label")}:</label>
         <input type="number" id="thickness" value="${defaultSettings.thickness}" min="1">
       </div>
-      <span class="custom-ring coloration">
+      <span class="SETT custom-ring coloration">
         <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
         <div class="form-group" data-tooltip="${game.i18n.localize(prefix + "coloration.inner.tooltip")} <img src='${IMGS.inner}'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(prefix + "coloration.inner.label")}:</label>
           <input type="number" id="innerRing" value="${defaultSettings.innerRing}" min="1">
