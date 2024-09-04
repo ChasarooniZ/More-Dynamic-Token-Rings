@@ -13,8 +13,8 @@
     - [Eldritch Dream Curse Ring (Colorable)](#eldritch-dream-curse-ring-colorable)
     - [Eldritch Dream Cyber Purple Ring (Colorable)](#eldritch-dream-cyber-purple-ring-colorable)
     - [Eldritch Dream Dual Glow Ring](#eldritch-dream-dual-glow-ring)
-    - [Eldritch Dream Simple Gold Ring (Colorable)](#eldritch-dream-simple-gold-ring-colorable)
     - [Eldritch Dream Pink Metal Ring (Colorable)](#eldritch-dream-pink-metal-ring-colorable)
+    - [Eldritch Dream Simple Gold Ring (Colorable)](#eldritch-dream-simple-gold-ring-colorable)
   - [Joeundsoo](#joeundsoo)
     - [Joeundsoo Simple Sharp Ring](#joeundsoo-simple-sharp-ring)
   - [Redeux](#redeux)
@@ -22,8 +22,8 @@
     - [Redeux Simple Ring (Clear)](#redeux-simple-ring-clear)
     - [Redeux Simple Transparent Ring](#redeux-simple-transparent-ring)
   - [Volfied](#volfied)
-    - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
     - [Volfied Runes Ring (Black)](#volfied-runes-ring-black)
+    - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
 
 ## [Chasarooni](https://ko-fi.com/Chasarooni)
 ### Chasarooni Chains Ring (Grey)
@@ -45,10 +45,10 @@
 ![image](https://github.com/user-attachments/assets/9771a436-db91-4dc2-8e69-03fd9532c025)
 ### Eldritch Dream Dual Glow Ring
 ![image](https://github.com/user-attachments/assets/a5b742a3-a7c8-4185-9a3f-4076b23655ce)
-### Eldritch Dream Simple Gold Ring (Colorable)
-![image](https://github.com/user-attachments/assets/1d011684-cf66-4175-a785-5ba39d5e1432)
 ### Eldritch Dream Pink Metal Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/4cb88d58-90b0-46b0-bcd3-306cc89e5ce6)
+### Eldritch Dream Simple Gold Ring (Colorable)
+![image](https://github.com/user-attachments/assets/1d011684-cf66-4175-a785-5ba39d5e1432)
 
 ## [Joeundsoo](https://primaryimmune.org/donate)
 ### Joeundsoo Simple Sharp Ring
@@ -63,8 +63,8 @@
 ![image](https://github.com/user-attachments/assets/ebd9c69b-89ce-4c3b-adaf-73bc15a928cb)
 
 ## [Volfied](https://www.metamorphic-digital.com/)
-### Volfied Runes Ring (Blue)
-![image](https://github.com/user-attachments/assets/b2f0c8d7-151e-4776-b012-9c3a15e6eee2)
 ### Volfied Runes Ring (Black)
 ![image](https://github.com/user-attachments/assets/8ff03f26-1b58-4e23-a401-d8e4532e1dec)
+### Volfied Runes Ring (Blue)
+![image](https://github.com/user-attachments/assets/b2f0c8d7-151e-4776-b012-9c3a15e6eee2)
 

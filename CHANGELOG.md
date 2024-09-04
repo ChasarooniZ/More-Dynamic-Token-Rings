@@ -1,4 +1,4 @@
-## [0.4.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.2...0.4.3) - QoL
+## [0.4.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.2...0.4.3) - New Rings
 - `Rings`
   - `Added`
     - **Eldritch Dream Classy Black Ring**
