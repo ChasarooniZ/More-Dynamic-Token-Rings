@@ -1,3 +1,8 @@
+## [0.4.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.1...0.4.2) - QoL
+- `Custom Ring`
+  - Custom Ring is enabled when you create or update one (@volfied)
+  - Custom Ring is set as your active ring when you create or update one (@volfied)
+
 ## [0.4.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.0...0.4.1) - 3 Am Edition
 - `Bug Fixes`
  - Fixed Issue with Redeux Trasnparent ring (@shemetz)
