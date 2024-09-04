@@ -1,8 +1,11 @@
-## [0.4.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.1...0.4.2) - QoL
+## [0.4.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.2...0.4.3) - QoL
 - `Rings`
   - `Added`
     - **Eldritch Dream Classy Black Ring**
     - **Eldritch Dream Dual Glow Ring**
+    - **Volfied Runes Ring (Black)**
+  - `Changed`
+    - **Eldritch Dream Simple Gold Ring** - Changed the border of the background color a bit so that it looks better when colored
 - `Languages`
   - Updated languages to show translated warning
 ## [0.4.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.1...0.4.2) - QoL
