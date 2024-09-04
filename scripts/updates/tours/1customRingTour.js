@@ -1,3 +1,5 @@
+import { MODULE_ID } from "../../const.js";
+
 export const customRingTour = () => {
     const t =  new Tour({
         namespace: "core",
