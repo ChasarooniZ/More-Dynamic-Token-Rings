@@ -22,8 +22,8 @@
     - [Redeux Simple Ring (Clear)](#redeux-simple-ring-clear)
     - [Redeux Simple Transparent Ring](#redeux-simple-transparent-ring)
   - [Volfied](#volfied)
-    - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
     - [Volfied Runes Ring (Black)](#volfied-runes-ring-black)
+    - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
 
 ## [Chasarooni](https://ko-fi.com/Chasarooni)
 ### Chasarooni Chains Ring (Grey)
