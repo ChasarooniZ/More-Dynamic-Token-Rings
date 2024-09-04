@@ -13,6 +13,13 @@
               "tooltip": "Doe para se livrar disso!"
             }
           },
+          "content": {
+            "link-to-guide": "Link para o Guia aqui"
+          },
+          "parts": {
+            "spritesheet": "Configuração da Folha de Sprites do Anel",
+            "json": "Configuração JSON do Anel"
+          },
           "fields": {
             "token-img": {
               "ring": {
@@ -84,7 +91,8 @@
       "first-time-user": {
         "content": "<h2>Bem-vindo ao SETT</h2><p>Olá, bem-vindo ao módulo.</p><p>Para acessar novos anéis de token, clique em Configurar Configurações e navegue até as configurações do módulo SETT. Ative alguns dos anéis lá, salve as alterações e você será solicitado a recarregar o Foundry. Depois de fazer isso, abra as configurações novamente e encontre a configuração suspensa Core -> Anel de Token Dinâmico, que agora incluirá os anéis extras. Selecione um deles, salve as alterações e recarregue o Foundry mais uma vez.</p>",
         "button": "Fazer um Tour"
-      }
+      },
+      "reload-to-switch": "Após adicionar o novo Anel Dinâmico, reinicie novamente para ativá-lo de fato!"
     },
     "dialog": {
       "reload": {
@@ -94,10 +102,15 @@
           "yes": "Sim",
           "no": "Não"
         }
+      },
+      "ring-submission": {
+        "title": "Submissão de Anel",
+        "content": "Você deseja enviar este anel (que é livre de direitos autorais ou você tem os direitos legais) para o módulo?"
       }
     },
     "hover-text": {
-      "new-ring": "Novo Anel!"
+      "new-ring": "Novo Anel!",
+      "click-ring": "Quando clicado, pedirá para você recarregar para ativar rapidamente o anel. [IMPORTANTE] isso NÃO salvará quaisquer outras alterações feitas no menu, então envie-as primeiro!"
     },
     "tours": {
       "starter": {
@@ -122,6 +135,38 @@
           "5": {
             "title": "Obrigado",
             "content": "Obrigado por fazer o tour, não se esqueça de dar uma gorjeta ao seu guia turístico (eu) e aos seus servidores (Criadores de Anéis) ao sair, se você se sentir inclinado a fazê-lo :P"
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨Anéis Personalizados✨",
+          "step": "Há um novo recurso! Para acessá-lo, você precisará ir às configurações do módulo SETT e clicar no novo botão no topo dessas configurações para usar o novo Sistema de Criação de Anel Personalizado. Boa sorte e aproveite as novas opções!"
+        },
+        "full": {
+          "1": {
+            "title": "Guia de Anel Personalizado",
+            "content": "Aqui eu linkei um guia geral para usar este recurso. Eu recomendaria pelo menos dar uma olhada rápida primeiro para evitar qualquer confusão. Este tour só vai te mostrar o básico"
+          },
+          "2": {
+            "title": "Imagens da Folha de Sprites do Anel",
+            "content": "Aqui você pode fazer upload do Anel Dinâmico e do Fundo para criar a 'Folha de Sprites do Anel Dinâmico'. Note que você precisa adicionar ambos de uma vez para salvar corretamente a folha de sprites. Se você só quer editar a configuração de um anel personalizado que já fez, simplesmente ignore estes."
+          },
+          "3": {
+            "title": "Configuração do Anel",
+            "content": "Aqui estão as configurações para o anel personalizado, passe o mouse sobre elas para ver uma descrição de cada uma, bem como uma ajuda visual"
+          },
+          "4": {
+            "title": "Criar Anel",
+            "content": "Este botão salvará seu anel e fundo carregados em uma folha de sprites se você os tiver, bem como salvará seus dados de configuração no json do anel. Depois de criar o anel, você precisará recarregar para ativar seu novo anel personalizado."
+          },
+          "5": {
+            "title": "Exportar Anel",
+            "content": "Este botão permite que você exporte a folha de sprites do anel e seu json correspondente. Você pode então enviar esses arquivos no github para que possivelmente sejam adicionados ao módulo!"
+          },
+          "6": {
+            "title": "Boa sorte! ✈",
+            "content": "Boa sorte e feliz criação de Anéis!<hr><i>considere também doar para mim no <a href='https://ko-fi.com/chasarooni'>kofi</a> para que eu possa me motivar a fazer mais coisas legais como esta</i>"
           }
         }
       }

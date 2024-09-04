@@ -13,6 +13,13 @@
               "tooltip": "Spende, um dies loszuwerden!"
             }
           },
+          "content": {
+            "link-to-guide": "Link zum Leitfaden hier"
+          },
+          "parts": {
+            "spritesheet": "Sprite-Sheet-Konfiguration für Ringe",
+            "json": "JSON-Konfiguration für Ringe"
+          },
           "fields": {
             "token-img": {
               "ring": {
@@ -84,7 +91,8 @@
       "first-time-user": {
         "content": "<h2>Willkommen bei SETT</h2><p>Hallo, willkommen zum Modul.</p><p>Um auf neue Token-Ringe zuzugreifen, klicken Sie auf Einstellungen konfigurieren und navigieren Sie zu den SETT-Moduleinstellungen. Aktivieren Sie dort einige der Ringe, speichern Sie die Änderungen, und Sie werden aufgefordert, Foundry neu zu laden. Öffnen Sie danach erneut die Einstellungen und suchen Sie die Core -> Dynamischer Token-Ring Dropdown-Einstellung, die jetzt die zusätzlichen Ringe enthält. Wählen Sie einen davon aus, speichern Sie die Änderungen und laden Sie Foundry erneut.",
         "button": "Eine Tour machen"
-      }
+      },
+      "reload-to-switch": "Nachdem Sie den neuen dynamischen Ring hinzugefügt haben, starten Sie erneut, um ihn tatsächlich zu aktivieren!"
     },
     "dialog": {
       "reload": {
@@ -94,10 +102,15 @@
           "yes": "Ja",
           "no": "Nein"
         }
+      },
+      "ring-submission": {
+        "title": "Ring-Einreichung",
+        "content": "Möchten Sie diesen Ring (der urheberrechtsfrei ist oder für den Sie die gesetzlichen Rechte besitzen) beim Modul einreichen?"
       }
     },
     "hover-text": {
-      "new-ring": "Neuer Ring!"
+      "new-ring": "Neuer Ring!",
+      "click-ring": "Beim Klicken werden Sie aufgefordert, neu zu laden, um den Ring schnell zu aktivieren. [WICHTIG] Dies wird keine anderen Änderungen im Menü speichern, also reichen Sie diese zuerst ein!"
     },
     "tours": {
       "starter": {
@@ -122,6 +135,38 @@
           "5": {
             "title": "Danke",
             "content": "Vielen Dank für die Tour. Vergessen Sie nicht, Ihrem Tourguide (mir) und Ihren Servern (Ring-Erstellern) beim Verlassen ein Trinkgeld zu geben, wenn Sie möchten :P."
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨Benutzerdefinierte Ringe✨",
+          "step": "Es gibt eine neue Funktion! Um darauf zuzugreifen, müssen Sie zu den SETT-Moduleinstellungen gehen und auf die neue Schaltfläche oben in diesen Einstellungen klicken, um das neue System zur Erstellung benutzerdefinierter Ringe zu verwenden. Viel Glück und genießen Sie die neuen Optionen!"
+        },
+        "full": {
+          "1": {
+            "title": "Benutzerdefinierter Ring-Leitfaden",
+            "content": "Hier habe ich einen allgemeinen Leitfaden zur Verwendung dieser Funktion verlinkt. Ich empfehle, ihn zumindest kurz durchzulesen, um Verwirrung zu vermeiden. Diese Tour wird Ihnen nur die Grundlagen zeigen"
+          },
+          "2": {
+            "title": "Ring-Sprite-Sheet-Bilder",
+            "content": "Hier können Sie den dynamischen Ring und den Hintergrund hochladen, um das 'Dynamische Ring-Sprite-Sheet' zu erstellen. Beachten Sie, dass Sie beide gleichzeitig hinzufügen müssen, um das Sprite-Sheet korrekt zu speichern. Wenn Sie nur die Konfiguration für einen benutzerdefinierten Ring bearbeiten möchten, den Sie bereits erstellt haben, ignorieren Sie diese einfach."
+          },
+          "3": {
+            "title": "Ring-Konfiguration",
+            "content": "Hier sind die Konfigurationseinstellungen für den benutzerdefinierten Ring, fahren Sie mit der Maus darüber, um eine Beschreibung von jedem sowie eine visuelle Hilfe zu sehen"
+          },
+          "4": {
+            "title": "Ring erstellen",
+            "content": "Diese Schaltfläche speichert Ihren hochgeladenen Ring und Hintergrund in einem Sprite-Sheet, wenn Sie sie haben, sowie Ihre Konfigurationsdaten im Ring-json. Nachdem Sie den Ring erstellt haben, müssen Sie neu laden, um Ihren neuen benutzerdefinierten Ring zu aktivieren."
+          },
+          "5": {
+            "title": "Ring exportieren",
+            "content": "Diese Schaltfläche ermöglicht es Ihnen, das Sprite-Sheet des Rings und das entsprechende json zu exportieren. Sie können diese Dateien dann auf github einreichen, damit sie möglicherweise dem Modul hinzugefügt werden!"
+          },
+          "6": {
+            "title": "Viel Glück! ✈",
+            "content": "Viel Glück und viel Spaß beim Erstellen von Ringen!<hr><i>überlegen Sie auch, mich auf <a href='https://ko-fi.com/chasarooni'>kofi</a> zu unterstützen, damit ich motiviert bin, mehr coole Sachen wie diese zu machen</i>"
           }
         }
       }

@@ -15,7 +15,7 @@ export async function createCustomTokenRingDialog() {
     outerRing: game.settings.get(MODULE_ID, "custom-ring.color-band.end") || 1,
     ringColor: game.settings.get(MODULE_ID, "custom-ring.color-band.color") || "#ffffff"
   };
-  const IMG_BASE_URL = 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/custom-rings/previews/tutorial/';
+  const IMG_BASE_URL = 'https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/main/previews/tutorial/';
   const IMGS = {
     ring: IMG_BASE_URL + 'dynamic-ring.gif',
     bg: IMG_BASE_URL + 'dynamic-bg.gif',
@@ -31,7 +31,7 @@ export async function createCustomTokenRingDialog() {
     title: game.i18n.localize(MODULE_ID + '.module-settings.custom-ring.menu.header'),
     content: `
     <p class="SETT custom-ring guide">
-    <a href="https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/custom-rings/CUSTOM_RING_GUIDE.md">${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide")}</a>
+    <a href="https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/main/CUSTOM_RING_GUIDE.md">${game.i18n.localize(MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide")}</a>
   </p>
   <form>
     <span class="SETT custom-ring spritesheet">

@@ -13,6 +13,13 @@
               "tooltip": "Faites un don pour vous en débarrasser !"
             }
           },
+          "content": {
+            "link-to-guide": "Lien vers le guide ici"
+          },
+          "parts": {
+            "spritesheet": "Configuration de la feuille de sprites de l'anneau",
+            "json": "Configuration JSON de l'anneau"
+          },
           "fields": {
             "token-img": {
               "ring": {
@@ -84,7 +91,8 @@
       "first-time-user": {
         "content": "<h2>Bienvenue dans SETT</h2><p>Bonjour, bienvenue dans le module.</p><p>Pour accéder aux nouveaux anneaux de jeton, cliquez sur Configurer les paramètres et naviguez vers les paramètres du module SETT. Activez certains des anneaux là-bas, sauvegardez les changements, et on vous demandera de recharger Foundry. Après l'avoir fait, ouvrez à nouveau les paramètres et trouvez le paramètre déroulant Core -> Anneau de jeton dynamique, qui inclura maintenant les anneaux supplémentaires. Sélectionnez-en un, sauvegardez les changements, et rechargez Foundry une fois de plus.</p>",
         "button": "Faire une visite"
-      }
+      },
+      "reload-to-switch": "Après avoir ajouté le nouvel anneau dynamique, redémarrez à nouveau pour l'activer réellement !"
     },
     "dialog": {
       "reload": {
@@ -94,10 +102,15 @@
           "yes": "Oui",
           "no": "Non"
         }
+      },
+      "ring-submission": {
+        "title": "Soumission d'anneau",
+        "content": "Voulez-vous soumettre cet anneau (qui est sans droits d'auteur ou dont vous avez les droits légaux) au module ?"
       }
     },
     "hover-text": {
-      "new-ring": "Nouvel anneau !"
+      "new-ring": "Nouvel anneau !",
+      "click-ring": "En cliquant, vous serez invité à recharger pour activer rapidement l'anneau. [IMPORTANT] cela NE sauvegardera PAS les autres modifications apportées dans le menu, alors soumettez-les d'abord !"
     },
     "tours": {
       "starter": {
@@ -122,6 +135,38 @@
           "5": {
             "title": "Merci",
             "content": "Merci d'avoir fait la visite, n'oubliez pas de donner un pourboire à votre guide touristique (moi) et à vos serveurs (Créateurs d'anneaux) en partant si vous vous sentez enclin à le faire :P."
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨Anneaux personnalisés✨",
+          "step": "Il y a une nouvelle fonctionnalité ! Pour y accéder, vous devrez vous rendre dans les paramètres du module SETT et cliquer sur le nouveau bouton en haut de ces paramètres pour utiliser le nouveau système de création d'anneaux personnalisés. Bonne chance et profitez des nouvelles options !"
+        },
+        "full": {
+          "1": {
+            "title": "Guide des anneaux personnalisés",
+            "content": "Voici un guide général pour utiliser cette fonctionnalité. Je vous recommande de le parcourir rapidement d'abord pour éviter toute confusion. Cette visite ne vous montrera que les bases"
+          },
+          "2": {
+            "title": "Images de la feuille de sprites de l'anneau",
+            "content": "Ici, vous pouvez télécharger l'anneau dynamique et l'arrière-plan pour créer la 'Feuille de sprites de l'anneau dynamique'. Notez que vous devez ajouter les deux à la fois pour enregistrer correctement la feuille de sprites. Si vous souhaitez uniquement modifier la configuration pour un anneau personnalisé que vous avez déjà créé, ignorez simplement ces éléments."
+          },
+          "3": {
+            "title": "Configuration de l'anneau",
+            "content": "Voici les paramètres de configuration pour l'anneau personnalisé, survolez-les pour voir une description de chacun ainsi qu'une aide visuelle"
+          },
+          "4": {
+            "title": "Créer un anneau",
+            "content": "Ce bouton enregistrera votre anneau et votre arrière-plan téléchargés dans une feuille de sprites si vous les avez, ainsi que vos données de configuration dans le json de l'anneau. Après avoir créé l'anneau, vous devrez recharger pour activer votre nouvel anneau personnalisé."
+          },
+          "5": {
+            "title": "Exporter l'anneau",
+            "content": "Ce bouton vous permet d'exporter la feuille de sprites de l'anneau et son json correspondant. Vous pouvez ensuite soumettre ces fichiers sur github pour qu'ils soient éventuellement ajoutés au module !"
+          },
+          "6": {
+            "title": "Bon voyage ! ✈",
+            "content": "Bonne chance et bon travail de création d'anneaux !<hr><i>envisagez également de me soutenir sur <a href='https://ko-fi.com/chasarooni'>kofi</a> pour que je puisse me motiver à faire plus de choses cool comme ça</i>"
           }
         }
       }
