@@ -110,7 +110,8 @@
     },
     "hover-text": {
       "new-ring": "New Ring!",
-      "click-ring": "When clicked will ask you to reload to quickly activate the ring. [IMPORTANT] this will NOT save any other changes made in the menu so submit those first!"
+      "click-ring": "When clicked will ask you to reload to quickly activate the ring.",
+      "click-ring-warning": "[IMPORTANT] this will NOT save any other changes made in the menu so submit those first!"
     },
     "tours": {
       "starter": {
