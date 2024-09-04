@@ -77,7 +77,7 @@ export async function showRingDialog() {
         <label>
           <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${ring.id}" ${isActive ? "checked" : ""}>
         </label>
-        <img src="${ring.preview}" alt="${ring.label}" data-id="${ring.id}" data-ring-id="${convertText(ring.label)}" data-tooltip="${game.i18n.localize(MODULE_ID + ".hover-text.click-ring")}">
+        <img src="${ring.preview}" alt="${ring.label}" data-id="${ring.id}" data-ring-id="${convertText(ring.label)}" data-tooltip="${game.i18n.localize(MODULE_ID + ".hover-text.click-ring")}<img src='$https://raw.githubusercontent.com/ChasarooniZ/More-Dynamic-Token-Rings/main/previews/rings/${ring.id}.webp'>">
       </div>`;
     });
 
