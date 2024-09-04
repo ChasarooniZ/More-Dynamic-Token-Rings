@@ -1,7 +1,7 @@
 import { MODULE_ID } from "../const.js";
 
 export async function submitRingDialog() {
-  return new Dialog({
+  return Dialog.confirm({
     title: game.i18n.localize(MODULE_ID + ".dialog.ring-submission.title"),
     content: `<p>${game.i18n.localize(
       MODULE_ID + ".dialog.ring-submission.content"
