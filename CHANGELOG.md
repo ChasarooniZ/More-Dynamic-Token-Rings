@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.0...0.4.1) - 3 Am Edition
+- `Bug Fixes`
+ - Fixed Issue with Redeux Trasnparent ring (@shemetz)
+ - Removed rings from normal settings list (@shemetz)
+ - Added second copy of the SETT button to the SETT settings in addition to above the select Dynamic Ring Setting (@shemetz)
+ - Moved and updated warning about reloading causing you to not save your settings (@shemetz)
+ - Removed ring id from the header of the Reload dialog (@shemetz)
+- `Misc`
+ - Added animation for new rings icon
 ## [0.4.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.3.1...0.4.0) - Customizing your Ringperience
 - `Custom Rings`
   - Added the ability to create your own Custom Dynamic Token Ring
