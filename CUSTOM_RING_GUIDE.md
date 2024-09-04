@@ -6,6 +6,9 @@ Welcome to the guide for making custom rings using SETT. Best of luck!
   - [Add To Game](#add-to-game)
   - [Submitting](#submitting)
   - [FAQ](#faq)
+## Video Tutorial
+[<img src="https://img.youtube.com/vi/LSEneuZSbHc/0.jpg">](https://www.youtube.com/watch?v=LSEneuZSbHc)
+
 ## Preface
 - I use [Paint.net](https://www.getpaint.net/) as an image editing software as it is free and has layers (feel free to use whatever software you want though, the general concepts should apply)
 - [Ring creation Style Guide](https://foundryvtt.com/article/dynamic-token-rings/)
