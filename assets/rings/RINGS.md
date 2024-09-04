@@ -63,8 +63,8 @@
 ![image](https://github.com/user-attachments/assets/ebd9c69b-89ce-4c3b-adaf-73bc15a928cb)
 
 ## [Volfied](https://www.metamorphic-digital.com/)
-### Volfied Runes Ring (Blue)
-![image](https://github.com/user-attachments/assets/b2f0c8d7-151e-4776-b012-9c3a15e6eee2)
 ### Volfied Runes Ring (Black)
 ![image](https://github.com/user-attachments/assets/8ff03f26-1b58-4e23-a401-d8e4532e1dec)
+### Volfied Runes Ring (Blue)
+![image](https://github.com/user-attachments/assets/b2f0c8d7-151e-4776-b012-9c3a15e6eee2)
 
