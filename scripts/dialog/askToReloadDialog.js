@@ -8,10 +8,10 @@ import { MODULE_ID } from "../const.js";
 
 export async function askToReload(ringID = null) {
   return new Dialog({
-    title: game.i18n.localize(MODULE_ID + ".dialog.reload.title") + (ringID ? ` (${ringID})` : ''),
+    title: game.i18n.localize(MODULE_ID + ".dialog.reload.title"),
     content: `<p>${game.i18n.localize(
       MODULE_ID + ".dialog.reload.content"
-    )}</p>`,
+    )}</p>${ringID ? `<p>${game.i18n.localize(MODULE_ID + ".hover-text.click-ring-warning")}</p>` : ""}`,
     buttons: {
       yes: {
         label: game.i18n.localize(
