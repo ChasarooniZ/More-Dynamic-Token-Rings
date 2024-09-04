@@ -105,7 +105,7 @@ function registerASetting(name, author, id) {
     hint: author,
     requiresReload: true,
     scope: "world",
-    config: true,
+    config: false,
     default: false,
     type: Boolean,
   });
