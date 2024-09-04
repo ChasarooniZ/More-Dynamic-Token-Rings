@@ -1,56 +1,175 @@
 {
-    "I18N.LANGUAGE": "Polski",
-    "more-dynamic-token-rings": {
-        "module-settings": {
-            "button": "Konfiguracja pierścieni za pomocą SETT"
-        },
-        "notifications": {
-            "ring-list-saved": "Dynamiczna lista pierścieni została zaktualizowana, załaduj ponownie, aby zobaczyć nowe pierścienie",
-            "first-time-user": {
-                "content": "<h2>Witamy w SETT</h2><p>Cześć, witam w module.</p><p>Aby uzyskać dostęp do nowych pierścieni tokenów, kliknij Skonfiguruj Ustawienia i przejdź do ustawień modułu SETT. Włącz tam niektóre pierścienie, zapisz zmiany, a zostaniesz poproszony o ponowne załadowanie Foundry. Po wykonaniu tej czynności ponownie otwórz ustawienia i znajdź rozwijane ustawienie Bazowa -> Dynamiczne Pierścienie Tokena, które będzie teraz zawierać dodatkowe pierścienie. Wybierz jeden z nich, zapisz zmiany i ponownie załaduj Foundry.</p>",
-                "button": "Zapraszamy na przewodnik"
+  "I18N.LANGUAGE": "Polski",
+  "more-dynamic-token-rings": {
+    "module-settings": {
+      "button": "Konfiguracja pierścieni za pomocą SETT",
+      "custom-ring": {
+        "menu": {
+          "settings-button": "Kreator niestandardowego pierścienia",
+          "header": "Utwórz arkusz sprite'ów i JSON pierścienia tokena",
+          "icons": {
+            "kofi": {
+              "title": "Wesprzyj mnie na Ko-fi",
+              "tooltip": "Wesprzyj mnie, aby pozbyć się tego!"
             }
-        },
-        "dialog": {
-            "reload": {
-                "title": "Przeładować?",
-                "content": "Czy chcesz przeładować?",
-                "buttons": {
-                    "yes": "Tak",
-                    "no": "Nie"
-                }
+          },
+          "content": {
+            "link-to-guide": "Link do przewodnika tutaj"
+          },
+          "parts": {
+            "spritesheet": "Konfiguracja arkusza sprite'ów pierścienia",
+            "json": "Konfiguracja JSON pierścienia"
+          },
+          "fields": {
+            "token-img": {
+              "ring": {
+                "label": "Dynamiczny pierścień tokena",
+                "tooltip": "Musi mieć 2048px x 2048px"
+              },
+              "background": {
+                "label": "Dynamiczne tło tokena",
+                "tooltip": "Musi mieć 2048px x 2048px"
+              },
+              "quality": {
+                "label": "Jakość pierścienia",
+                "tooltip": "Jakość generowanego Webp, zalecane 80%"
+              }
+            },
+            "thickness": {
+              "label": "Grubość pierścienia",
+              "tooltip": "Jak gruby jest pierścień od wnętrza do zewnątrz jako wartość od 0 do 1, gdzie 1 oznacza 100%"
+            },
+            "coloration": {
+              "label": "Kolorowanie pierścienia",
+              "inner": {
+                "label": "Wewnętrzna krawędź",
+                "tooltip": "Gdzie na pierścieniu powinno zaczynać się kolorowanie jako wartość od 0 do 1, gdzie 1 oznacza 100% odległości od środka"
+              },
+              "outer": {
+                "label": "Zewnętrzna krawędź",
+                "tooltip": "Gdzie na pierścieniu powinno kończyć się kolorowanie jako wartość od 0 do 1.5, gdzie 1 oznacza 100% odległości od środka"
+              },
+              "color": {
+                "label": "Kolor",
+                "tooltip": "Wprowadź wartość Hex koloru, który jest 'biały', gdy pierścień jest przekolorowywany (np. jeśli wybierzesz kolor niebieski, to niebieski będzie najbardziej przekolorowywany)"
+              }
             }
-        },
-        "hover-text": {
-            "new-ring": "Nowy pierścień!"
-        },
-        "tours": {
-            "starter": {
-                "title": "Przewodnik dla początkujących SETT",
-                "steps": {
-                    "1": {
-                        "title": "Nawiguj do",
-                        "content": "Po otwarciu ustawień najpierw przejdź do ustawień \"Bazowe\""
-                    },
-                    "2": {
-                        "title": "Menu SETT",
-                        "content": "Powinieneś zobaczyć przycisk SETT, który został dodany, użyj go, aby włączyć nowe pierścienie!"
-                    },
-                    "3": {
-                        "title": "Następnie",
-                        "content": "Po włączeniu pierścieni upewnij się, że kliknąłeś przycisk Zapisz, a następnie zostaniesz poproszony o ponowne załadowanie Foundry"
-                    },
-                    "4": {
-                        "title": "Wybieranie pierścienia",
-                        "content": "Po wybraniu pierścienia zostanie wyświetlony monit o ponowne załadowanie, aby można było zaktualizować pierścienie"
-                    },
-                    "5": {
-                        "title": "Dzięki",
-                        "content": "Dzięki za przewodnik, pamiętaj, aby dać napiwek swojemu przewodnikowi (mnie) i serwerom (Ring Makers) przy wyjściu, jeśli masz na to ochotę :P."
-                    }
-                }
+          },
+          "error": {
+            "upload-both": "Proszę załadować oba obrazy, aby utworzyć pierścień",
+            "2048-min": "Oba obrazy muszą mieć 2048px x 2048px.",
+            "failed-to-download": {
+              "json": "Nie udało się pobrać JSON:",
+              "image": "Nie udało się pobrać lub przekonwertować obrazu:"
+            },
+            "does-not-exist": "SETT: Niestandardowy pierścień nie istnieje, proszę faktycznie go utworzyć"
+          },
+          "buttons": {
+            "create": {
+              "label": "Utwórz"
+            },
+            "export": {
+              "label": "Eksportuj"
+            },
+            "cancel": {
+              "label": "Anuluj"
             }
+          }
+        },
+        "enabled": {
+          "name": "Niestandardowy pierścień włączony",
+          "hint": "Włącza niestandardowy pierścień w Dynamicznym Wybieraczu Pierścieni, pamiętaj, że musisz za każdym razem przeładować, aby zmiany zostały zaktualizowane"
+        },
+        "kofi-code": {
+          "name": "Kod z Kofi",
+          "hint": "Jeśli kiedykolwiek wesprzesz mnie na kofi, możesz usunąć ikonę nagłówka i wiadomości z Kreatora Niestandardowego Pierścienia"
         }
-        
+      }
+    },
+    "notifications": {
+      "ring-list-saved": "Dynamiczna lista pierścieni została zaktualizowana, załaduj ponownie, aby zobaczyć nowe pierścienie",
+      "first-time-user": {
+        "content": "<h2>Witamy w SETT</h2><p>Cześć, witam w module.</p><p>Aby uzyskać dostęp do nowych pierścieni tokenów, kliknij Skonfiguruj Ustawienia i przejdź do ustawień modułu SETT. Włącz tam niektóre pierścienie, zapisz zmiany, a zostaniesz poproszony o ponowne załadowanie Foundry. Po wykonaniu tej czynności ponownie otwórz ustawienia i znajdź rozwijane ustawienie Bazowa -> Dynamiczne Pierścienie Tokena, które będzie teraz zawierać dodatkowe pierścienie. Wybierz jeden z nich, zapisz zmiany i ponownie załaduj Foundry.</p>",
+        "button": "Zapraszamy na przewodnik"
+      },
+      "reload-to-switch": "Po dodaniu nowego Dynamicznego Pierścienia, ponownie uruchom, aby go faktycznie aktywować!"
+    },
+    "dialog": {
+      "reload": {
+        "title": "Przeładować?",
+        "content": "Czy chcesz przeładować?",
+        "buttons": {
+          "yes": "Tak",
+          "no": "Nie"
+        }
+      },
+      "ring-submission": {
+        "title": "Przesłanie pierścienia",
+        "content": "Czy chcesz przesłać ten pierścień (który jest wolny od praw autorskich lub masz do niego prawa) do modułu?"
+      }
+    },
+    "hover-text": {
+      "new-ring": "Nowy pierścień!",
+      "click-ring": "Po kliknięciu zostaniesz poproszony o przeładowanie, aby szybko aktywować pierścień. [WAŻNE] to NIE zapisze żadnych innych zmian w menu, więc najpierw je zatwierdź!"
+    },
+    "tours": {
+      "starter": {
+        "title": "Przewodnik dla początkujących SETT",
+        "steps": {
+          "1": {
+            "title": "Nawiguj do",
+            "content": "Po otwarciu ustawień najpierw przejdź do ustawień \"Bazowe\""
+          },
+          "2": {
+            "title": "Menu SETT",
+            "content": "Powinieneś zobaczyć przycisk SETT, który został dodany, użyj go, aby włączyć nowe pierścienie!"
+          },
+          "3": {
+            "title": "Następnie",
+            "content": "Po włączeniu pierścieni upewnij się, że kliknąłeś przycisk Zapisz, a następnie zostaniesz poproszony o ponowne załadowanie Foundry"
+          },
+          "4": {
+            "title": "Wybieranie pierścienia",
+            "content": "Po wybraniu pierścienia zostanie wyświetlony monit o ponowne załadowanie, aby można było zaktualizować pierścienie"
+          },
+          "5": {
+            "title": "Dzięki",
+            "content": "Dzięki za przewodnik, pamiętaj, aby dać napiwek swojemu przewodnikowi (mnie) i serwerom (Ring Makers) przy wyjściu, jeśli masz na to ochotę :P."
+          }
+        }
+      },
+      "custom": {
+        "notification": {
+          "title": "✨Niestandardowe pierścienie✨",
+          "step": "Jest nowa funkcja! Aby uzyskać do niej dostęp, musisz przejść do ustawień modułu SETT i kliknąć nowy przycisk na górze tych ustawień, aby skorzystać z nowego systemu tworzenia niestandardowych pierścieni. Powodzenia i ciesz się nowymi opcjami!"
+        },
+        "full": {
+          "1": {
+            "title": "Przewodnik po niestandardowych pierścieniach",
+            "content": "Tutaj zamieściłem ogólny przewodnik dotyczący korzystania z tej funkcji. Zalecałbym przynajmniej szybkie przejrzenie go, aby uniknąć nieporozumień. Ten przewodnik pokaże Ci tylko podstawy"
+          },
+          "2": {
+            "title": "Obrazy arkusza sprite'ów pierścienia",
+            "content": "Tutaj możesz przesłać Dynamiczny Pierścień i Tło, aby utworzyć 'Arkusz Sprite'ów Dynamicznego Pierścienia'. Pamiętaj, że musisz dodać oba naraz, aby poprawnie zapisać arkusz sprite'ów. Jeśli chcesz tylko edytować konfigurację dla niestandardowego pierścienia, który już stworzyłeś, po prostu zignoruj te opcje."
+          },
+          "3": {
+            "title": "Konfiguracja pierścienia",
+            "content": "Oto ustawienia konfiguracji dla niestandardowego pierścienia, najedź kursorem na nie, aby zobaczyć opis każdej z nich oraz wizualną pomoc"
+          },
+          "4": {
+            "title": "Utwórz pierścień",
+            "content": "Ten przycisk zapisze przesłany pierścień i tło do arkusza sprite'ów, jeśli je masz, oraz zapisze dane konfiguracji do JSON pierścienia. Po utworzeniu pierścienia będziesz musiał przeładować, aby aktywować swój nowy niestandardowy pierścień."
+          },
+          "5": {
+            "title": "Eksportuj pierścień",
+            "content": "Ten przycisk pozwala na eksport arkusza sprite'ów pierścienia i odpowiadającego mu JSON. Możesz następnie przesłać te pliki na github, aby mogły zostać dodane do modułu!"
+          },
+          "6": {
+            "title": "Powodzenia! ✈",
+            "content": "Powodzenia i szczęśliwego tworzenia pierścieni!<hr><i>rozważ również wsparcie mnie na <a href='https://ko-fi.com/chasarooni'>kofi</a>, abym mógł motywować się do robienia więcej fajnych rzeczy, takich jak ta</i>"
+          }
+        }
+      }
     }
+  }
 }
