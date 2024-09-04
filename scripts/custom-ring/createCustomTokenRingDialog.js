@@ -4,6 +4,7 @@ import { downloadCustomRing } from "./export.js";
 import { loadImage, processAndSaveImages, processAndSaveConfigJSON, checkKofi } from "./custom-ring.js";
 import { customRingFullTour } from "../updates/tours/1.5customRingTourFull.js";
 import { submitRingDialog } from "../dialog/openRingSubmissionDialog.js";
+import { convertText } from "../hooks.js";
 
 // Function to create the dialog box in Foundry VTT
 
@@ -114,7 +115,7 @@ export async function createCustomTokenRingDialog() {
             ui.notifications.info(tsundereKoFiLines[Math.floor(Math.random() * tsundereKoFiLines.length)]);
           }
           await game.settings.set(MODULE_ID, "custom-ring.enabled", true);
-          await askToReload();
+          await askToReload(convertText("Custom SETT Ring"));
         }
       },
       export: {
