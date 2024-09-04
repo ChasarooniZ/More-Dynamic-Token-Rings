@@ -1,4 +1,11 @@
 ## [0.4.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.1...0.4.2) - QoL
+- `Rings`
+  - `Added`
+    - **Eldritch Dream Classy Black Ring**
+    - **Eldritch Dream Dual Glow Ring**
+- `Languages`
+  - Updated languages to show translated warning
+## [0.4.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.1...0.4.2) - QoL
 - `Custom Ring`
   - Custom Ring is enabled when you create or update one (@volfied)
   - Custom Ring is set as your active ring when you create or update one (@volfied)
