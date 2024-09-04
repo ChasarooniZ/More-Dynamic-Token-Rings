@@ -74,6 +74,16 @@ function registerSettings() {
     type: String,
   });
 
+  game.settings.register(MODULE_ID, "tours-run", {
+    name: "tours-run",
+    hint: "",
+    requiresReload: false,
+    scope: "world",
+    config: false,
+    default: [],
+    type: Array,
+  });
+
   RINGS.forEach(({ label, author, id }) => {
     registerASetting(label, author, id);
   });
