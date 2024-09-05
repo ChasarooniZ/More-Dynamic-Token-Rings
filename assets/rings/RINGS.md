@@ -13,6 +13,7 @@
     - [Eldritch Dream Curse Ring (Colorable)](#eldritch-dream-curse-ring-colorable)
     - [Eldritch Dream Cyber Purple Ring (Colorable)](#eldritch-dream-cyber-purple-ring-colorable)
     - [Eldritch Dream Dual Glow Ring](#eldritch-dream-dual-glow-ring)
+    - [Eldritch Dream Gilded Black Marble Ring](#eldritch-dream-gilded-black-marble-ring)
     - [Eldritch Dream Pink Metal Ring (Colorable)](#eldritch-dream-pink-metal-ring-colorable)
     - [Eldritch Dream Simple Gold Ring (Colorable)](#eldritch-dream-simple-gold-ring-colorable)
   - [Joeundsoo](#joeundsoo)
@@ -45,6 +46,8 @@
 ![image](https://github.com/user-attachments/assets/9771a436-db91-4dc2-8e69-03fd9532c025)
 ### Eldritch Dream Dual Glow Ring
 ![image](https://github.com/user-attachments/assets/a5b742a3-a7c8-4185-9a3f-4076b23655ce)
+### Eldritch Dream Gilded Black Marble Ring
+![image](../../previews/rings/rings-eldritch-dream;-gilded-black-marble-ring.webp)
 ### Eldritch Dream Pink Metal Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/4cb88d58-90b0-46b0-bcd3-306cc89e5ce6)
 ### Eldritch Dream Simple Gold Ring (Colorable)
