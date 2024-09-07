@@ -5,7 +5,7 @@
 ## [0.4.5](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.4...0.4.5) - New Rings 2
 - `Rings`
   - `Added`
-    - **Gilded Black Marble Ring**
+    - **Eldritch Dream: Gilded Black Marble Ring**
 ## [0.4.4](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.3...0.4.4) - Better Preview
 - `Rings`
   - Added a better preview for each ring when hovering over them to help make your decision a bit easier
