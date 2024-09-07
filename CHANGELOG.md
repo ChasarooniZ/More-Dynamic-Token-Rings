@@ -1,4 +1,5 @@
-
+## [0.4.6](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.5...0.4.6) - Now they can See
+- Fixed bug where non GM users couldn't see custom rings (found by @stonedtroll)
 ## [0.4.5](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.4...0.4.5) - New Rings 2
 - `Rings`
   - `Added`
