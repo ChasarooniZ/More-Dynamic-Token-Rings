@@ -55,7 +55,7 @@
         "y": 0.5
       },
       "gridTarget": 3,
-      "ringThickness": 0.098
+      "ringThickness": 0.196
     },
     "token-ring-large-huge-bkg": {
       "frame": {
@@ -105,7 +105,7 @@
         "y": 0.5
       },
       "gridTarget": 2,
-      "ringThickness": 0.098
+      "ringThickness": 0.196
     },
     "token-ring-med-bkg": {
       "frame": {
@@ -155,7 +155,7 @@
         "y": 0.5
       },
       "gridTarget": 1,
-      "ringThickness": 0.098
+      "ringThickness": 0.196
     },
     "token-ring-tiny-bkg": {
       "frame": {
@@ -205,7 +205,7 @@
         "y": 0.5
       },
       "gridTarget": 0.5,
-      "ringThickness": 0.098
+      "ringThickness": 0.196
     }
   },
   "meta": {

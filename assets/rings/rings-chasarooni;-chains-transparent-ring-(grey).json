@@ -28,7 +28,7 @@
 			"sourceSize": {"w":2048,"h":2048},
 			"anchor": {"x":0.5,"y":0.5},
 			"gridTarget": 3,
-			"ringThickness": 0.072
+			"ringThickness": 0.144
 		},
 		"token-ring-large-huge-bkg":
 		{
@@ -48,7 +48,7 @@
 			"sourceSize": {"w":1024,"h":1024},
 			"anchor": {"x":0.5,"y":0.5},
 			"gridTarget": 2,
-			"ringThickness": 0.072
+			"ringThickness": 0.144
 		},
 		"token-ring-med-bkg":
 		{
@@ -68,7 +68,7 @@
 			"sourceSize": {"w":512,"h":512},
 			"anchor": {"x":0.5,"y":0.5},
 			"gridTarget": 1,
-			"ringThickness": 0.072
+			"ringThickness": 0.144
 		},
 		"token-ring-tiny-bkg":
 		{
@@ -88,7 +88,7 @@
 			"sourceSize": {"w":256,"h":256},
 			"anchor": {"x":0.5,"y":0.5},
 			"gridTarget": 0.5,
-			"ringThickness": 0.072
+			"ringThickness": 0.144
 		}},
 	"meta": {
 		"version": "1.1",

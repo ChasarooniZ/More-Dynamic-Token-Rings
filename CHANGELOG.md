@@ -1,3 +1,6 @@
+## [0.4.8](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.7...0.4.8) - More Thick
+- Fixed Ring thickness and custom ring tutorial Guide for thickness to be the proper size (@shemetz)
+- This fixes grid fit support for these rings
 ## [0.4.7](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.6...0.4.7) - PL!!!
 - Updated the PL Translation (@Lioheart)
 ## [0.4.6](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.5...0.4.6) - Now they can See
