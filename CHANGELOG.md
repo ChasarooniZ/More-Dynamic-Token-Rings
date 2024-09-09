@@ -1,3 +1,5 @@
+## [0.4.9](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.8...0.4.9) - Centered Tour
+- Moved the intro tour to be centered on the screen so there is less confusion (@CrusherEAGLE)
 ## [0.4.8](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.7...0.4.8) - More Thick
 - Fixed Ring thickness and custom ring tutorial Guide for thickness to be the proper size (@shemetz)
 - This fixes grid fit support for these rings

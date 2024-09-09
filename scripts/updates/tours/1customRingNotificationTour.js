@@ -8,8 +8,9 @@ export const customRingTour = () => {
         steps: [
             {
                 title: game.i18n.localize(MODULE_ID + ".tours.custom.notification.title"),
-                selector: '[data-tab="settings"]',
+                selector: 'section#ui-middle',
                 content: game.i18n.localize(MODULE_ID + ".tours.custom.notification.step"),
+                tooltipDirection: "CENTER"
             }
         ]
     })
