@@ -1,4 +1,4 @@
-## [0.4.10](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.10...0.4.11) - AV
+## [0.4.11](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.10...0.4.11) - AV
 - `Rings`
   - `Added`
     - **Chasarooni: Abomination Vaults**
