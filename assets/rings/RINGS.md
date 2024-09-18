@@ -3,6 +3,7 @@
 - [List of Token Rings](#list-of-token-rings)
   - [Table of Contents](#table-of-contents)
   - [Chasarooni](#chasarooni)
+    - [Chasarooni Abomination Vaults Ring](#Chasarooni-Abomination-Vaults-Ring)
     - [Chasarooni Chains Ring (Grey)](#chasarooni-chains-ring-grey)
     - [Chasarooni Chains Transparent Ring (Grey)](#chasarooni-chains-transparent-ring-grey)
   - [Eldritch Dream](#eldritch-dream)
@@ -27,6 +28,8 @@
     - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
 
 ## [Chasarooni](https://ko-fi.com/Chasarooni)
+### Chasarooni Abomination Vaults Ring
+![image](https://github.com/user-attachments/assets/a2ac94af-f1a0-4de1-aeba-bc0961a4d190)
 ### Chasarooni Chains Ring (Grey)
 ![image](https://github.com/user-attachments/assets/1cb5d4ac-c72f-478e-8b36-c9dc6417b484)
 ### Chasarooni Chains Transparent Ring (Grey)
