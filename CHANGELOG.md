@@ -1,3 +1,7 @@
+## [0.4.10](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.10...0.4.11) - AV
+- `Rings`
+  - `Added`
+    - **Chasarooni: Abomination Vaults**
 ## [0.4.10](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.9...0.4.10) - This tour could've been an email
 - Replaced intro tour with a chat message, to avoid forcing extra clicks (@shemetz)
 ## [0.4.9](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.8...0.4.9) - Centered Tour
