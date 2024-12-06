@@ -1,3 +1,5 @@
+## [0.5.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.11...0.5.0) - Fixing Rings for 5e
+- Chnaged the ring JSON for existing rings + custom rings so that it properly works with 5e (@picollo-24, @stonedTroll)
 ## [0.4.11](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.4.10...0.4.11) - AV
 - `Rings`
   - `Added`
