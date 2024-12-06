@@ -8,7 +8,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
             "defaultRingColor": ringColor
         },
         "frames": {
-            "token-ring-gargantuan-bkg":
+            "gnt-ring-bkg":
             {
                 "frame": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
                 "rotated": false,
@@ -17,7 +17,27 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "sourceSize": { "w": 2048, "h": 2048 },
                 "anchor": { "x": 0.5, "y": 0.5 }
             },
-            "token-ring-gargantuan":
+            "gnt-ring":
+            {
+                "frame": { "x": 2048, "y": 0, "w": 2048, "h": 2048 },
+                "rotated": false,
+                "trimmed": false,
+                "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
+                "sourceSize": { "w": 2048, "h": 2048 },
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "gridTarget": 4,
+                "ringThickness": ringThickness
+            },
+            "hge-ring-bkg":
+            {
+                "frame": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
+                "rotated": false,
+                "trimmed": false,
+                "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
+                "sourceSize": { "w": 2048, "h": 2048 },
+                "anchor": { "x": 0.5, "y": 0.5 }
+            },
+            "hge-ring":
             {
                 "frame": { "x": 2048, "y": 0, "w": 2048, "h": 2048 },
                 "rotated": false,
@@ -28,7 +48,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "gridTarget": 3,
                 "ringThickness": ringThickness
             },
-            "token-ring-large-huge-bkg":
+            "lrg-ring-bkg":
             {
                 "frame": { "x": 4096, "y": 0, "w": 1024, "h": 1024 },
                 "rotated": false,
@@ -37,7 +57,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "sourceSize": { "w": 1024, "h": 1024 },
                 "anchor": { "x": 0.5, "y": 0.5 }
             },
-            "token-ring-large-huge":
+            "lrg-ring":
             {
                 "frame": { "x": 5120, "y": 0, "w": 1024, "h": 1024 },
                 "rotated": false,
@@ -48,7 +68,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "gridTarget": 2,
                 "ringThickness": ringThickness
             },
-            "token-ring-med-bkg":
+            "med-ring-bkg":
             {
                 "frame": { "x": 6144, "y": 0, "w": 512, "h": 512 },
                 "rotated": false,
@@ -57,7 +77,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "sourceSize": { "w": 512, "h": 512 },
                 "anchor": { "x": 0.5, "y": 0.5 }
             },
-            "token-ring-med":
+            "med-ring":
             {
                 "frame": { "x": 6656, "y": 0, "w": 512, "h": 512 },
                 "rotated": false,
@@ -68,7 +88,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "gridTarget": 1,
                 "ringThickness": ringThickness
             },
-            "token-ring-tiny-bkg":
+            "tny-ring-bkg":
             {
                 "frame": { "x": 7168, "y": 0, "w": 256, "h": 256 },
                 "rotated": false,
@@ -77,7 +97,7 @@ export function getBaseJSON(colorBandStartRadius, colorBandEndRadius, ringColor,
                 "sourceSize": { "w": 256, "h": 256 },
                 "anchor": { "x": 0.5, "y": 0.5 }
             },
-            "token-ring-tiny":
+            "tny-ring":
             {
                 "frame": { "x": 7424, "y": 0, "w": 256, "h": 256 },
                 "rotated": false,

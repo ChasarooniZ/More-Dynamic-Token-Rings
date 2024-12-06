@@ -7,7 +7,7 @@
     "defaultRingColor": "#e9ca9e"
   },
   "frames": {
-    "token-ring-gargantuan-bkg": {
+    "gnt-ring-bkg": {
       "frame": {
         "x": 0,
         "y": 0,
@@ -31,7 +31,57 @@
         "y": 0.5
       }
     },
-    "token-ring-gargantuan": {
+    "gnt-ring": {
+      "frame": {
+        "x": 2048,
+        "y": 0,
+        "w": 2048,
+        "h": 2048
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 2048,
+        "h": 2048
+      },
+      "sourceSize": {
+        "w": 2048,
+        "h": 2048
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "gridTarget": 4,
+      "ringThickness": 0.17
+    },
+    "hge-ring-bkg": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 2048,
+        "h": 2048
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 2048,
+        "h": 2048
+      },
+      "sourceSize": {
+        "w": 2048,
+        "h": 2048
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "hge-ring": {
       "frame": {
         "x": 2048,
         "y": 0,
@@ -55,9 +105,9 @@
         "y": 0.5
       },
       "gridTarget": 3,
-      "ringThickness": 0.170
+      "ringThickness": 0.17
     },
-    "token-ring-large-huge-bkg": {
+    "lrg-ring-bkg": {
       "frame": {
         "x": 4096,
         "y": 0,
@@ -81,7 +131,7 @@
         "y": 0.5
       }
     },
-    "token-ring-large-huge": {
+    "lrg-ring": {
       "frame": {
         "x": 5120,
         "y": 0,
@@ -105,9 +155,9 @@
         "y": 0.5
       },
       "gridTarget": 2,
-      "ringThickness": 0.170
+      "ringThickness": 0.17
     },
-    "token-ring-med-bkg": {
+    "med-ring-bkg": {
       "frame": {
         "x": 6144,
         "y": 0,
@@ -131,7 +181,7 @@
         "y": 0.5
       }
     },
-    "token-ring-med": {
+    "med-ring": {
       "frame": {
         "x": 6656,
         "y": 0,
@@ -155,9 +205,9 @@
         "y": 0.5
       },
       "gridTarget": 1,
-      "ringThickness": 0.170
+      "ringThickness": 0.17
     },
-    "token-ring-tiny-bkg": {
+    "tny-ring-bkg": {
       "frame": {
         "x": 7168,
         "y": 0,
@@ -181,7 +231,7 @@
         "y": 0.5
       }
     },
-    "token-ring-tiny": {
+    "tny-ring": {
       "frame": {
         "x": 7424,
         "y": 0,
@@ -205,7 +255,7 @@
         "y": 0.5
       },
       "gridTarget": 0.5,
-      "ringThickness": 0.170
+      "ringThickness": 0.17
     }
   },
   "meta": {
