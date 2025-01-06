@@ -100,7 +100,7 @@
   },
   "meta": {
     "version": "1.1",
-    "image": "art/rings-redeux;-simple-ring-(clear).webp",
+    "image": "rings-redeux;-simple-ring-(clear).webp",
     "format": "RGBA8888",
     "size": { "w": 7680, "h": 2048 },
     "scale": "1"

@@ -101,7 +101,7 @@
   },
   "meta": {
     "version": "1.1",
-    "image": "art/rings-eldritch-dream;-bronze-spiral-ring-(colored).webp",
+    "image": "rings-eldritch-dream;-bronze-spiral-ring-(colored).webp",
     "format": "RGBA8888",
     "size": { "w": 7680, "h": 2048 },
     "scale": "1"

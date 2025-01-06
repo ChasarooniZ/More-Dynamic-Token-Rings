@@ -60,7 +60,7 @@
             "2048-min": "Ambas imágenes deben ser de 2048px x 2048px.",
             "failed-to-download": {
               "json": "Error al descargar JSON:",
-              "image": "art/Error al descargar o convertir la imagen:"
+              "image": "Error al descargar o convertir la imagen:"
             },
             "does-not-exist": "SETT: El anillo personalizado no existe, por favor crea uno realmente"
           },

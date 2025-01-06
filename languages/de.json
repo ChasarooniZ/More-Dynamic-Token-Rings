@@ -60,7 +60,7 @@
             "2048-min": "Beide Bilder müssen 2048px x 2048px groß sein.",
             "failed-to-download": {
               "json": "JSON konnte nicht heruntergeladen werden:",
-              "image": "art/Bild konnte nicht heruntergeladen oder konvertiert werden:"
+              "image": "Bild konnte nicht heruntergeladen oder konvertiert werden:"
             },
             "does-not-exist": "SETT: Benutzerdefinierter Ring existiert nicht, bitte erstellen Sie tatsächlich einen"
           },

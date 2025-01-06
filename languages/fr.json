@@ -60,7 +60,7 @@
             "2048-min": "Les deux images doivent être de 2048px x 2048px.",
             "failed-to-download": {
               "json": "Échec du téléchargement du JSON :",
-              "image": "art/Échec du téléchargement ou de la conversion de l'image :"
+              "image": "Échec du téléchargement ou de la conversion de l'image :"
             },
             "does-not-exist": "SETT : L'anneau personnalisé n'existe pas, veuillez en créer un réellement"
           },
