@@ -60,7 +60,7 @@
             "2048-min": "Oba obrazy muszą mieć rozmiar 2048px x 2048px.",
             "failed-to-download": {
               "json": "Nie udało się pobrać pliku JSON:",
-              "image": "Nie udało się pobrać lub przekonwertować obrazu:"
+              "image": "art/Nie udało się pobrać lub przekonwertować obrazu:"
             },
             "does-not-exist": "SETT: Pierścień niestandardowy nie istnieje, należy go utworzyć"
           },

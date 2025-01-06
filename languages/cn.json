@@ -60,7 +60,7 @@
             "2048-min": "两张图片都必须为2048px x 2048px。",
             "failed-to-download": {
               "json": "下载JSON失败：",
-              "image": "下载或转换图片失败："
+              "image": "art/下载或转换图片失败："
             },
             "does-not-exist": "SETT：自定义指环不存在，请实际创建一个"
           },

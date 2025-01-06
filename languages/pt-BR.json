@@ -60,7 +60,7 @@
             "2048-min": "Ambas as imagens devem ter 2048px x 2048px.",
             "failed-to-download": {
               "json": "Falha ao baixar JSON:",
-              "image": "Falha ao baixar ou converter imagem:"
+              "image": "art/Falha ao baixar ou converter imagem:"
             },
             "does-not-exist": "SETT: O Anel Personalizado não existe, por favor crie um de verdade"
           },
