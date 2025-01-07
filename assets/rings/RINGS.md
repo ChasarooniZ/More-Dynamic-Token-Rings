@@ -53,7 +53,7 @@
 ### Eldritch Dream Gilded Black Marble Ring
 ![image](../../previews/rings/rings-eldritch-dream;-gilded-black-marble-ring.webp)
 ### Eldritch Dream Gilded Black Marble Ring (Colorable)
-![image](./../previews/rings/rings-eldritch-dream;-gilded-black-marble-ring-(colored).webp)
+![image](./../previews/rings/rings-eldritch-dream%3B-gilded-black-marble-ring-(colored).webp)
 ### Eldritch Dream Pink Metal Ring (Colorable)
 ![image](https://github.com/user-attachments/assets/4cb88d58-90b0-46b0-bcd3-306cc89e5ce6)
 ### Eldritch Dream Simple Gold Ring (Colorable)
