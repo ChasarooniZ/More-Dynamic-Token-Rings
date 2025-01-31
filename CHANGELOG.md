@@ -1,6 +1,6 @@
 ## [0.5.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.1...0.5.2) - Guide Updates
 
-- Updated thickness guide image to actually match
+- Updated thickness guide image to actually match (@Moth)
 
 ## [0.5.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.0...0.5.1) - Color
 
