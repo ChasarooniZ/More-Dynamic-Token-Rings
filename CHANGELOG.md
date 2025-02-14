@@ -1,4 +1,8 @@
-## [0.5.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.1...0.5.2) - Guide Updates
+## [0.5.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.2...0.5.3) - Fix Select
+
+- Fix setting ring by clicking it (@ChapB42)
+
+## [0.5.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.1...0.5.2) - Guide Updates
 
 - Updated thickness guide image to actually match (@Moth)
 

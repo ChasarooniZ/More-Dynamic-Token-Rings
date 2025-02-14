@@ -99,20 +99,20 @@ export async function ready() {
       if (document.querySelector(selector)) {
         return resolve(document.querySelector(selector));
       }
-
+    
       const observer = new MutationObserver(() => {
         if (document.querySelector(selector)) {
           resolve(document.querySelector(selector));
           observer.disconnect();
         }
       });
-
+    
       observer.observe(document.body, {
         childList: true,
         subtree: true,
       });
 
-      this.wait(timeout).then(reject);
+      setTimeout(() => reject(new Error('Timeout waiting for element')), timeout);
     });
   }
 }
