@@ -8,14 +8,6 @@
   },
 
   "frames": {
-    "gnt-ring-bkg": {
-      "frame": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
-      "sourceSize": { "w": 2048, "h": 2048 },
-      "anchor": { "x": 0.5, "y": 0.5 }
-    },
     "gnt-ring": {
       "frame": { "x": 2048, "y": 0, "w": 2048, "h": 2048 },
       "rotated": false,
@@ -32,15 +24,6 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
       "sourceSize": { "w": 2048, "h": 2048 },
       "anchor": { "x": 0.5, "y": 0.5 }
-    },
-    "gnt-ring": {
-      "frame": { "x": 2048, "y": 0, "w": 2048, "h": 2048 },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
-      "sourceSize": { "w": 2048, "h": 2048 },
-      "anchor": { "x": 0.5, "y": 0.5 },
-      "gridTarget": 3
     },
     "lrg-ring-bkg": {
       "frame": { "x": 4096, "y": 0, "w": 1024, "h": 1024 },
