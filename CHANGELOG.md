@@ -1,3 +1,9 @@
+## [0.5.4](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.3...0.5.4) - Ruby Phoenix
+
+- `Rings`
+  - `Added`
+    - **Chasarooni: Ruby Phoenix**
+
 ## [0.5.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.2...0.5.3) - Fix Select
 
 - Fix setting ring by clicking it (@ChapB42)
