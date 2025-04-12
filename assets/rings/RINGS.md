@@ -47,6 +47,8 @@
 
 ### Chasarooni Ruby Phoenix Ring (Colorable)
 
+![image](https://github.com/user-attachments/assets/d18eb5b7-7d23-4bc7-a678-94e1d42b00df)
+
 ## [Eldritch Dream](https://ko-fi.com/eldritchdream)
 
 ### Eldritch Dream Blue Aura Ring (Colorable)
