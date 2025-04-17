@@ -7,7 +7,7 @@ export const AUTHORS = [
     name: "Eldritch Dream",
     link: "https://ko-fi.com/eldritchdream",
   },
-  { name: "Volfied", link: "https://www.metamorphic-digital.com/" },
+  { name: "Volfied", link: "https://discord.gg/mQX64M6VNu" },
   { name: "", link: "" },
 ];
 

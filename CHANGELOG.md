@@ -1,3 +1,9 @@
+## [0.5.5](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.4...0.5.5) - Chiaroscura
+
+- `Rings`
+  - `Added`
+    - **Volified: Chiaroscura**
+
 ## [0.5.4](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.3...0.5.4) - Ruby Phoenix
 
 - `Rings`

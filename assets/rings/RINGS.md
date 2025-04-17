@@ -28,6 +28,7 @@
     - [Redeux Simple Ring (Clear)](#redeux-simple-ring-clear)
     - [Redeux Simple Transparent Ring](#redeux-simple-transparent-ring)
   - [Volfied](#volfied)
+    - [Volified: Chiaroscura](#volified-chiaroscura)
     - [Volfied Runes Ring (Black)](#volfied-runes-ring-black)
     - [Volfied Runes Ring (Blue)](#volfied-runes-ring-blue)
 
@@ -116,6 +117,11 @@
 ![image](https://github.com/user-attachments/assets/ebd9c69b-89ce-4c3b-adaf-73bc15a928cb)
 
 ## [Volfied](https://www.metamorphic-digital.com/)
+
+
+### Volified: Chiaroscura
+
+
 
 ### Volfied Runes Ring (Black)
 
