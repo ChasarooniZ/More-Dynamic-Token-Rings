@@ -8,7 +8,7 @@ import { handleVersion } from "./updates/handleVersion.js";
 export function renderSettingsConfig(_, html) {
   if (!game.user.isGM)
     return false;
-  const coreTab = html.find(`.tab[data-tab=core]`);
+  const coreTab = $(html).find(`.tab[data-tab=core]`);
   // Retrieve the localized name for the setting
   const localizedName = game.i18n.localize(
     MODULE_ID + ".module-settings.button"
@@ -28,7 +28,7 @@ export function renderSettingsConfig(_, html) {
       </button>
   `);
 
-  const moduleTab = html.find(`.tab[data-tab=${MODULE_ID}]`);
+  const moduleTab = $(html).find(`.tab[data-tab=${MODULE_ID}]`);
   const button = `
       <button type="button" class="SETT-button-settings" onclick="(async () => { 
         game.SETT.custom.menu() 

@@ -31,8 +31,8 @@
 
 //   activateListeners(html) {
 //     super.activateListeners(html);
-//     html.find(".ring-checkbox").change(this._onCheckboxChange.bind(this));
-//     html.find(".reload-button").click(this._onReloadClick.bind(this));
+//     $(html).find(".ring-checkbox").change(this._onCheckboxChange.bind(this));
+//     $(html).find(".reload-button").click(this._onReloadClick.bind(this));
 //   }
 
 //   _onCheckboxChange(event) {

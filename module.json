@@ -19,6 +19,7 @@
     "recommends": [
       {
         "id": "pf2e-reactive-token-ring",
+        "name": "REDY: Reactive Dynamic Token Rings",
         "type": "module",
         "reason": "This module actually adds functionality to dynamic tokens for many systems (Don't enable for DND5e and other systems that already have these features implemented)",
         "manifest": "https://github.com/ChasarooniZ/PF2e-Reactive-Token-Ring/releases/latest/download/module.json",
