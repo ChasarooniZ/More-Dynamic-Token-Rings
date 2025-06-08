@@ -1,3 +1,7 @@
+## [1.0.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/1.0.2...1.0.3) - Custom Ring Fix
+
+- Fixed custom ring workflow
+
 ## [1.0.2](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/1.0.1...1.0.2) - Fixed height
 
 - Fixed height styling (🐛 @Quirken)

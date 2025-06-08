@@ -37,11 +37,20 @@ export async function createCustomTokenRingDialog() {
 
   const prefix = MODULE_ID + ".module-settings.custom-ring.menu.fields.";
 
-  new foundry.applications.api.DialogV2({
+  foundry.applications.api.DialogV2.wait({
     window: {
       title: game.i18n.localize(
         MODULE_ID + ".module-settings.custom-ring.menu.header"
       ),
+      controls: [
+        {
+          action: "kofi",
+          label: "Support Dev",
+          icon: "fa-solid fa-mug-hot fa-beat-fade",
+          onClick: () => window.open("https://ko-fi.com/chasarooni", _blank),
+        },
+      ],
+      icon: "fa-duotone fa-solid fa-life-ring",
     },
     content: `
     <p class="SETT custom-ring guide">
@@ -147,7 +156,8 @@ export async function createCustomTokenRingDialog() {
         label: game.i18n.localize(
           MODULE_ID + ".module-settings.custom-ring.menu.buttons.create.label"
         ),
-        callback: async (html) => {
+        callback: async (event, button, dialog) => {
+          const html = dialog.element ? dialog.element : dialog;
           const image1File = $(html).find("#image1")[0].files[0];
           const image2File = $(html).find("#image2")[0].files[0];
           const quality = parseInt($(html).find("#quality").val()) / 100;
@@ -235,7 +245,8 @@ export async function createCustomTokenRingDialog() {
         ),
       },
     ],
-    render: (html) => {
+    render: (_event, app) => {
+      const html = app.element ? app.element : app;
       const colorInput = $(html).find("#ringColor");
       const hexInput = $(html).find("#ringColorHex");
 
