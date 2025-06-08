@@ -25,20 +25,20 @@ export async function showRingDialog() {
 
       con += `
       <div class="ring-item" data-ring-name="${ring.name.toLowerCase()}" data-author-name="${ring.author.toLowerCase()}">
-        <h3>${
+        <h4>${
           new_rings.includes(ring.id)
             ? '<i class="fa-solid fa-circle-exclamation fa-beat-fade" style="--fa-beat-fade-opacity: 0.8; --fa-beat-fade-scale: 1.05; --fa-animation-duration: 1.5s;" data-tooltip="' +
               game.i18n.localize(MODULE_ID + ".hover-text.new-ring") +
               '" data-tooltip-direction="UP"></i> '
             : ""
-        }${ring.name}</h3>
-        <h4><a href="${authorLink}">${ring.author}</a></h4>
+        }${ring.name}</h4>
+        <h5><a href="${authorLink}">${ring.author}</a></h5>
         <label>
           <input type="checkbox" data-tooltip="Enable Ring" data-tooltip-direction="UP" data-id="${
             ring.id
           }" ${isActive ? "checked" : ""}>
         </label>
-        <img src="${ring.preview}" alt="${ring.label}" data-id="${
+      <img src="${ring.preview}" alt="${ring.label}" data-id="${
         ring.id
       }" data-ring-id="${convertText(
         ring.label
@@ -60,8 +60,19 @@ export async function showRingDialog() {
     new_rings
   );
 
-  const dialog = new foundry.applications.api.DialogV2({
-    window: { title: "Ring Activation" },
+  const dialog = foundry.applications.api.DialogV2.wait({
+    window: {
+      title: "Ring Activation",
+      controls: [
+        {
+          action: "kofi",
+          label: "Support Dev",
+          icon: "fa-solid fa-mug-hot fa-beat-fade",
+          onClick: () => window.open("https://ko-fi.com/chasarooni", _blank),
+        },
+      ],
+      icon: "fas fa-circle-notch",
+    },
     content: content,
     buttons: [
       {
@@ -69,9 +80,10 @@ export async function showRingDialog() {
         label: "Submit",
         default: true,
         callback: async (event, button, dialog) => {
+          const html = dialog.element ? dialog.element : dialog;
           const updatedMap = {};
           console.log({ event, button, dialog });
-          $(dialog)
+          $(html)
             .find('input[type="checkbox"]')
             .each((_index, element) => {
               updatedMap[element.dataset.id] = element.checked;
@@ -86,9 +98,10 @@ export async function showRingDialog() {
         },
       },
     ],
-    render: (html) => {
-      // Make the dialog wider
-      //html.closest(".dialog").css({ width: "800px" });
+    render: (_event, app) => {
+      console.log("-----------HI");
+      const html = app.element ? app.element : app;
+      console.log({ app, html, _event });
       // Implement search functionality
       const searchInput = $(html).find("#ring-search");
       searchInput.on("input", function () {
@@ -118,7 +131,12 @@ export async function showRingDialog() {
           askToReload(ringId);
         });
     },
-  }).render(true, { width: 1000, height: 750, top: 50 });
+    position: {
+      width: 1000,
+      height: 750,
+      top: 50,
+    },
+  }).render(true);
   game.settings.set(
     MODULE_ID,
     "old-rings",

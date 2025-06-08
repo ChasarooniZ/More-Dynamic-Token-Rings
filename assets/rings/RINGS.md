@@ -8,8 +8,7 @@
     - [Chasarooni Abomination Vaults Ring](#chasarooni-abomination-vaults-ring)
     - [Chasarooni Chains Ring (Grey)](#chasarooni-chains-ring-grey)
     - [Chasarooni Chains Transparent Ring (Grey)](#chasarooni-chains-transparent-ring-grey)
-    - [Chasarooni Ruby Phoenix Ring (Colorable)](
-#chasarooni-ruby-phoenix-ring-colorable)
+    - [Chasarooni Ruby Phoenix Ring (Colorable)](#chasarooni-ruby-phoenix-ring-colorable)
   - [Eldritch Dream](#eldritch-dream)
     - [Eldritch Dream Blue Aura Ring (Colorable)](#eldritch-dream-blue-aura-ring-colorable)
     - [Eldritch Dream Bronze Spiral Ring (Colorable)](#eldritch-dream-bronze-spiral-ring-colorable)
@@ -120,7 +119,6 @@
 
 ## [Volfied](https://www.metamorphic-digital.com/)
 
-
 ### Volified: Chiaroscura
 
 ![image](https://github.com/user-attachments/assets/366086c0-6357-4498-9176-c352dd2c1aed)
@@ -133,5 +131,6 @@
 
 ![image](https://github.com/user-attachments/assets/b2f0c8d7-151e-4776-b012-9c3a15e6eee2)
 
-
 ### Volified: Warpgate
+
+![image](../../previews/rings/rings-volfied;-warpgate.webp)

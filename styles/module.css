@@ -9,14 +9,14 @@ button.SETT-button {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   overflow-y: auto;
-  max-height: calc(80vh - 200px); /* Adjust based on desired height */
+  max-height: calc(80vh - 240px); /* Adjust based on desired height */
 }
 .ring-item {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
 }
-.ring-item h3 {
+.ring-item h4 {
   margin: 5px 0;
 }
 .ring-item img {
@@ -24,7 +24,7 @@ button.SETT-button {
   height: auto;
   cursor: pointer;
 }
-.ring-item h4 {
+.ring-item h5 {
   margin: 5px 0;
   display: inline-block;
   width: calc(100% - 30px); /* Adjusted width to accommodate the checkbox */

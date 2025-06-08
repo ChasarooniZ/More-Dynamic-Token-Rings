@@ -1,3 +1,12 @@
+## [1.0.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.5...1.0.0) - V13 Updated
+
+- `Updated`
+  - Updated module to FVTT `v13`
+  - Updated to use `DialogV2`
+- `Rings`
+  - `Added`
+    - **Volified: Warpgate**
+
 ## [0.5.5](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.4...0.5.5) - Chiaroscura
 
 - `Rings`
