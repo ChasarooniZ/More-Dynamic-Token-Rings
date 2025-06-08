@@ -99,9 +99,7 @@ export async function showRingDialog() {
       },
     ],
     render: (_event, app) => {
-      console.log("-----------HI");
       const html = app.element ? app.element : app;
-      console.log({ app, html, _event });
       // Implement search functionality
       const searchInput = $(html).find("#ring-search");
       searchInput.on("input", function () {
