@@ -1,3 +1,7 @@
+## [1.0.1](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/1.0.0...1.0.1) - Bug Fix
+
+- Removed unnecessary `render(true)`
+
 ## [1.0.0](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/0.5.5...1.0.0) - V13 Updated
 
 - `Updated`

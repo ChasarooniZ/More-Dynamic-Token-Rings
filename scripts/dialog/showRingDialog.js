@@ -136,7 +136,7 @@ export async function showRingDialog() {
       height: 750,
       top: 50,
     },
-  }).render(true);
+  })
   game.settings.set(
     MODULE_ID,
     "old-rings",
