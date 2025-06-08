@@ -9,7 +9,7 @@ button.SETT-button {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   overflow-y: auto;
-  max-height: calc(80vh - 240px); /* Adjust based on desired height */
+  max-height: 580px; /* Adjust based on desired height */
 }
 .ring-item {
   border: 1px solid #ccc;
