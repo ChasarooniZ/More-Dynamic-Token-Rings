@@ -1,9 +1,11 @@
+![module_banner](https://github.com/ChasarooniZ/pf2e-usage-updater/assets/79132112/3b2a4f8c-7ba1-4647-b073-d8ecac9d93a6)
+
 ![](https://img.shields.io/badge/Foundry-v13-informational)
 ![All Downloads](https://img.shields.io/github/downloads/ChasarooniZ/More-Dynamic-Token-Rings/total?color=5e0000&label=All%20Downloads)
 ![Latest Release Download Count](https://img.shields.io/github/downloads/ChasarooniZ/More-Dynamic-Token-Rings/latest/module.zip)
-
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fmore-dynamic-token-rings&colorB=4aa94a)
-[![Kofi](https://shields.io/badge/kofi-Buy_a_coffee-29abe0?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/chasarooni)
+
+[![gitlocalized ](https://gitlocalize.com/repo/10295/whole_project/badge.svg)](https://gitlocalize.com/repo/10295?utm_source=badge) [![Kofi](https://shields.io/badge/kofi-Buy_a_coffee-29abe0?logo=ko-fi&style=for-the-badgeKofi)](https://ko-fi.com/chasarooni)
 <!--- Downloads @ Latest Badge -->
 <!--- replace <user>/<repo> with your username/repository -->
 
