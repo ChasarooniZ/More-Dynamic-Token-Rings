@@ -1,3 +1,7 @@
+## 1.0.4
+
+- Fixed styling issue with Custom Ring Workflow
+
 ## [1.0.3](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/compare/1.0.2...1.0.3) - Custom Ring Fix
 
 - Fixed custom ring workflow

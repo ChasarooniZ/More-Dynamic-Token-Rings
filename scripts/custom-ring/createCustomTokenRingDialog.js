@@ -42,6 +42,9 @@ export async function createCustomTokenRingDialog() {
       title: game.i18n.localize(
         MODULE_ID + ".module-settings.custom-ring.menu.header"
       ),
+      position: {
+        width: 500,
+      },
       controls: [
         {
           action: "kofi",
@@ -61,24 +64,22 @@ export async function createCustomTokenRingDialog() {
   <form>
     <span class="SETT custom-ring spritesheet">
       <h2>${game.i18n.localize(
-        MODULE_ID + ".module-settings.custom-ring.menu.parts.spritesheet"
-      )}</h2>
+      MODULE_ID + ".module-settings.custom-ring.menu.parts.spritesheet"
+    )}</h2>
       <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "token-img.ring.tooltip"
-      )} <img src='${
-      IMGS.ring
-    }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-      prefix + "token-img.ring.label"
-    )}:</label>
+      prefix + "token-img.ring.tooltip"
+    )} <img src='${IMGS.ring
+      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+        prefix + "token-img.ring.label"
+      )}:</label>
         <input type="file" id="image1" accept="image/*">
       </div>
       <div class="form-group" data-tooltip="${game.i18n.localize(
         prefix + "token-img.background.tooltip"
-      )} <img src='${
-      IMGS.bg
-    }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-      prefix + "token-img.background.label"
-    )}:</label>
+      )} <img src='${IMGS.bg
+      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+        prefix + "token-img.background.label"
+      )}:</label>
         <input type="file" id="image2" accept="image/*">
       </div>
     </span>
@@ -90,58 +91,49 @@ export async function createCustomTokenRingDialog() {
         prefix + "token-img.quality.tooltip"
       )}" data-tooltip-direction="LEFT">
         <label>${game.i18n.localize(
-          prefix + "token-img.quality.label"
-        )} (%):</label>
+        prefix + "token-img.quality.label"
+      )} (%):</label>
         <input type="number" id="quality" value="80" min="1">
       </div>
       <div class="form-group" data-tooltip="${game.i18n.localize(
         prefix + "thickness.tooltip"
-      )} <img src='${
-      IMGS.thickness
-    }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-      prefix + "thickness.label"
-    )}:</label>
-        <input type="number" id="thickness" value="${
-          defaultSettings.thickness
-        }" min="1">
+      )} <img src='${IMGS.thickness
+      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+        prefix + "thickness.label"
+      )}:</label>
+        <input type="number" id="thickness" value="${defaultSettings.thickness
+      }" min="1">
       </div>
       <span class="SETT custom-ring coloration">
         <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
         <div class="form-group" data-tooltip="${game.i18n.localize(
-          prefix + "coloration.inner.tooltip"
-        )} <img src='${
-      IMGS.inner
-    }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-      prefix + "coloration.inner.label"
-    )}:</label>
-          <input type="number" id="innerRing" value="${
-            defaultSettings.innerRing
-          }" min="1">
+        prefix + "coloration.inner.tooltip"
+      )} <img src='${IMGS.inner
+      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+        prefix + "coloration.inner.label"
+      )}:</label>
+          <input type="number" id="innerRing" value="${defaultSettings.innerRing
+      }" min="1">
         </div>
         <div class="form-group" data-tooltip="${game.i18n.localize(
-          prefix + "coloration.outer.tooltip"
-        )} <img src='${
-      IMGS.outer
-    }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-      prefix + "coloration.outer.label"
-    )}:</label>
-          <input type="number" id="outerRing" value="${
-            defaultSettings.outerRing
-          }" min="1">
+        prefix + "coloration.outer.tooltip"
+      )} <img src='${IMGS.outer
+      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+        prefix + "coloration.outer.label"
+      )}:</label>
+          <input type="number" id="outerRing" value="${defaultSettings.outerRing
+      }" min="1">
         </div>
         <div class="form-group" data-tooltip="${game.i18n.localize(
-          prefix + "coloration.color.tooltip"
-        )} <img src='${
-      IMGS.color
-    }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-      prefix + "coloration.color.label"
-    )}:</label>
-          <input type="color" id="ringColor" value="${
-            defaultSettings.ringColor
-          }">
-          <input type="text" id="ringColorHex" value="${
-            defaultSettings.ringColor
-          }" size="7" style="margin-left: 5px;">
+        prefix + "coloration.color.tooltip"
+      )} <img src='${IMGS.color
+      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+        prefix + "coloration.color.label"
+      )}:</label>
+          <input type="color" id="ringColor" value="${defaultSettings.ringColor
+      }">
+          <input type="text" id="ringColorHex" value="${defaultSettings.ringColor
+      }" size="7" style="margin-left: 5px;">
         </div>
       </span>
     </span>
@@ -170,7 +162,7 @@ export async function createCustomTokenRingDialog() {
             ui.notifications.error(
               game.i18n.localize(
                 MODULE_ID +
-                  ".module-settings.custom-ring.menu.error.upload-both"
+                ".module-settings.custom-ring.menu.error.upload-both"
               )
             );
             return;
@@ -218,7 +210,7 @@ export async function createCustomTokenRingDialog() {
             ];
             ui.notifications.info(
               tsundereKoFiLines[
-                Math.floor(Math.random() * tsundereKoFiLines.length)
+              Math.floor(Math.random() * tsundereKoFiLines.length)
               ]
             );
           }
@@ -265,9 +257,9 @@ export async function createCustomTokenRingDialog() {
             MODULE_ID + ".module-settings.custom-ring.menu.icons.kofi.title"
           )}">
              <i class="fas fa-coffee fa-fade" data-tooltip="${game.i18n.localize(
-               MODULE_ID +
-                 ".module-settings.custom-ring.menu.icons.kofi.tooltip"
-             )}"></i>
+            MODULE_ID +
+            ".module-settings.custom-ring.menu.icons.kofi.tooltip"
+          )}"></i>
            </a>`
         ).css({
           // 'margin-left': 'auto',
@@ -291,5 +283,5 @@ export async function createCustomTokenRingDialog() {
         game.settings.set(MODULE_ID, "tours-run", toursRun);
       }
     },
-  }).render(true);
+  });
 }
