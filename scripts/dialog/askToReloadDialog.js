@@ -7,17 +7,16 @@ import { MODULE_ID } from "../const.js";
  */
 
 export async function askToReload(ringID = null) {
-  return new foundry.applications.api.DialogV2({
+  return foundry.applications.api.DialogV2.wait({
     window: { title: game.i18n.localize(MODULE_ID + ".dialog.reload.title") },
     content: `<p>${game.i18n.localize(
       MODULE_ID + ".dialog.reload.content"
-    )}</p>${
-      ringID
-        ? `<p>${game.i18n.localize(
-            MODULE_ID + ".hover-text.click-ring-warning"
-          )}</p>`
-        : ""
-    }`,
+    )}</p>${ringID
+      ? `<p>${game.i18n.localize(
+        MODULE_ID + ".hover-text.click-ring-warning"
+      )}</p>`
+      : ""
+      }`,
     buttons: [
       {
         action: "yes",
@@ -41,5 +40,5 @@ export async function askToReload(ringID = null) {
         label: game.i18n.localize(MODULE_ID + ".dialog.reload.buttons.no"),
       },
     ],
-  }).render(true);
+  });
 }

@@ -69,6 +69,7 @@ function b(c, d) { var e = a(); return b = function (f, g) { f = f - 0x175; var 
 
 
 export async function ready() {
+  if (!game.user.isGM) return;
   if (game.settings.get(MODULE_ID, "first-time-user")) {
     //TODO direct them how to enable rings
     game.settings.set(MODULE_ID, "first-time-user", false);
@@ -82,8 +83,8 @@ export async function ready() {
   //Sets the ring after token Ring Config setup
   const setRingTo = game.settings.get(MODULE_ID, "set-ring-to")
   if (setRingTo) {
-    game.settings.set("core", "dynamicTokenRing", setRingTo)
-    game.settings.set(MODULE_ID, "set-ring-to", "")
+    await game.settings.set("core", "dynamicTokenRing", setRingTo)
+    await game.settings.set(MODULE_ID, "set-ring-to", "")
     ui.notifications.notify(
       game.i18n.localize(MODULE_ID + ".notifications.reload-to-switch")
     );
@@ -99,14 +100,14 @@ export async function ready() {
       if (document.querySelector(selector)) {
         return resolve(document.querySelector(selector));
       }
-    
+
       const observer = new MutationObserver(() => {
         if (document.querySelector(selector)) {
           resolve(document.querySelector(selector));
           observer.disconnect();
         }
       });
-    
+
       observer.observe(document.body, {
         childList: true,
         subtree: true,

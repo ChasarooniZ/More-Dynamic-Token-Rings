@@ -1,3 +1,9 @@
+## 1.0.5
+
+- `Updated`
+  - Fixed race condition with the module reloading that caused an infinite reloading bug (🐛 @DudeAndre)
+  - Another fix for DialogV2
+
 ## 1.0.4
 
 - Fixed styling issue with Custom Ring Workflow
