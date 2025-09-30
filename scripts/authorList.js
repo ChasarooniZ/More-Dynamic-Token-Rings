@@ -8,6 +8,7 @@ export const AUTHORS = [
     link: "https://ko-fi.com/eldritchdream",
   },
   { name: "Volfied", link: "https://discord.gg/mQX64M6VNu" },
+  { name: "Gensokian", link: "https://discord.com/users/216647648801718272" },
   { name: "", link: "" },
 ];
 
@@ -17,4 +18,5 @@ export const ICONS = {
   patreon: '<i class="fa-brands fa-patreon"></i>',
   website: '<i class="fa-solid fa-globe"></i>',
   github: '<i class="fa-brands fa-github"></i>',
-}
+  discord: '<i class="fa-brands fa-discord"></i>'
+};
