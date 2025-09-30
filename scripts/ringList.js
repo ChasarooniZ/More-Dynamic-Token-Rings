@@ -28,3 +28,41 @@ export const RINGS_RAW = [
   "rings-volfied;-warpgate.json",
   "rings-gensokian;-toon-marble.json"
 ];
+
+export const RINGS = {
+  "Chasarooni": [
+    "abomination-vaults-ring-(colorable)",
+    "chains-ring-(grey)",
+    "chains-transparent-ring-(grey)",
+    "ruby-phoenix-ring-(colorable)"
+  ],
+  "Eldritch Dream": [
+    "blue-aura-ring-(colorable)",
+    "bronze-spiral-ring-(colorable)",
+    "classy-black-ring",
+    "curse-ring",
+    "curse-ring-(colorable)",
+    "cyber-purple-ring-(colorable)",
+    "dual-glow-ring-(colorable)",
+    "gilded-black-marble-ring",
+    "pink-metal-ring-(colorable)",
+    "simple-gold-ring-(colorable)"
+  ],
+  "Gensokian": [
+    "toon-marble-ring"
+  ],
+  "Joeundsoo": [
+    "simple-sharp-ring"
+  ],
+  "Redeux": [
+    "simple-ring",
+    "simple-ring-(clear)",
+    "simple-transparent-ring"
+  ],
+  "Volfied": [
+    "chiaroscuro-ring",
+    "runes-ring-(black)",
+    "runes-ring-(blue)",
+    "warpgate-ring"
+  ]
+}

@@ -12,6 +12,15 @@ export const AUTHORS = [
   { name: "", link: "" },
 ];
 
+export const LINKS = {
+  "_DEFAULT": "https://primaryimmune.org/donate",
+  "Chasarooni": "https://ko-fi.com/Chasarooni",
+  "Gensokian": "https://discord.com/users/216647648801718272",
+  "Redeux": "https://ko-fi.com/redeux",
+  "Eldritch Dream": "https://ko-fi.com/eldritchdream",
+  "Volfied": "https://discord.gg/mQX64M6VNu",
+}
+
 
 export const ICONS = {
   kofi: '<i class="fa-sharp-duotone fa-solid fa-mug-hot"></i>',
