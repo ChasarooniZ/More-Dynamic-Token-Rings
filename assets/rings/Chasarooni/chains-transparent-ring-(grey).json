@@ -1,9 +1,10 @@
 {
   "config": {
     "defaultColorBand": {
-      "startRadius": 0.589,
-      "endRadius": 0.9
-    }
+      "startRadius": 0,
+      "endRadius": 1
+    },
+    "defaultRingColor": "#a8a8a8"
   },
 
   "frames": {
@@ -22,7 +23,8 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
       "sourceSize": { "w": 2048, "h": 2048 },
       "anchor": { "x": 0.5, "y": 0.5 },
-      "gridTarget": 4
+      "gridTarget": 4,
+      "ringThickness": 0.144
     },
     "hge-ring-bkg": {
       "frame": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
@@ -39,7 +41,8 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 2048, "h": 2048 },
       "sourceSize": { "w": 2048, "h": 2048 },
       "anchor": { "x": 0.5, "y": 0.5 },
-      "gridTarget": 3
+      "gridTarget": 3,
+      "ringThickness": 0.144
     },
     "lrg-ring-bkg": {
       "frame": { "x": 4096, "y": 0, "w": 1024, "h": 1024 },
@@ -56,7 +59,8 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 1024, "h": 1024 },
       "sourceSize": { "w": 1024, "h": 1024 },
       "anchor": { "x": 0.5, "y": 0.5 },
-      "gridTarget": 2
+      "gridTarget": 2,
+      "ringThickness": 0.144
     },
     "med-ring-bkg": {
       "frame": { "x": 6144, "y": 0, "w": 512, "h": 512 },
@@ -73,7 +77,8 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 512, "h": 512 },
       "sourceSize": { "w": 512, "h": 512 },
       "anchor": { "x": 0.5, "y": 0.5 },
-      "gridTarget": 1
+      "gridTarget": 1,
+      "ringThickness": 0.144
     },
     "tny-ring-bkg": {
       "frame": { "x": 7168, "y": 0, "w": 256, "h": 256 },
@@ -90,12 +95,13 @@
       "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 256 },
       "sourceSize": { "w": 256, "h": 256 },
       "anchor": { "x": 0.5, "y": 0.5 },
-      "gridTarget": 0.5
+      "gridTarget": 0.5,
+      "ringThickness": 0.144
     }
   },
   "meta": {
     "version": "1.1",
-    "image": "rings-chasarooni;-simply-grey-(transparent).webp",
+    "image": "chains-transparent-ring-(grey).webp",
     "format": "RGBA8888",
     "size": { "w": 7680, "h": 2048 },
     "scale": "1"
