@@ -21,6 +21,8 @@
     - [Eldritch Dream Gilded Black Marble Ring (Colorable)](#eldritch-dream-gilded-black-marble-ring-colorable)
     - [Eldritch Dream Pink Metal Ring (Colorable)](#eldritch-dream-pink-metal-ring-colorable)
     - [Eldritch Dream Simple Gold Ring (Colorable)](#eldritch-dream-simple-gold-ring-colorable)
+  - [Gensokian](#gensokian)
+  - [Gensokian Toon Marble](#gensokian-toon-marble)
   - [Joeundsoo](#joeundsoo)
     - [Joeundsoo Simple Sharp Ring](#joeundsoo-simple-sharp-ring)
   - [Redeux](#redeux)
@@ -97,6 +99,12 @@
 
 ![image](https://github.com/user-attachments/assets/1d011684-cf66-4175-a785-5ba39d5e1432)
 
+## [Gensokian](https://discord.com/users/216647648801718272)
+
+## Gensokian Toon Marble
+
+![image](../../previews/rings/rings-gensokian;-toon-marble.webp)
+
 ## [Joeundsoo](https://primaryimmune.org/donate)
 
 ### Joeundsoo Simple Sharp Ring
@@ -117,7 +125,7 @@
 
 ![image](https://github.com/user-attachments/assets/ebd9c69b-89ce-4c3b-adaf-73bc15a928cb)
 
-## [Volfied](https://www.metamorphic-digital.com/)
+## [Volfied](https://discord.gg/mQX64M6VNu)
 
 ### Volified: Chiaroscura
 
