@@ -45,6 +45,7 @@ export const RINGS = {
     "cyber-purple-ring-(colorable)",
     "dual-glow-ring-(colorable)",
     "gilded-black-marble-ring",
+    "gilded-black-marble-ring-(colorable)",
     "pink-metal-ring-(colorable)",
     "simple-gold-ring-(colorable)"
   ],
