@@ -42,9 +42,6 @@ export async function createCustomTokenRingDialog() {
       title: game.i18n.localize(
         MODULE_ID + ".module-settings.custom-ring.menu.header"
       ),
-      position: {
-        width: 500,
-      },
       controls: [
         {
           action: "kofi",
@@ -54,6 +51,9 @@ export async function createCustomTokenRingDialog() {
         },
       ],
       icon: "fa-duotone fa-solid fa-life-ring",
+    },
+    position: {
+      width: 500,
     },
     content: `
     <p class="SETT custom-ring guide">
