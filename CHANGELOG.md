@@ -1,3 +1,11 @@
+## 1.0.6
+
+- `Added`
+  - `Rings`
+    - **Gensokian Toon Marble**
+- `Updated`
+  - Fixed Custom Ring maker Dialog stuck in top left issue
+
 ## 1.0.5
 
 - `Updated`
