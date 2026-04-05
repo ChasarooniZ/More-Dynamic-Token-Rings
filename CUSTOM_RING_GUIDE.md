@@ -12,6 +12,7 @@ Welcome to the guide for making custom rings using SETT. Best of luck!
 ## Preface
 - I use [Paint.net](https://www.getpaint.net/) as an image editing software as it is free and has layers (feel free to use whatever software you want though, the general concepts should apply)
 - [Ring creation Style Guide](https://foundryvtt.com/article/dynamic-token-rings/)
+- [Example Ring JSON + Image Pairs](https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/tree/main/assets/rings)
 ## Making your Ring and BG
 1. For this example I'm going to be using a ring and background from [Eldritch Dream](https://ko-fi.com/eldritchdream)
 2. To start with I usually start off of this template as my base iamge as it makes it easier to read
