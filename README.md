@@ -1,6 +1,6 @@
 [![module_banner](https://github.com/ChasarooniZ/pf2e-usage-updater/assets/79132112/3b2a4f8c-7ba1-4647-b073-d8ecac9d93a6)](https://chasarooniz.github.io/)
 
-![](https://img.shields.io/badge/Foundry-v13-informational)
+![](https://img.shields.io/badge/Foundry-v14-informational)
 ![All Downloads](https://img.shields.io/github/downloads/ChasarooniZ/More-Dynamic-Token-Rings/total?color=5e0000&label=All%20Downloads)
 ![Latest Release Download Count](https://img.shields.io/github/downloads/ChasarooniZ/More-Dynamic-Token-Rings/latest/module.zip)
 ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fmore-dynamic-token-rings&colorB=4aa94a)
@@ -18,14 +18,14 @@ Adds options for dynamic token rings
 [Page](https://chasarooniz.github.io/Dynamic-Token-Ring-Viewer/) to Make your own Token Sprite Sheet
 
 ## Table of Contents
-- [FoundryVTT Module](#foundryvtt-module)
+- [SETT: Some Extra Token (ring) Types](#sett-some-extra-token-ring-types)
   - [Table of Contents](#table-of-contents)
   - [Current Rings](#current-rings)
   - [Creating New Rings](#creating-new-rings)
   - [Custom Rings](#custom-rings)
   - [Changelog](#changelog)
   - [Contributors](#contributors)
-  - [Sources](#sources-licensing)
+  - [Sources \& Licensing](#sources--licensing)
   - [Support Me](#support-me)
 ## [Current Rings](assets/rings/RINGS.md)
 Click link above to see a list of all current rings
