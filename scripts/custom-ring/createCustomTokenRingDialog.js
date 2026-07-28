@@ -210,16 +210,7 @@ export async function createCustomTokenRingDialog() {
           if (
             !checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))
           ) {
-            const tsundereKoFiLines = [
-              "It's not like I need your help, but if you donate... Baka!",
-              "Fine, donate... but don't think I'm happy about it!",
-              "Hmph, I guess more TTRPG items wouldn't be so bad... Donate if you want.",
-              "Do what you want! Donate if you feel like it.",
-              "If you donate, I might get more TTRPG items... not that it matters.",
-              "Tch, donate if you want, but I'm not thrilled... or anything.",
-              "You can donate... but it's not like I'm relying on you!",
-              "Ugh, fine! Donate if you want... just don't expect me to be happy!",
-            ];
+            const tsundereKoFiLines = ["support for development and upkeep"];
             ui.notifications.info(
               tsundereKoFiLines[
                 Math.floor(Math.random() * tsundereKoFiLines.length)
