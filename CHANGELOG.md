@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Added `Bastardhall` ring
+
 ## 2.0.0
 
 - Updated to support FoundryVTT `14`

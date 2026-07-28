@@ -1,10 +1,11 @@
 export const RINGS = {
-  "Chasarooni": [
+  Chasarooni: [
     "abomination-vaults-ring-(colorable)",
     "chains-ring-(grey)",
     "chains-transparent-ring-(grey)",
-    "ruby-phoenix-ring-(colorable)"
+    "ruby-phoenix-ring-(colorable)",
   ],
+  "Cory McCreery": ["bastardhall-ring"],
   "Eldritch Dream": [
     "blue-aura-ring-(colorable)",
     "bronze-spiral-ring-(colorable)",
@@ -16,23 +17,15 @@ export const RINGS = {
     "gilded-black-marble-ring",
     "gilded-black-marble-ring-(colorable)",
     "pink-metal-ring-(colorable)",
-    "simple-gold-ring-(colorable)"
+    "simple-gold-ring-(colorable)",
   ],
-  "Gensokian": [
-    "toon-marble-ring"
-  ],
-  "Joeundsoo": [
-    "simple-sharp-ring"
-  ],
-  "Redeux": [
-    "simple-ring",
-    "simple-ring-(clear)",
-    "simple-transparent-ring"
-  ],
-  "Volfied": [
+  Gensokian: ["toon-marble-ring"],
+  Joeundsoo: ["simple-sharp-ring"],
+  Redeux: ["simple-ring", "simple-ring-(clear)", "simple-transparent-ring"],
+  Volfied: [
     "chiaroscuro-ring",
     "runes-ring-(black)",
     "runes-ring-(blue)",
-    "warpgate-ring"
-  ]
-}
+    "warpgate-ring",
+  ],
+};
