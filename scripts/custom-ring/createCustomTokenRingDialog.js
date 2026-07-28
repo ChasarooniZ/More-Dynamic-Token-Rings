@@ -5,11 +5,11 @@ import {
   loadImage,
   processAndSaveImages,
   processAndSaveConfigJSON,
-  checkKofi,
 } from "./custom-ring.js";
 import { customRingFullTour } from "../updates/tours/1.5customRingTourFull.js";
 import { submitRingDialog } from "../dialog/openRingSubmissionDialog.js";
 import { convertText } from "../hooks.js";
+import { checkKofi } from "../checkkofi.js";
 
 // Function to create the dialog box in Foundry VTT
 
@@ -40,7 +40,7 @@ export async function createCustomTokenRingDialog() {
   foundry.applications.api.DialogV2.wait({
     window: {
       title: game.i18n.localize(
-        MODULE_ID + ".module-settings.custom-ring.menu.header"
+        MODULE_ID + ".module-settings.custom-ring.menu.header",
       ),
       controls: [
         {
@@ -58,82 +58,93 @@ export async function createCustomTokenRingDialog() {
     content: `
     <p class="SETT custom-ring guide">
     <a href="https://github.com/ChasarooniZ/More-Dynamic-Token-Rings/blob/main/CUSTOM_RING_GUIDE.md">${game.i18n.localize(
-      MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide"
+      MODULE_ID + ".module-settings.custom-ring.menu.content.link-to-guide",
     )}</a>
   </p>
   <form>
     <span class="SETT custom-ring spritesheet">
       <h2>${game.i18n.localize(
-      MODULE_ID + ".module-settings.custom-ring.menu.parts.spritesheet"
-    )}</h2>
+        MODULE_ID + ".module-settings.custom-ring.menu.parts.spritesheet",
+      )}</h2>
       <div class="form-group" data-tooltip="${game.i18n.localize(
-      prefix + "token-img.ring.tooltip"
-    )} <img src='${IMGS.ring
+        prefix + "token-img.ring.tooltip",
+      )} <img src='${
+        IMGS.ring
       }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-        prefix + "token-img.ring.label"
+        prefix + "token-img.ring.label",
       )}:</label>
         <input type="file" id="image1" accept="image/*">
       </div>
       <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "token-img.background.tooltip"
-      )} <img src='${IMGS.bg
+        prefix + "token-img.background.tooltip",
+      )} <img src='${
+        IMGS.bg
       }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-        prefix + "token-img.background.label"
+        prefix + "token-img.background.label",
       )}:</label>
         <input type="file" id="image2" accept="image/*">
       </div>
     </span>
     <span class="SETT custom-ring json">
       <h2>${game.i18n.localize(
-        MODULE_ID + ".module-settings.custom-ring.menu.parts.json"
+        MODULE_ID + ".module-settings.custom-ring.menu.parts.json",
       )}</h2>
       <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "token-img.quality.tooltip"
+        prefix + "token-img.quality.tooltip",
       )}" data-tooltip-direction="LEFT">
         <label>${game.i18n.localize(
-        prefix + "token-img.quality.label"
-      )} (%):</label>
+          prefix + "token-img.quality.label",
+        )} (%):</label>
         <input type="number" id="quality" value="80" min="1">
       </div>
       <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "thickness.tooltip"
-      )} <img src='${IMGS.thickness
+        prefix + "thickness.tooltip",
+      )} <img src='${
+        IMGS.thickness
       }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-        prefix + "thickness.label"
+        prefix + "thickness.label",
       )}:</label>
-        <input type="number" id="thickness" value="${defaultSettings.thickness
-      }" min="1">
+        <input type="number" id="thickness" value="${
+          defaultSettings.thickness
+        }" min="1">
       </div>
       <span class="SETT custom-ring coloration">
         <h3>${game.i18n.localize(prefix + "coloration.label")}</h3>
         <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "coloration.inner.tooltip"
-      )} <img src='${IMGS.inner
-      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-        prefix + "coloration.inner.label"
-      )}:</label>
-          <input type="number" id="innerRing" value="${defaultSettings.innerRing
-      }" min="1">
+          prefix + "coloration.inner.tooltip",
+        )} <img src='${
+          IMGS.inner
+        }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+          prefix + "coloration.inner.label",
+        )}:</label>
+          <input type="number" id="innerRing" value="${
+            defaultSettings.innerRing
+          }" min="1">
         </div>
         <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "coloration.outer.tooltip"
-      )} <img src='${IMGS.outer
-      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-        prefix + "coloration.outer.label"
-      )}:</label>
-          <input type="number" id="outerRing" value="${defaultSettings.outerRing
-      }" min="1">
+          prefix + "coloration.outer.tooltip",
+        )} <img src='${
+          IMGS.outer
+        }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+          prefix + "coloration.outer.label",
+        )}:</label>
+          <input type="number" id="outerRing" value="${
+            defaultSettings.outerRing
+          }" min="1">
         </div>
         <div class="form-group" data-tooltip="${game.i18n.localize(
-        prefix + "coloration.color.tooltip"
-      )} <img src='${IMGS.color
-      }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
-        prefix + "coloration.color.label"
-      )}:</label>
-          <input type="color" id="ringColor" value="${defaultSettings.ringColor
-      }">
-          <input type="text" id="ringColorHex" value="${defaultSettings.ringColor
-      }" size="7" style="margin-left: 5px;">
+          prefix + "coloration.color.tooltip",
+        )} <img src='${
+          IMGS.color
+        }'>" data-tooltip-direction="LEFT"> <label>${game.i18n.localize(
+          prefix + "coloration.color.label",
+        )}:</label>
+          <input type="color" id="ringColor" value="${
+            defaultSettings.ringColor
+          }">
+          <input type="text" id="ringColorHex" value="${
+            defaultSettings.ringColor
+          }" size="7" style="margin-left: 5px;">
         </div>
       </span>
     </span>
@@ -146,7 +157,7 @@ export async function createCustomTokenRingDialog() {
         default: true,
         icon: "<i class='fas fa-check'></i>",
         label: game.i18n.localize(
-          MODULE_ID + ".module-settings.custom-ring.menu.buttons.create.label"
+          MODULE_ID + ".module-settings.custom-ring.menu.buttons.create.label",
         ),
         callback: async (event, button, dialog) => {
           const html = dialog.element ? dialog.element : dialog;
@@ -162,8 +173,8 @@ export async function createCustomTokenRingDialog() {
             ui.notifications.error(
               game.i18n.localize(
                 MODULE_ID +
-                ".module-settings.custom-ring.menu.error.upload-both"
-              )
+                  ".module-settings.custom-ring.menu.error.upload-both",
+              ),
             );
             return;
           }
@@ -181,8 +192,9 @@ export async function createCustomTokenRingDialog() {
             ) {
               ui.notifications.error(
                 game.i18n.localize(
-                  MODULE_ID + ".module-settings.custom-ring.menu.error.2048-min"
-                )
+                  MODULE_ID +
+                    ".module-settings.custom-ring.menu.error.2048-min",
+                ),
               );
               return;
             } else {
@@ -193,7 +205,7 @@ export async function createCustomTokenRingDialog() {
             thickness,
             innerRing,
             outerRing,
-            ringColor
+            ringColor,
           );
           if (
             !checkKofi(game.settings.get(MODULE_ID, "custom-ring.kofi-code"))
@@ -210,8 +222,8 @@ export async function createCustomTokenRingDialog() {
             ];
             ui.notifications.info(
               tsundereKoFiLines[
-              Math.floor(Math.random() * tsundereKoFiLines.length)
-              ]
+                Math.floor(Math.random() * tsundereKoFiLines.length)
+              ],
             );
           }
           await game.settings.set(MODULE_ID, "custom-ring.enabled", true);
@@ -222,7 +234,7 @@ export async function createCustomTokenRingDialog() {
         action: "export",
         icon: "<i class='fas fa-file-export'></i>",
         label: game.i18n.localize(
-          MODULE_ID + ".module-settings.custom-ring.menu.buttons.export.label"
+          MODULE_ID + ".module-settings.custom-ring.menu.buttons.export.label",
         ),
         callback: async () => {
           await downloadCustomRing();
@@ -233,7 +245,7 @@ export async function createCustomTokenRingDialog() {
         action: "cancel",
         icon: "<i class='fas fa-times'></i>",
         label: game.i18n.localize(
-          MODULE_ID + ".module-settings.custom-ring.menu.buttons.cancel.label"
+          MODULE_ID + ".module-settings.custom-ring.menu.buttons.cancel.label",
         ),
       },
     ],
@@ -254,13 +266,13 @@ export async function createCustomTokenRingDialog() {
 
         const kofiButton = $(
           `<a href="https://ko-fi.com/chasarooni" title="${game.i18n.localize(
-            MODULE_ID + ".module-settings.custom-ring.menu.icons.kofi.title"
+            MODULE_ID + ".module-settings.custom-ring.menu.icons.kofi.title",
           )}">
              <i class="fas fa-coffee fa-fade" data-tooltip="${game.i18n.localize(
-            MODULE_ID +
-            ".module-settings.custom-ring.menu.icons.kofi.tooltip"
-          )}"></i>
-           </a>`
+               MODULE_ID +
+                 ".module-settings.custom-ring.menu.icons.kofi.tooltip",
+             )}"></i>
+           </a>`,
         ).css({
           // 'margin-left': 'auto',
           // 'margin-right': '10px',
